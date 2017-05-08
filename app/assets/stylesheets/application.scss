@@ -1,8 +1,13 @@
 @import 'bootstrap';
 
-html {
-  position: relative;
+html, body {
   min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  padding-top: 75px;
+  padding-left: 30px;
 }
 
 .footer {
