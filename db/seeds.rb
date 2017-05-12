@@ -31,19 +31,7 @@ p "Added #{Team.count} teams"
 # Start Player Seeds
 players = Player.create([{
 # Start Botany Swarm
-# Start Swarm Forwards  "name": "Jake Ratcliffe",
-  "team": "West Auckland Admirals",
-  "shoots": "Right",
-  "position": "Forward",
-  "number": 8,
-  "gp": 15,
-  "goals": 12,
-  "assists": 6,
-  "points": 18,
-  "pim": 12,
-  "plusMinus": 7,
-	"abr": "WAA"
-}, {
+# Start Swarm Forwards  
 	"name": "Michael Attwell",
 	"shoots": "Right",
 	"position": "Forward",
