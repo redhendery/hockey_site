@@ -39,6 +39,8 @@ ActiveRecord::Schema.define(version: 20170511211410) do
   create_table "teams", force: :cascade do |t|
     t.string "team_name"
     t.string "abr"
+    t.string "sm_logo"
+    t.string "lg_logo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

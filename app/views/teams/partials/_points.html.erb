@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="card-header">
+    <strong>Team Points Leaders</strong>
+  </div>
+  <div class="card-block">
+    <% @points.each_with_index do |points, i| %>
+      <div class="table-responsive">
+        <span><strong><%= i += 1 %>. </strong></span>
+        <span><strong><%= points.name %></strong></span>
+        <span class="float-right"><strong><%= points.points %></strong></span>
+      </div>
+    <% end %>
+  </div>
+</div>
