@@ -6,7 +6,6 @@ class CreatePlayers < ActiveRecord::Migration[5.1]
       t.string :catches
       t.string :position
       t.string :posAbr
-      t.string :abr
       t.integer :number
       t.integer :gp
       t.integer :goals

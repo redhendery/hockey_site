@@ -4,6 +4,8 @@ class CreateTeams < ActiveRecord::Migration[5.1]
 
       t.string :team_name
       t.string :abr
+      t.string :sm_logo
+      t.string :lg_logo
 
       t.timestamps
     end
