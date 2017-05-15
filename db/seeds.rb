@@ -31,20 +31,10 @@ p "Added #{Team.count} teams"
 # Start Player Seeds
 players = Player.create([{
 # Start Botany Swarm
-# Start Swarm Forwards  "name": "Jake Ratcliffe",
-  "team": "West Auckland Admirals",
-  "shoots": "Right",
-  "position": "Forward",
-  "number": 8,
-  "gp": 15,
-  "goals": 12,
-  "assists": 6,
-  "points": 18,
-  "pim": 12,
-  "plusMinus": 7,
-	"abr": "WAA"
-}, {
+# Start Swarm Forwards
 	"name": "Michael Attwell",
+	"team_name": 'Botany Swarm',
+	"team_abr": 'BSW',
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -58,6 +48,8 @@ players = Player.create([{
 	team_id: 1
 }, {
 	"name": "Aaron Henderson",
+	"team_name": 'Botany Swarm',
+	"team_abr": 'BSW',
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -71,6 +63,8 @@ players = Player.create([{
 	team_id: 1
 }, {
 	"name": "Robyn Vortanov",
+	"team_name": 'Botany Swarm',
+	"team_abr": 'BSW',
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -84,6 +78,8 @@ players = Player.create([{
 	team_id: 1
 }, {
 	"name": "Alexander Polozov",
+	"team_name": 'Botany Swarm',
+	"team_abr": 'BSW',
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -97,6 +93,8 @@ players = Player.create([{
 	team_id: 1
 }, {
 	"name": "Ritchie Hopkinson",
+	"team_name": 'Botany Swarm',
+	"team_abr": 'BSW',
 	"shoots": "Left",
 	"position": "Forward",
 	"posAbr": "F",
@@ -110,6 +108,8 @@ players = Player.create([{
 	team_id: 1
 }, {
 	"name": "Matthew Taylor",
+	"team_name": 'Botany Swarm',
+	"team_abr": 'BSW',
 	"shoots": "Left",
 	"position": "Forward",
 	"posAbr": "F",
@@ -123,6 +123,8 @@ players = Player.create([{
 	team_id: 1
 }, {
 	"name": "Thomas Clow",
+	"team_name": 'Botany Swarm',
+	"team_abr": 'BSW',
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -136,6 +138,8 @@ players = Player.create([{
 	team_id: 1
 }, {
 	"name": "Dion Guest",
+	"team_name": 'Botany Swarm',
+	"team_abr": 'BSW',
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -149,6 +153,8 @@ players = Player.create([{
 	team_id: 1
 }, {
 	"name": "Kyle Jonsson",
+	"team_name": 'Botany Swarm',
+	"team_abr": 'BSW',
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -162,6 +168,8 @@ players = Player.create([{
 	team_id: 1
 }, {
 	"name": "Aaron Henderson",
+	"team_name": 'Botany Swarm',
+	"team_abr": 'BSW',
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -175,6 +183,8 @@ players = Player.create([{
 	team_id: 1
 }, {
 	"name": "K.C Ball",
+	"team_name": 'Botany Swarm',
+	"team_abr": 'BSW',
 	"shoots": "Left",
 	"position": "Forward",
 	"posAbr": "F",
@@ -188,6 +198,8 @@ players = Player.create([{
 	team_id: 1
 }, {
 	"name": "Oliver Hay",
+	"team_name": 'Botany Swarm',
+	"team_abr": 'BSW',
 	"shoots": "Left",
 	"position": "Forward",
 	"posAbr": "F",
@@ -201,6 +213,8 @@ players = Player.create([{
 	team_id: 1
 }, {
 	"name": "Sami Saastamoinen",
+	"team_name": 'Botany Swarm',
+	"team_abr": 'BSW',
 	"shoots": "Left",
 	"position": "Forward",
 	"posAbr": "F",
@@ -214,6 +228,8 @@ players = Player.create([{
 	team_id: 1
 }, {
 	"name": "Maxim Kaluzhny",
+	"team_name": 'Botany Swarm',
+	"team_abr": 'BSW',
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -229,6 +245,8 @@ players = Player.create([{
 # Start Swarm Defence
 {
 	"name": "Jamie Lawrence",
+	"team_name": 'Botany Swarm',
+	"team_abr": 'BSW',
 	"shoots": "Right",
 	"position": "Defence",
 	"posAbr": "D",
@@ -242,6 +260,8 @@ players = Player.create([{
 	team_id: 1
 }, {
 	"name": "Kahu Joyce",
+	"team_name": 'Botany Swarm',
+	"team_abr": 'BSW',
 	"shoots": "Left",
 	"position": "Defence",
 	"posAbr": "D",
@@ -255,6 +275,8 @@ players = Player.create([{
 	team_id: 1
 }, {
 	"name": "Andrew Hay",
+	"team_name": 'Botany Swarm',
+	"team_abr": 'BSW',
 	"shoots": "Right",
 	"position": "Defence",
 	"posAbr": "D",
@@ -268,6 +290,8 @@ players = Player.create([{
 	team_id: 1
 }, {
 	"name": "Stephen Mawson",
+	"team_name": 'Botany Swarm',
+	"team_abr": 'BSW',
 	"shoots": "Right",
 	"position": "Defence",
 	"posAbr": "D",
@@ -281,6 +305,8 @@ players = Player.create([{
 	team_id: 1
 }, {
 	"name": "Steven Adams",
+	"team_name": 'Botany Swarm',
+	"team_abr": 'BSW',
 	"shoots": "Right",
 	"position": "Defence",
 	"posAbr": "D",
@@ -294,6 +320,8 @@ players = Player.create([{
 	team_id: 1
 }, {
 	"name": "Leith Thompson",
+	"team_name": 'Botany Swarm',
+	"team_abr": 'BSW',
 	"shoots": "Left",
 	"position": "Defence",
 	"posAbr": "D",
@@ -307,6 +335,8 @@ players = Player.create([{
 	team_id: 1
 }, {
 	"name": "Logan Fraser",
+	"team_name": 'Botany Swarm',
+	"team_abr": 'BSW',
 	"shoots": "Right",
 	"position": "Defence",
 	"posAbr": "D",
@@ -322,6 +352,8 @@ players = Player.create([{
 # Start Botany Swarm Goaltenders
 {
 	"name": "Michael Hopkinson",
+	"team_name": 'Botany Swarm',
+	"team_abr": 'BSW',
 	"catches": "Left",
 	"position": "Goalie",
 	"posAbr": "GK",
@@ -332,6 +364,8 @@ players = Player.create([{
 	team_id: 1
 }, {
 	"name": "Alain Giauque",
+	"team_name": 'Botany Swarm',
+	"team_abr": 'BSW',
 	"catches": "Left",
 	"position": "Goalie",
 	"posAbr": "GK",
@@ -342,6 +376,8 @@ players = Player.create([{
 	team_id: 1
 }, {
 	"name": "Grace Harrison",
+	"team_name": 'Botany Swarm',
+	"team_abr": 'BSW',
 	"catches": "Left",
 	"position": "Goalie",
 	"posAbr": "GK",
@@ -355,6 +391,8 @@ players = Player.create([{
 # Start Canterbury Red Devils Forwards
 {
 	"name": "Chris Eaden",
+	"team_name": "Canterbury Red Devils",
+	"team_abr": "CRD",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -368,6 +406,8 @@ players = Player.create([{
 	team_id: 2
 }, {
 	"name": "Brad Apps",
+	"team_name": "Canterbury Red Devils",
+	"team_abr": "CRD",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -381,6 +421,8 @@ players = Player.create([{
 	team_id: 2
 }, {
 	"name": "Alex Ashwell",
+	"team_name": "Canterbury Red Devils",
+	"team_abr": "CRD",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -394,6 +436,8 @@ players = Player.create([{
 	team_id: 2
 }, {
 	"name": "Shaun Brown",
+	"team_name": "Canterbury Red Devils",
+	"team_abr": "CRD",
 	"shoots": "Left",
 	"position": "Forward",
 	"posAbr": "F",
@@ -407,6 +451,8 @@ players = Player.create([{
 	team_id: 2
 }, {
 	"name": "Liam Dallimore",
+	"team_name": "Canterbury Red Devils",
+	"team_abr": "CRD",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -420,6 +466,8 @@ players = Player.create([{
 	team_id: 2
 }, {
 	"name": "Alex Damm",
+	"team_name": "Canterbury Red Devils",
+	"team_abr": "CRD",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -433,6 +481,8 @@ players = Player.create([{
 	team_id: 2
 }, {
 	"name": "Alex Egan",
+	"team_name": "Canterbury Red Devils",
+	"team_abr": "CRD",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -446,6 +496,8 @@ players = Player.create([{
 	team_id: 2
 }, {
 	"name": "Justin Fuller",
+	"team_name": "Canterbury Red Devils",
+	"team_abr": "CRD",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -459,6 +511,8 @@ players = Player.create([{
 	team_id: 2
 }, {
 	"name": "Jeong Kim",
+	"team_name": "Canterbury Red Devils",
+	"team_abr": "CRD",
 	"shoots": "Left",
 	"position": "Forward",
 	"posAbr": "F",
@@ -472,6 +526,8 @@ players = Player.create([{
 	team_id: 2
 }, {
 	"name": "Luke Hill",
+	"team_name": "Canterbury Red Devils",
+	"team_abr": "CRD",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -485,6 +541,8 @@ players = Player.create([{
 	team_id: 2
 }, {
 	"name": "Jaxson Lane",
+	"team_name": "Canterbury Red Devils",
+	"team_abr": "CRD",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -498,6 +556,8 @@ players = Player.create([{
 	team_id: 2
 }, {
 	"name": "Anton Purver",
+	"team_name": "Canterbury Red Devils",
+	"team_abr": "CRD",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -511,6 +571,8 @@ players = Player.create([{
 	team_id: 2
 }, {
 	"name": "Nik Stefanissin",
+	"team_name": "Canterbury Red Devils",
+	"team_abr": "CRD",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -526,6 +588,8 @@ players = Player.create([{
 # Start Canterbury Red Devils Defence
 {
 	"name": "Moses Bygate-Smith",
+	"team_name": "Canterbury Red Devils",
+	"team_abr": "CRD",
 	"shoots": "Right",
 	"position": "Defence",
 	"posAbr": "D",
@@ -539,6 +603,8 @@ players = Player.create([{
 	team_id: 2
 }, {
 	"name": "Ryan Fraser",
+	"team_name": "Canterbury Red Devils",
+	"team_abr": "CRD",
 	"shoots": "Left",
 	"position": "Defence",
 	"posAbr": "D",
@@ -552,6 +618,8 @@ players = Player.create([{
 	team_id: 2
 }, {
 	"name": "Mason Kennedy",
+	"team_name": "Canterbury Red Devils",
+	"team_abr": "CRD",
 	"shoots": "Right",
 	"position": "Defence",
 	"posAbr": "D",
@@ -565,6 +633,8 @@ players = Player.create([{
 	team_id: 2
 }, {
 	"name": "Henry Morley-Hall",
+	"team_name": "Canterbury Red Devils",
+	"team_abr": "CRD",
 	"shoots": "Right",
 	"position": "Defence",
 	"posAbr": "D",
@@ -578,6 +648,8 @@ players = Player.create([{
 	team_id: 2
 }, {
 	"name": "Kyle Nash",
+	"team_name": "Canterbury Red Devils",
+	"team_abr": "CRD",
 	"shoots": "Right",
 	"position": "Defence",
 	"posAbr": "D",
@@ -591,6 +663,8 @@ players = Player.create([{
 	team_id: 2
 }, {
 	"name": "Mason Rees",
+	"team_name": "Canterbury Red Devils",
+	"team_abr": "CRD",
 	"shoots": "Right",
 	"position": "Defence",
 	"posAbr": "D",
@@ -606,6 +680,8 @@ players = Player.create([{
 # Start Canterbury Red Devils Goaltenders
 {
 	"name": "Michael Coleman",
+	"team_name": "Canterbury Red Devils",
+	"team_abr": "CRD",
 	"catches": "Left",
 	"position": "Goalie",
 	"posAbr": "GK",
@@ -616,6 +692,8 @@ players = Player.create([{
 	team_id: 2
 }, {
 	"name": "Steven Coull",
+	"team_name": "Canterbury Red Devils",
+	"team_abr": "CRD",
 	"catches": "Left",
 	"position": "Goalie",
 	"posAbr": "GK",
@@ -626,6 +704,8 @@ players = Player.create([{
 	team_id: 2
 }, {
 	"name": "Richard Bigsby",
+	"team_name": "Canterbury Red Devils",
+	"team_abr": "CRD",
 	"catches": "Left",
 	"position": "Goalie",
 	"posAbr": "GK",
@@ -639,6 +719,8 @@ players = Player.create([{
 # Start Dunedin Thunder Forwards
 {
 	"name": "Gareth Lloyd",
+	"team_name": "Dunedin Thunder",
+	"team_abr": "DNT",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -652,6 +734,8 @@ players = Player.create([{
 	team_id: 3
 }, {
 	"name": "Jaan Turia",
+	"team_name": "Dunedin Thunder",
+	"team_abr": "DNT",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -665,6 +749,8 @@ players = Player.create([{
 	team_id: 3
 }, {
 	"name": "Thomas Carson-Pratt",
+	"team_name": "Dunedin Thunder",
+	"team_abr": "DNT",
 	"shoots": "Left",
 	"position": "Forward",
 	"posAbr": "F",
@@ -678,6 +764,8 @@ players = Player.create([{
 	team_id: 3
 }, {
 	"name": "Shaun Harrison",
+	"team_name": "Dunedin Thunder",
+	"team_abr": "DNT",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -691,6 +779,8 @@ players = Player.create([{
 	team_id: 3
 }, {
 	"name": "Jacob Hurring",
+	"team_name": "Dunedin Thunder",
+	"team_abr": "DNT",
 	"shoots": "Left",
 	"position": "Forward",
 	"posAbr": "F",
@@ -704,6 +794,8 @@ players = Player.create([{
 	team_id: 3
 }, {
 	"name": "Joel Scott",
+	"team_name": "Dunedin Thunder",
+	"team_abr": "DNT",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -717,6 +809,8 @@ players = Player.create([{
 	team_id: 3
 }, {
 	"name": "Joe Orr",
+	"team_name": "Dunedin Thunder",
+	"team_abr": "DNT",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -730,6 +824,8 @@ players = Player.create([{
 	team_id: 3
 }, {
 	"name": "Ben Roth",
+	"team_name": "Dunedin Thunder",
+	"team_abr": "DNT",
 	"shoots": "Left",
 	"position": "Forward",
 	"posAbr": "F",
@@ -743,6 +839,8 @@ players = Player.create([{
 	team_id: 3
 }, {
 	"name": "Noah Leahy",
+	"team_name": "Dunedin Thunder",
+	"team_abr": "DNT",
 	"shoots": "Left",
 	"position": "Forward",
 	"posAbr": "F",
@@ -758,6 +856,8 @@ players = Player.create([{
 #  Start Dunedin Thunder Defence
 {
 	"name": "Regan Wilson",
+	"team_name": "Dunedin Thunder",
+	"team_abr": "DNT",
 	"shoots": "Right",
 	"position": "Defence",
 	"posAbr": "D",
@@ -771,6 +871,8 @@ players = Player.create([{
 	team_id: 3
 }, {
 	"name": "Filipe Aquirre",
+	"team_name": "Dunedin Thunder",
+	"team_abr": "DNT",
 	"shoots": "Right",
 	"position": "Defence",
 	"posAbr": "D",
@@ -784,6 +886,8 @@ players = Player.create([{
 	team_id: 3
 }, {
 	"name": "George Hopkins",
+	"team_name": "Dunedin Thunder",
+	"team_abr": "DNT",
 	"shoots": "Right",
 	"position": "Defence",
 	"posAbr": "D",
@@ -797,6 +901,8 @@ players = Player.create([{
 	team_id: 3
 }, {
 	"name": "Dylan Devlin",
+	"team_name": "Dunedin Thunder",
+	"team_abr": "DNT",
 	"shoots": "Right",
 	"position": "Defence",
 	"posAbr": "D",
@@ -810,6 +916,8 @@ players = Player.create([{
 	team_id: 3
 }, {
 	"name": "Matas Barakauskas",
+	"team_name": "Dunedin Thunder",
+	"team_abr": "DNT",
 	"shoots": "Left",
 	"position": "Defence",
 	"posAbr": "D",
@@ -825,6 +933,8 @@ players = Player.create([{
 # Start Thunder Goaltenders
 {
 	"name": "Hunter Waugh",
+	"team_name": "Dunedin Thunder",
+	"team_abr": "DNT",
 	"catches": "Left",
 	"position": "Goalie",
 	"posAbr": "GK",
@@ -835,6 +945,8 @@ players = Player.create([{
 	team_id: 3
 }, {
 	"name": "Jonas Barakauskas",
+	"team_name": "Dunedin Thunder",
+	"team_abr": "DNT",
 	"catches": "Left",
 	"position": "Goalie",
 	"posAbr": "GK",
@@ -848,6 +960,8 @@ players = Player.create([{
 # Start Skycity Stampede Forwards
 {
 	"name": "Matt Schneider",
+	"team_name": "Skycity Stampede",
+	"team_abr": "STP",
 	"shoots": "Left",
 	"position": "Forward",
 	"posAbr": "F",
@@ -861,6 +975,8 @@ players = Player.create([{
 	team_id: 4
 }, {
 	"name": "Luke Pickering",
+	"team_name": "Skycity Stampede",
+	"team_abr": "STP",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -874,6 +990,8 @@ players = Player.create([{
 	team_id: 4
 }, {
 	"name": "Cameron White",
+	"team_name": "Skycity Stampede",
+	"team_abr": "STP",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -887,6 +1005,8 @@ players = Player.create([{
 	team_id: 4
 }, {
 	"name": "Braden Lee",
+	"team_name": "Skycity Stampede",
+	"team_abr": "STP",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -900,6 +1020,8 @@ players = Player.create([{
 	team_id: 4
 }, {
 	"name": "Mike McRae",
+	"team_name": "Skycity Stampede",
+	"team_abr": "STP",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -913,6 +1035,8 @@ players = Player.create([{
 	team_id: 4
 }, {
 	"name": "Callum Burns",
+	"team_name": "Skycity Stampede",
+	"team_abr": "STP",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -926,6 +1050,8 @@ players = Player.create([{
 	team_id: 4
 }, {
 	"name": "Harrison Macharg",
+	"team_name": "Skycity Stampede",
+	"team_abr": "STP",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -939,6 +1065,8 @@ players = Player.create([{
 	team_id: 4
 }, {
 	"name": "Stefan King",
+	"team_name": "Skycity Stampede",
+	"team_abr": "STP",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -952,6 +1080,8 @@ players = Player.create([{
 	team_id: 4
 }, {
 	"name": "Taylor Stewart",
+	"team_name": "Skycity Stampede",
+	"team_abr": "STP",
 	"shoots": "Left",
 	"position": "Forward",
 	"posAbr": "F",
@@ -965,6 +1095,8 @@ players = Player.create([{
 	team_id: 4
 }, {
 	"name": "Max Macharg",
+	"team_name": "Skycity Stampede",
+	"team_abr": "STP",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -978,6 +1110,8 @@ players = Player.create([{
 	team_id: 4
 }, {
 	"name": "Bryn Murray",
+	"team_name": "Skycity Stampede",
+	"team_abr": "STP",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -991,6 +1125,8 @@ players = Player.create([{
 	team_id: 4
 }, {
 	"name": "Ryan Strayer",
+	"team_name": "Skycity Stampede",
+	"team_abr": "STP",
 	"shoots": "Left",
 	"position": "Forward",
 	"posAbr": "F",
@@ -1006,6 +1142,8 @@ players = Player.create([{
 # Start Skycity Stampede Defence
 {
 	"name": "Bert Haines",
+	"team_name": "Skycity Stampede",
+	"team_abr": "STP",
 	"shoots": "Left",
 	"position": "Defence",
 	"posAbr": "D",
@@ -1019,6 +1157,8 @@ players = Player.create([{
 	team_id: 4
 }, {
 	"name": "Stefan Helmersson",
+	"team_name": "Skycity Stampede",
+	"team_abr": "STP",
 	"shoots": "Left",
 	"position": "Defence",
 	"posAbr": "D",
@@ -1032,6 +1172,8 @@ players = Player.create([{
 	team_id: 4
 }, {
 	"name": "Cameron Trew",
+	"team_name": "Skycity Stampede",
+	"team_abr": "STP",
 	"shoots": "Right",
 	"position": "Defence",
 	"posAbr": "D",
@@ -1045,6 +1187,8 @@ players = Player.create([{
 	team_id: 4
 }, {
 	"name": "Cameron Frear",
+	"team_name": "Skycity Stampede",
+	"team_abr": "STP",
 	"shoots": "Right",
 	"position": "Defence",
 	"posAbr": "D",
@@ -1058,6 +1202,8 @@ players = Player.create([{
 	team_id: 4
 }, {
 	"name": "Ben Harford",
+	"team_name": "Skycity Stampede",
+	"team_abr": "STP",
 	"shoots": "Right",
 	"position": "Defence",
 	"posAbr": "D",
@@ -1084,6 +1230,8 @@ players = Player.create([{
 	team_id: 4
 }, {
 	"name": "Hayden Argyle",
+	"team_name": "Skycity Stampede",
+	"team_abr": "STP",
 	"shoots": "Left",
 	"position": "Defence",
 	"posAbr": "D",
@@ -1097,6 +1245,8 @@ players = Player.create([{
 	team_id: 4
 }, {
 	"name": "Ben Miller",
+	"team_name": "Skycity Stampede",
+	"team_abr": "STP",
 	"shoots": "Right",
 	"position": "Defence",
 	"posAbr": "D",
@@ -1112,6 +1262,8 @@ players = Player.create([{
 # Start Skycity Stampede Goaltenders
 {
 	"name": "Aston Brookes",
+	"team_name": "Skycity Stampede",
+	"team_abr": "STP",
 	"catches": "Left",
 	"position": "Goalie",
 	"posAbr": "GK",
@@ -1122,6 +1274,8 @@ players = Player.create([{
 	team_id: 4
 }, {
 	"name": "Matt Swirtz",
+	"team_name": "Skycity Stampede",
+	"team_abr": "STP",
 	"catches": "Left",
 	"position": "Goalie",
 	"posAbr": "GK",
@@ -1135,6 +1289,8 @@ players = Player.create([{
 # Start West Auckland Admirals Forwards
 {
 	"name": "Jake Ratcliffe",
+	"team_name": "West Auckland Admirals",
+	"team_abr": "WAA",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -1148,6 +1304,8 @@ players = Player.create([{
 	team_id: 5
 }, {
 	"name": "Andy Hart",
+	"team_name": "West Auckland Admirals",
+	"team_abr": "WAA",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -1161,6 +1319,8 @@ players = Player.create([{
 	team_id: 5
 }, {
 	"name": "Tom Tracy",
+	"team_name": "West Auckland Admirals",
+	"team_abr": "WAA",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -1174,6 +1334,8 @@ players = Player.create([{
 	team_id: 5
 }, {
 	"name": "Zac Vince",
+	"team_name": "West Auckland Admirals",
+	"team_abr": "WAA",
 	"shoots": "Left",
 	"position": "Forward",
 	"posAbr": "F",
@@ -1187,6 +1349,8 @@ players = Player.create([{
 	team_id: 5
 }, {
 	"name": "Ollie Curtis",
+	"team_name": "West Auckland Admirals",
+	"team_abr": "WAA",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -1200,6 +1364,8 @@ players = Player.create([{
 	team_id: 5
 }, {
 	"name": "Max Vesper",
+	"team_name": "West Auckland Admirals",
+	"team_abr": "WAA",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -1213,6 +1379,8 @@ players = Player.create([{
 	team_id: 5
 }, {
 	"name": "Steve Huish",
+	"team_name": "West Auckland Admirals",
+	"team_abr": "WAA",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -1226,6 +1394,8 @@ players = Player.create([{
 	team_id: 5
 }, {
 	"name": "Dylan Dickson",
+	"team_name": "West Auckland Admirals",
+	"team_abr": "WAA",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -1239,6 +1409,8 @@ players = Player.create([{
 	team_id: 5
 }, {
 	"name": "Taylor Rooney",
+	"team_name": "West Auckland Admirals",
+	"team_abr": "WAA",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -1252,6 +1424,8 @@ players = Player.create([{
 	team_id: 5
 }, {
 	"name": "Nick Henderson",
+	"team_name": "West Auckland Admirals",
+	"team_abr": "WAA",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -1265,6 +1439,8 @@ players = Player.create([{
 	team_id: 5
 }, {
 	"name": "Sam Pillidge",
+	"team_name": "West Auckland Admirals",
+	"team_abr": "WAA",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -1278,6 +1454,8 @@ players = Player.create([{
 	team_id: 5
 }, {
 	"name": "Josh Rawiri",
+	"team_name": "West Auckland Admirals",
+	"team_abr": "WAA",
 	"shoots": "Left",
 	"position": "Forward",
 	"posAbr": "F",
@@ -1291,6 +1469,8 @@ players = Player.create([{
 	team_id: 5
 }, {
 	"name": "Mark Rawiri",
+	"team_name": "West Auckland Admirals",
+	"team_abr": "WAA",
 	"shoots": "Right",
 	"position": "Forward",
 	"posAbr": "F",
@@ -1306,6 +1486,8 @@ players = Player.create([{
 	# Start West Auckland Admirals Defence
 {
 	"name": "Justin Daigle",
+	"team_name": "West Auckland Admirals",
+	"team_abr": "WAA",
 	"shoots": "Left",
 	"position": "Defence",
 	"posAbr": "D",
@@ -1319,6 +1501,8 @@ players = Player.create([{
 	team_id: 5
 }, {
 	"name": "Blake Jackson",
+	"team_name": "West Auckland Admirals",
+	"team_abr": "WAA",
 	"shoots": "Right",
 	"position": "Defence",
 	"posAbr": "D",
@@ -1332,6 +1516,8 @@ players = Player.create([{
 	team_id: 5
 }, {
 	"name": "Gareth McLeish",
+	"team_name": "West Auckland Admirals",
+	"team_abr": "WAA",
 	"shoots": "Right",
 	"position": "Defence",
 	"posAbr": "D",
@@ -1345,6 +1531,8 @@ players = Player.create([{
 	team_id: 5
 }, {
 	"name": "Eric Chung",
+	"team_name": "West Auckland Admirals",
+	"team_abr": "WAA",
 	"shoots": "Right",
 	"position": "Defence",
 	"posAbr": "D",
@@ -1358,6 +1546,8 @@ players = Player.create([{
 	team_id: 5
 }, {
 	"name": "Nick Craig",
+	"team_name": "West Auckland Admirals",
+	"team_abr": "WAA",
 	"shoots": "Right",
 	"position": "Defence",
 	"posAbr": "D",
@@ -1371,6 +1561,8 @@ players = Player.create([{
 	team_id: 5
 }, {
 	"name": "Jono Pol",
+	"team_name": "West Auckland Admirals",
+	"team_abr": "WAA",
 	"shoots": "Right",
 	"position": "Defence",
 	"posAbr": "D",
@@ -1384,6 +1576,8 @@ players = Player.create([{
 	team_id: 5
 }, {
 	"name": "Mat Roxborough",
+	"team_name": "West Auckland Admirals",
+	"team_abr": "WAA",
 	"shoots": "Left",
 	"position": "Defence",
 	"posAbr": "D",
@@ -1399,6 +1593,8 @@ players = Player.create([{
 	# Start West Auckland Admirals Goaltenders
 {
 	"name": "Rick Parry",
+	"team_name": "West Auckland Admirals",
+	"team_abr": "WAA",
 	"catches": "Left",
 	"position": "Goalie",
 	"posAbr": "GK",
@@ -1409,6 +1605,8 @@ players = Player.create([{
 	team_id: 5
 }, {
 	"name": "Csaba Kersco-Margos",
+	"team_name": "West Auckland Admirals",
+	"team_abr": "WAA",
 	"catches": "Left",
 	"position": "Goalie",
 	"posAbr": "GK",

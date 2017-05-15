@@ -17,11 +17,12 @@ ActiveRecord::Schema.define(version: 20170511211410) do
 
   create_table "players", force: :cascade do |t|
     t.string "name"
+    t.string "team_name"
+    t.string "team_abr"
     t.string "shoots"
     t.string "catches"
     t.string "position"
     t.string "posAbr"
-    t.string "abr"
     t.integer "number"
     t.integer "gp"
     t.integer "goals"
