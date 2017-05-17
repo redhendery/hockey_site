@@ -4,7 +4,14 @@ Rails.application.routes.draw do
   resources :players
 
   resources :teams do
+    resources :schedules
     resources :players
   end
+
+  resources :schedules do
+    resources :teams
+    resources :players
+  end
+
   root 'welcome#index'
 end

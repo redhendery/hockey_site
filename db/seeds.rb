@@ -28,6 +28,694 @@ teams = Team.create([{
 
 p "Added #{Team.count} teams"
 
+schedules = Schedule.create([{
+	"away": "Canterbury Red Devils",
+	"awayAbr": "CRD",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/devils.png?alt=media&token=b2f7e89b-0882-4c4f-b09d-33cbb2ddd5b5",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/redDevilsLarge.png?alt=media&token=a14bd2d4-a9a0-432b-913c-ef024a9e6a79",
+	"date": "26/05/2017",
+	"home": "Skycity Stampede",
+	"homeAbr": "STP",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampede.png?alt=media&token=a099d85f-5eca-4ed9-a823-a7eff26e425c",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampedeLarge.png?alt=media&token=2c159e64-1f53-4cda-a79d-2f2cec88ab3a",
+	"leagueGame": "Game 1",
+	"prettyDate": "Friday, May 26th, 6:50pm",
+	"venue": "Queenstown Ice Arena"
+}, {
+	"away": "Canterbury Red Devils",
+	"awayAbr": "CRD",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/devils.png?alt=media&token=b2f7e89b-0882-4c4f-b09d-33cbb2ddd5b5",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/redDevilsLarge.png?alt=media&token=a14bd2d4-a9a0-432b-913c-ef024a9e6a79",
+	"date": "27/05/2017",
+	"home": "Skycity Stampede",
+	"homeAbr": "STP",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampede.png?alt=media&token=a099d85f-5eca-4ed9-a823-a7eff26e425c",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampedeLarge.png?alt=media&token=2c159e64-1f53-4cda-a79d-2f2cec88ab3a",
+	"leagueGame": "Game 2",
+	"prettyDate": "Saturday, May 27th, 6:50pm",
+	"venue": "Queenstown Ice Arena"
+}, {
+	"away": "Botany Swarm",
+	"awayAbr": "BSW",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarm.png?alt=media&token=78ca16e2-6101-4a14-8b8f-54bc9862bd69",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarmLarge.png?alt=media&token=6f494894-6dcc-4f52-bf9d-facd61ca8ebe",
+	"date": "27/05/2017",
+	"home": "West Auckland Admirals",
+	"homeAbr": "WAA",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admirals.png?alt=media&token=c2d26473-e8f7-45b7-8ddd-b304f7e37bee",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admiralsLarge.png?alt=media&token=d161ea78-7f6b-4b23-a6e8-444aadfd242a",
+	"leagueGame": "Game 3",
+	"prettyDate": "Saturday, May 27th, 4:30pm",
+	"venue": "Paradice Avondale"
+}, {
+	"away": "Botany Swarm",
+	"awayAbr": "BSW",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarm.png?alt=media&token=78ca16e2-6101-4a14-8b8f-54bc9862bd69",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarmLarge.png?alt=media&token=6f494894-6dcc-4f52-bf9d-facd61ca8ebe",
+	"date": "28/05/2017",
+	"home": "West Auckland Admirals",
+	"homeAbr": "WAA",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admirals.png?alt=media&token=c2d26473-e8f7-45b7-8ddd-b304f7e37bee",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admiralsLarge.png?alt=media&token=d161ea78-7f6b-4b23-a6e8-444aadfd242a",
+	"leagueGame": "Game 4",
+	"prettyDate": "Sunday, May 28th, 4:30pm",
+	"venue": "Paradice Avondale"
+}, {
+	"away": "West Auckland Admirals",
+	"awayAbr": "WAA",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admirals.png?alt=media&token=c2d26473-e8f7-45b7-8ddd-b304f7e37bee",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admiralsLarge.png?alt=media&token=d161ea78-7f6b-4b23-a6e8-444aadfd242a",
+	"date": "10/06/2017",
+	"home": "Dunedin Thunder",
+	"homeAbr": "THU",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunder.png?alt=media&token=74c89295-bd10-4b54-b782-8e58b34036be",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunderLarge.png?alt=media&token=0828e20c-2b80-4ffd-adda-3714a328adc6",
+	"leagueGame": "Game 5",
+	"prettyDate": "Saturday, June 10th, 4:30pm",
+	"venue": "Dunedin Ice Stadium",
+}, {
+	"away": "West Auckland Admirals",
+	"awayAbr": "WAA",
+	"date": "11/06/2017",
+	"prettyDate": "Saturday, June 11th, 4:30pm",
+	"home": "Dunedin Thunder",
+	"homeAbr": "THU",
+	"leagueGame": "Game 6",
+	"venue": "Dunedin Ice Stadium",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunder.png?alt=media&token=74c89295-bd10-4b54-b782-8e58b34036be",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunderLarge.png?alt=media&token=0828e20c-2b80-4ffd-adda-3714a328adc6",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admirals.png?alt=media&token=c2d26473-e8f7-45b7-8ddd-b304f7e37bee",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admiralsLarge.png?alt=media&token=d161ea78-7f6b-4b23-a6e8-444aadfd242a"
+}, {
+	"away": "Canterbury Red Devils",
+	"awayAbr": "CRD",
+	"date": "10/06/2017",
+	"prettyDate": "Saturday, June 10th, 4:45pm",
+	"home": "Botany Swarm",
+	"homeAbr": "BSW",
+	"leagueGame": "Game 7",
+	"venue": "Paradice Botany",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarm.png?alt=media&token=78ca16e2-6101-4a14-8b8f-54bc9862bd69",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarmLarge.png?alt=media&token=6f494894-6dcc-4f52-bf9d-facd61ca8ebe",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/devils.png?alt=media&token=b2f7e89b-0882-4c4f-b09d-33cbb2ddd5b5",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/redDevilsLarge.png?alt=media&token=a14bd2d4-a9a0-432b-913c-ef024a9e6a79"
+}, {
+	"away": "Canterbury Red Devils",
+	"awayAbr": "CRD",
+	"date": "11/06/2017",
+	"prettyDate": "Sunday, June 11th, 4:45pm",
+	"home": "Botany Swarm",
+	"homeAbr": "BSW",
+	"leagueGame": "Game 8",
+	"venue": "Paradice Botany",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarm.png?alt=media&token=78ca16e2-6101-4a14-8b8f-54bc9862bd69",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarmLarge.png?alt=media&token=6f494894-6dcc-4f52-bf9d-facd61ca8ebe",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/devils.png?alt=media&token=b2f7e89b-0882-4c4f-b09d-33cbb2ddd5b5",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/redDevilsLarge.png?alt=media&token=a14bd2d4-a9a0-432b-913c-ef024a9e6a79"
+}, {
+	"away": "Skycity Stampede",
+	"awayAbr": "STP",
+	"date": "17/06/2107",
+	"prettyDate": "Saturday, June 17th, 4:40pm",
+	"home": "Dunedin Thunder",
+	"homeAbr": "THU",
+	"leagueGame": "Game 9",
+	"venue": "Dunedin Ice Stadium",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunder.png?alt=media&token=74c89295-bd10-4b54-b782-8e58b34036be",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunderLarge.png?alt=media&token=0828e20c-2b80-4ffd-adda-3714a328adc6",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampede.png?alt=media&token=a099d85f-5eca-4ed9-a823-a7eff26e425c",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampedeLarge.png?alt=media&token=2c159e64-1f53-4cda-a79d-2f2cec88ab3a"
+}, {
+	"away": "Skycity Stampede",
+	"awayAbr": "STP",
+	"date": "18/06/2107",
+	"prettyDate": "Sunday, June 18th, 4:40pm",
+	"home": "Dunedin Thunder",
+	"homeAbr": "THU",
+	"leagueGame": "Game 10",
+	"venue": "Dunedin Ice Stadium",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunder.png?alt=media&token=74c89295-bd10-4b54-b782-8e58b34036be",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunderLarge.png?alt=media&token=0828e20c-2b80-4ffd-adda-3714a328adc6",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampede.png?alt=media&token=a099d85f-5eca-4ed9-a823-a7eff26e425c",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampedeLarge.png?alt=media&token=2c159e64-1f53-4cda-a79d-2f2cec88ab3a"
+}, {
+	"away": "Canterbury Red Devils",
+	"awayAbr": "CRD",
+	"date": "17/06/2107",
+	"prettyDate": "Saturday, June 17th, 4:30pm",
+	"home": "West Auckland Admirals",
+	"homeAbr": "WAA",
+	"leagueGame": "Game 11",
+	"venue": "Paradice Avondale",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admirals.png?alt=media&token=c2d26473-e8f7-45b7-8ddd-b304f7e37bee",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admiralsLarge.png?alt=media&token=d161ea78-7f6b-4b23-a6e8-444aadfd242a",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/devils.png?alt=media&token=b2f7e89b-0882-4c4f-b09d-33cbb2ddd5b5",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/redDevilsLarge.png?alt=media&token=a14bd2d4-a9a0-432b-913c-ef024a9e6a79"
+}, {
+	"away": "Canterbury Red Devils",
+	"awayAbr": "CRD",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/devils.png?alt=media&token=b2f7e89b-0882-4c4f-b09d-33cbb2ddd5b5",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/redDevilsLarge.png?alt=media&token=a14bd2d4-a9a0-432b-913c-ef024a9e6a79",
+	"date": "18/06/2107",
+	"home": "West Auckland Admirals",
+	"homeAbr": "WAA",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admirals.png?alt=media&token=c2d26473-e8f7-45b7-8ddd-b304f7e37bee",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admiralsLarge.png?alt=media&token=d161ea78-7f6b-4b23-a6e8-444aadfd242a",
+	"leagueGame": "Game 12",
+	"prettyDate": "Sunday, June 18th, 4:30pm",
+	"venue": "Paradice Avondale",
+}, {
+	"away": "Botany Swarm",
+	"awayAbr": "BSW",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarm.png?alt=media&token=78ca16e2-6101-4a14-8b8f-54bc9862bd69",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarmLarge.png?alt=media&token=6f494894-6dcc-4f52-bf9d-facd61ca8ebe",
+	"date": "23/06/2017",
+	"home": "Skycity Stampede",
+	"homeAbr": "STP",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampede.png?alt=media&token=a099d85f-5eca-4ed9-a823-a7eff26e425c",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampedeLarge.png?alt=media&token=2c159e64-1f53-4cda-a79d-2f2cec88ab3a",
+	"leagueGame": "Game 13",
+	"prettyDate": "Friday, June 23rd, 7:40pm",
+	"venue": "Queenstown Ice Arena",
+}, {
+	"away": "Botany Swarm",
+	"awayAbr": "BSW",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarm.png?alt=media&token=78ca16e2-6101-4a14-8b8f-54bc9862bd69",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarmLarge.png?alt=media&token=6f494894-6dcc-4f52-bf9d-facd61ca8ebe",
+	"date": "24/06/2017",
+	"home": "Skycity Stampede",
+	"homeAbr": "STP",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampede.png?alt=media&token=a099d85f-5eca-4ed9-a823-a7eff26e425c",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampedeLarge.png?alt=media&token=2c159e64-1f53-4cda-a79d-2f2cec88ab3a",
+	"leagueGame": "Game 14",
+	"prettyDate": "Saturday, June 24th, 6:50pm",
+	"venue": "Queenstown Ice Arena",
+}, {
+	"away": "Dunedin Thunder",
+	"awayAbr": "THU",
+	"date": "24/06/2017",
+	"prettyDate": "Saturday, June 24th, 4:45pm",
+	"home": "Canterbury Red Devils",
+	"homeAbr": "CRD",
+	"leagueGame": "Game 15",
+	"venue": "Christchurch Alpine Ice",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/devils.png?alt=media&token=b2f7e89b-0882-4c4f-b09d-33cbb2ddd5b5",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunder.png?alt=media&token=74c89295-bd10-4b54-b782-8e58b34036be",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/redDevilsLarge.png?alt=media&token=a14bd2d4-a9a0-432b-913c-ef024a9e6a79",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunderLarge.png?alt=media&token=0828e20c-2b80-4ffd-adda-3714a328adc6"
+}, {
+	"away": "Dunedin Thunder",
+	"awayAbr": "THU",
+	"date": "25/06/2017",
+	"prettyDate": "Sunday, June 25th, 4:45pm",
+	"home": "Canterbury Red Devils",
+	"homeAbr": "CRD",
+	"leagueGame": "Game 16",
+	"venue": "Christchurch Alpine Ice",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/devils.png?alt=media&token=b2f7e89b-0882-4c4f-b09d-33cbb2ddd5b5",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunder.png?alt=media&token=74c89295-bd10-4b54-b782-8e58b34036be",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/redDevilsLarge.png?alt=media&token=a14bd2d4-a9a0-432b-913c-ef024a9e6a79",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunderLarge.png?alt=media&token=0828e20c-2b80-4ffd-adda-3714a328adc6"
+}, {
+	"away": "Skycity Stampede",
+	"awayAbr": "STP",
+	"date": "01/07/2017",
+	"prettyDate": "Saturday, July 1st, 4:30pm",
+	"home": "West Auckland Admirals",
+	"homeAbr": "WAA",
+	"leagueGame": "Game 17",
+	"venue": "Paradice Avondale",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admirals.png?alt=media&token=c2d26473-e8f7-45b7-8ddd-b304f7e37bee",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admiralsLarge.png?alt=media&token=d161ea78-7f6b-4b23-a6e8-444aadfd242a",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampede.png?alt=media&token=a099d85f-5eca-4ed9-a823-a7eff26e425c",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampedeLarge.png?alt=media&token=2c159e64-1f53-4cda-a79d-2f2cec88ab3a"
+}, {
+	"away": "Skycity Stampede",
+	"awayAbr": "STP",
+	"date": "02/07/2017",
+	"prettyDate": "Sunday, July 2nd, 4:30pm",
+	"home": "West Auckland Admirals",
+	"homeAbr": "WAA",
+	"leagueGame": "Game 18",
+	"venue": "Paradice Avondale",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admirals.png?alt=media&token=c2d26473-e8f7-45b7-8ddd-b304f7e37bee",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admiralsLarge.png?alt=media&token=d161ea78-7f6b-4b23-a6e8-444aadfd242a",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampede.png?alt=media&token=a099d85f-5eca-4ed9-a823-a7eff26e425c",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampedeLarge.png?alt=media&token=2c159e64-1f53-4cda-a79d-2f2cec88ab3a"
+}, {
+	"away": "Botany Swarm",
+	"awayAbr": "BSW",
+	"date": "01/07/2017",
+	"prettyDate": "Saturday, July 1st, 4:30pm",
+	"home": "Dunedin Thunder",
+	"homeAbr": "THU",
+	"leagueGame": "Game 19",
+	"venue": "Dunedin Ice Stadium",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunder.png?alt=media&token=74c89295-bd10-4b54-b782-8e58b34036be",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunderLarge.png?alt=media&token=0828e20c-2b80-4ffd-adda-3714a328adc6",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarm.png?alt=media&token=78ca16e2-6101-4a14-8b8f-54bc9862bd69",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarmLarge.png?alt=media&token=6f494894-6dcc-4f52-bf9d-facd61ca8ebe"
+}, {
+	"away": "Botany Swarm",
+	"awayAbr": "BSW",
+	"date": "02/07/2017",
+	"prettyDate": "Sunday, July 2nd, 4:30pm",
+	"home": "Dunedin Thunder",
+	"homeAbr": "THU",
+	"leagueGame": "Game 20",
+	"venue": "Dunedin Ice Stadium",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunder.png?alt=media&token=74c89295-bd10-4b54-b782-8e58b34036be",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunderLarge.png?alt=media&token=0828e20c-2b80-4ffd-adda-3714a328adc6",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarm.png?alt=media&token=78ca16e2-6101-4a14-8b8f-54bc9862bd69",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarmLarge.png?alt=media&token=6f494894-6dcc-4f52-bf9d-facd61ca8ebe"
+}, {
+	"away": "Dunedin Thunder",
+	"awayAbr": "THU",
+	"date": "07/07/2017",
+	"prettyDate": "Friday, July 7th, 6:50pm",
+	"home": "Skycity Stampede",
+	"homeAbr": "STP",
+	"leagueGame": "Game 21",
+	"venue": "Queenstown Ice Arena",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampede.png?alt=media&token=a099d85f-5eca-4ed9-a823-a7eff26e425c",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampedeLarge.png?alt=media&token=2c159e64-1f53-4cda-a79d-2f2cec88ab3a",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunder.png?alt=media&token=74c89295-bd10-4b54-b782-8e58b34036be",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunderLarge.png?alt=media&token=0828e20c-2b80-4ffd-adda-3714a328adc6"
+}, {
+	"away": "Dunedin Thunder",
+	"awayAbr": "THU",
+	"date": "08/07/2017",
+	"prettyDate": "Saturday, July 8th, 6:50pm",
+	"home": "Skycity Stampede",
+	"homeAbr": "STP",
+	"leagueGame": "Game 22",
+	"venue": "Queenstown Ice Arena",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampede.png?alt=media&token=a099d85f-5eca-4ed9-a823-a7eff26e425c",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampedeLarge.png?alt=media&token=2c159e64-1f53-4cda-a79d-2f2cec88ab3a",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunder.png?alt=media&token=74c89295-bd10-4b54-b782-8e58b34036be",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunderLarge.png?alt=media&token=0828e20c-2b80-4ffd-adda-3714a328adc6"
+}, {
+	"away": "West Auckland Admirals",
+	"awayAbr": "WAA",
+	"date": "08/07/2017",
+	"prettyDate": "Saturday, July 8th, 4:35pm",
+	"home": "Canterbury Red Devils",
+	"homeAbr": "CRD",
+	"leagueGame": "Game 23",
+	"venue": "Christchurch Alpine Ice",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/devils.png?alt=media&token=b2f7e89b-0882-4c4f-b09d-33cbb2ddd5b5",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/redDevilsLarge.png?alt=media&token=a14bd2d4-a9a0-432b-913c-ef024a9e6a79",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admirals.png?alt=media&token=c2d26473-e8f7-45b7-8ddd-b304f7e37bee",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admiralsLarge.png?alt=media&token=d161ea78-7f6b-4b23-a6e8-444aadfd242a"
+}, {
+	"away": "West Auckland Admirals",
+	"awayAbr": "WAA",
+	"date": "09/07/2017",
+	"prettyDate": "Sunday, July 9th 2017, 4:30pm",
+	"home": "Canterbury Red Devils",
+	"homeAbr": "CRD",
+	"leagueGame": "Game 24",
+	"venue": "Christchurch Alpine Ice",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/devils.png?alt=media&token=b2f7e89b-0882-4c4f-b09d-33cbb2ddd5b5",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/redDevilsLarge.png?alt=media&token=a14bd2d4-a9a0-432b-913c-ef024a9e6a79",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admirals.png?alt=media&token=c2d26473-e8f7-45b7-8ddd-b304f7e37bee",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admiralsLarge.png?alt=media&token=d161ea78-7f6b-4b23-a6e8-444aadfd242a"
+}, {
+	"away": "West Auckland Admirals",
+	"awayAbr": "WAA",
+	"date": "14/07/2017",
+	"prettyDate": "Friday, July 14th, 6:50pm",
+	"home": "Skycity Stampede",
+	"homeAbr": "STP",
+	"leagueGame": "Game 25",
+	"venue": "Queenstown Ice Arena",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampede.png?alt=media&token=a099d85f-5eca-4ed9-a823-a7eff26e425c",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampedeLarge.png?alt=media&token=2c159e64-1f53-4cda-a79d-2f2cec88ab3a",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admirals.png?alt=media&token=c2d26473-e8f7-45b7-8ddd-b304f7e37bee",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admiralsLarge.png?alt=media&token=d161ea78-7f6b-4b23-a6e8-444aadfd242a"
+}, {
+	"away": "West Auckland Admirals",
+	"awayAbr": "WAA",
+	"date": "15/07/2017",
+	"prettyDate": "Saturday, July 15th, 6:50pm",
+	"home": "Skycity Stampede",
+	"homeAbr": "STP",
+	"leagueGame": "Game 26",
+	"venue": "Queenstown Ice Arena",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampede.png?alt=media&token=a099d85f-5eca-4ed9-a823-a7eff26e425c",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampedeLarge.png?alt=media&token=2c159e64-1f53-4cda-a79d-2f2cec88ab3a",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admirals.png?alt=media&token=c2d26473-e8f7-45b7-8ddd-b304f7e37bee",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admiralsLarge.png?alt=media&token=d161ea78-7f6b-4b23-a6e8-444aadfd242a"
+}, {
+	"away": "Dunedin Thunder",
+	"awayAbr": "THU",
+	"date": "16/07/2107",
+	"prettyDate": "Sunday, July 16th, 4:45pm",
+	"home": "Botany Swarm",
+	"homeAbr": "BSW",
+	"leagueGame": "Game 27",
+	"venue": "Paradice Botany",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarm.png?alt=media&token=78ca16e2-6101-4a14-8b8f-54bc9862bd69",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarmLarge.png?alt=media&token=6f494894-6dcc-4f52-bf9d-facd61ca8ebe",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunder.png?alt=media&token=74c89295-bd10-4b54-b782-8e58b34036be",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunderLarge.png?alt=media&token=0828e20c-2b80-4ffd-adda-3714a328adc6"
+}, {
+	"away": "Dunedin Thunder",
+	"awayAbr": "THU",
+	"date": "22/07/2107",
+	"prettyDate": "Saturday, July 22nd, 4:45pm",
+	"home": "Botany Swarm",
+	"homeAbr": "BSW",
+	"leagueGame": "Game 28",
+	"venue": "Paradice Botany",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarm.png?alt=media&token=78ca16e2-6101-4a14-8b8f-54bc9862bd69",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarmLarge.png?alt=media&token=6f494894-6dcc-4f52-bf9d-facd61ca8ebe",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunder.png?alt=media&token=74c89295-bd10-4b54-b782-8e58b34036be",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunderLarge.png?alt=media&token=0828e20c-2b80-4ffd-adda-3714a328adc6"
+}, {
+	"away": "Skycity Stampede",
+	"awayAbr": "STP",
+	"date": "22/07/2017",
+	"prettyDate": "Saturday, July 22nd, 4:45pm",
+	"home": "Botany Swarm",
+	"homeAbr": "BSW",
+	"leagueGame": "Game 29",
+	"venue": "Paradice Botany",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarmLarge.png?alt=media&token=6f494894-6dcc-4f52-bf9d-facd61ca8ebe",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarm.png?alt=media&token=78ca16e2-6101-4a14-8b8f-54bc9862bd69",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampede.png?alt=media&token=a099d85f-5eca-4ed9-a823-a7eff26e425c",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampedeLarge.png?alt=media&token=2c159e64-1f53-4cda-a79d-2f2cec88ab3a"
+}, {
+	"away": "Skycity Stampede",
+	"awayAbr": "STP",
+	"date": "23/07/2017",
+	"prettyDate": "Sunday, July 23rd, 4:45pm",
+	"home": "Botany Swarm",
+	"homeAbr": "BSW",
+	"leagueGame": "Game 30",
+	"venue": "Paradice Botany",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarm.png?alt=media&token=78ca16e2-6101-4a14-8b8f-54bc9862bd69",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarmLarge.png?alt=media&token=6f494894-6dcc-4f52-bf9d-facd61ca8ebe",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampede.png?alt=media&token=a099d85f-5eca-4ed9-a823-a7eff26e425c",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampedeLarge.png?alt=media&token=2c159e64-1f53-4cda-a79d-2f2cec88ab3a"
+}, {
+	"away": "Canterbury Red Devils",
+	"awayAbr": "CRD",
+	"date": "22/07/2017",
+	"prettyDate": "Saturday, July 22nd 2017, 4:45pm",
+	"home": "Dunedin Thunder",
+	"homeAbr": "THU",
+	"leagueGame": "Game 31",
+	"venue": "Dunedin Ice Stadium",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunder.png?alt=media&token=74c89295-bd10-4b54-b782-8e58b34036be",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunderLarge.png?alt=media&token=0828e20c-2b80-4ffd-adda-3714a328adc6",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/devils.png?alt=media&token=b2f7e89b-0882-4c4f-b09d-33cbb2ddd5b5",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/redDevilsLarge.png?alt=media&token=a14bd2d4-a9a0-432b-913c-ef024a9e6a79"
+}, {
+	"away": "Canterbury Red Devils",
+	"awayAbr": "CRD",
+	"date": "23/07/2017",
+	"prettyDate": "Sunday, July 23nd 2017, 4:45pm",
+	"home": "Dunedin Thunder",
+	"homeAbr": "THU",
+	"leagueGame": "Game 32",
+	"venue": "Dunedin Ice Stadium",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunder.png?alt=media&token=74c89295-bd10-4b54-b782-8e58b34036be",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunderLarge.png?alt=media&token=0828e20c-2b80-4ffd-adda-3714a328adc6",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/devils.png?alt=media&token=b2f7e89b-0882-4c4f-b09d-33cbb2ddd5b5",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/redDevilsLarge.png?alt=media&token=a14bd2d4-a9a0-432b-913c-ef024a9e6a79"
+}, {
+	"away": "Dunedin Thunder",
+	"awayAbr": "THU",
+	"date": "29/07/2017",
+	"prettyDate": "Saturday July 29th, 4:45pm",
+	"home": "West Auckland Admirals",
+	"homeAbr": "WAA",
+	"leagueGame": "Game 33",
+	"venue": "Paradice Avondale",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admirals.png?alt=media&token=c2d26473-e8f7-45b7-8ddd-b304f7e37bee",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admiralsLarge.png?alt=media&token=d161ea78-7f6b-4b23-a6e8-444aadfd242a",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunder.png?alt=media&token=74c89295-bd10-4b54-b782-8e58b34036be",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunderLarge.png?alt=media&token=0828e20c-2b80-4ffd-adda-3714a328adc6"
+}, {
+	"away": "Dunedin Thunder",
+	"awayAbr": "THU",
+	"date": "30/07/2017",
+	"prettyDate": "Sunday July 30th, 4:45pm",
+	"home": "West Auckland Admirals",
+	"homeAbr": "WAA",
+	"leagueGame": "Game 34",
+	"venue": "Paradice Avondale",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admirals.png?alt=media&token=c2d26473-e8f7-45b7-8ddd-b304f7e37bee",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admiralsLarge.png?alt=media&token=d161ea78-7f6b-4b23-a6e8-444aadfd242a",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunder.png?alt=media&token=74c89295-bd10-4b54-b782-8e58b34036be",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunderLarge.png?alt=media&token=0828e20c-2b80-4ffd-adda-3714a328adc6"
+}, {
+	"away": "Botany Swarm",
+	"awayAbr": "BSW",
+	"date": "29/07/2017",
+	"prettyDate": "Saturday, July 29th, 4:45pm",
+	"home": "Canterbury Red Devils",
+	"homeAbr": "CRD",
+	"leagueGame": "Game 35",
+	"venue": "Christchurch Alpine Ice",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/devils.png?alt=media&token=b2f7e89b-0882-4c4f-b09d-33cbb2ddd5b5",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/redDevilsLarge.png?alt=media&token=a14bd2d4-a9a0-432b-913c-ef024a9e6a79",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarm.png?alt=media&token=78ca16e2-6101-4a14-8b8f-54bc9862bd69",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarmLarge.png?alt=media&token=6f494894-6dcc-4f52-bf9d-facd61ca8ebe"
+}, {
+	"away": "Botany Swarm",
+	"awayAbr": "BSW",
+	"date": "30/07/2017",
+	"prettyDate": "Sunday, July 30th, 4:45pm",
+	"home": "Canterbury Red Devils",
+	"homeAbr": "CRD",
+	"leagueGame": "Game 36",
+	"venue": "Christchurch Alpine Ice",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/devils.png?alt=media&token=b2f7e89b-0882-4c4f-b09d-33cbb2ddd5b5",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/redDevilsLarge.png?alt=media&token=a14bd2d4-a9a0-432b-913c-ef024a9e6a79",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarm.png?alt=media&token=78ca16e2-6101-4a14-8b8f-54bc9862bd69",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarmLarge.png?alt=media&token=6f494894-6dcc-4f52-bf9d-facd61ca8ebe"
+}, {
+	"away": "Skycity Stampede",
+	"awayAbr": "STP",
+	"date": "05/08/2017",
+	"prettyDate": "Saturday, August 5th, 4:45pm",
+	"home": "Canterbury Red Devils",
+	"homeAbr": "CRD",
+	"leagueGame": "Game 37",
+	"venue": "Christchurch Alpine Ice",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/devils.png?alt=media&token=b2f7e89b-0882-4c4f-b09d-33cbb2ddd5b5",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/redDevilsLarge.png?alt=media&token=a14bd2d4-a9a0-432b-913c-ef024a9e6a79",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampede.png?alt=media&token=a099d85f-5eca-4ed9-a823-a7eff26e425c",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampedeLarge.png?alt=media&token=2c159e64-1f53-4cda-a79d-2f2cec88ab3a"
+}, {
+	"away": "Skycity Stampede",
+	"awayAbr": "STP",
+	"date": "06/08/2017",
+	"prettyDate": "Sunday, August 6th, 4:45pm",
+	"home": "Canterbury Red Devils",
+	"homeAbr": "CRD",
+	"leagueGame": "Game 38",
+	"venue": "Christchurch Alpine Ice",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/devils.png?alt=media&token=b2f7e89b-0882-4c4f-b09d-33cbb2ddd5b5",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/redDevilsLarge.png?alt=media&token=a14bd2d4-a9a0-432b-913c-ef024a9e6a79",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampede.png?alt=media&token=a099d85f-5eca-4ed9-a823-a7eff26e425c",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampedeLarge.png?alt=media&token=2c159e64-1f53-4cda-a79d-2f2cec88ab3a"
+}, {
+	"away": "West Auckland Admirals",
+	"awayAbr": "WAA",
+	"date": "05/08/2017",
+	"prettyDate": "Saturday August 5th, 4:45pm",
+	"home": "Botany Swarm",
+	"homeAbr": "BSW",
+	"leagueGame": "Game 39",
+	"venue": "Paradice Botany",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarm.png?alt=media&token=78ca16e2-6101-4a14-8b8f-54bc9862bd69",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarmLarge.png?alt=media&token=6f494894-6dcc-4f52-bf9d-facd61ca8ebe",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admirals.png?alt=media&token=c2d26473-e8f7-45b7-8ddd-b304f7e37bee",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admiralsLarge.png?alt=media&token=d161ea78-7f6b-4b23-a6e8-444aadfd242a"
+}, {
+	"away": "West Auckland Admirals",
+	"awayAbr": "WAA",
+	"date": "06/08/2017",
+	"prettyDate": "Sunday August 6th, 4:45pm",
+	"home": "Botany Swarm",
+	"homeAbr": "BSW",
+	"leagueGame": "Game 40",
+	"venue": "Paradice Botany",
+	"homeLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarm.png?alt=media&token=78ca16e2-6101-4a14-8b8f-54bc9862bd69",
+	"homeLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarmLarge.png?alt=media&token=6f494894-6dcc-4f52-bf9d-facd61ca8ebe",
+	"awayLogo": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admirals.png?alt=media&token=c2d26473-e8f7-45b7-8ddd-b304f7e37bee",
+	"awayLogoLarge": "https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admiralsLarge.png?alt=media&token=d161ea78-7f6b-4b23-a6e8-444aadfd242a"
+}])
+
+p "Added #{Schedule.count} games"
+
+game = TeamSchedule.create([{
+	away_team_id: 2,
+	home_team_id: 4,
+	schedule_id: 1
+}, {
+	away_team_id: 2,
+	home_team_id: 4,
+	schedule_id: 2
+}, {
+	away_team_id: 1,
+	home_team_id: 5,
+	schedule_id: 3
+}, {
+	away_team_id: 1,
+	home_team_id: 5,
+	schedule_id: 4
+}, {
+	away_team_id: 5,
+	home_team_id: 3,
+	schedule_id: 5
+}, {
+	away_team_id: 5,
+	home_team_id: 3,
+	schedule_id: 6
+}, {
+	away_team_id: 2,
+	home_team_id: 1,
+	schedule_id: 7
+}, {
+	away_team_id: 2,
+	home_team_id: 1,
+	schedule_id: 8
+}, {
+	away_team_id: 4,
+	home_team_id: 3,
+	schedule_id: 9
+}, {
+	away_team_id: 4,
+	home_team_id: 3,
+	schedule_id: 10
+}, {
+	away_team_id: 2,
+	home_team_id: 5,
+	schedule_id: 11
+}, {
+	away_team_id: 2,
+	home_team_id: 5,
+	schedule_id: 12
+}, {
+	away_team_id: 1,
+	home_team_id: 4,
+	schedule_id: 13
+}, {
+	away_team_id: 1,
+	home_team_id: 4,
+	schedule_id: 14
+}, {
+	away_team_id: 3,
+	home_team_id: 2,
+	schedule_id: 15
+}, {
+	away_team_id: 3,
+	home_team_id: 2,
+	schedule_id: 16
+}, {
+	away_team_id: 4,
+	home_team_id: 5,
+	schedule_id: 17
+}, {
+	away_team_id: 4,
+	home_team_id: 5,
+	schedule_id: 18
+}, {
+	away_team_id: 1,
+	home_team_id: 3,
+	schedule_id: 19
+}, {
+	away_team_id: 1,
+	home_team_id: 3,
+	schedule_id: 20
+}, {
+	away_team_id: 3,
+	home_team_id: 4,
+	schedule_id: 21
+}, {
+	away_team_id: 3,
+	home_team_id: 4,
+	schedule_id: 22
+}, {
+	away_team_id: 5,
+	home_team_id: 2,
+	schedule_id: 23
+}, {
+	away_team_id: 5,
+	home_team_id: 2,
+	schedule_id: 24
+}, {
+	away_team_id: 5,
+	home_team_id: 4,
+	schedule_id: 25
+}, {
+	away_team_id: 5,
+	home_team_id: 4,
+	schedule_id: 26
+}, {
+	away_team_id: 3,
+	home_team_id: 1,
+	schedule_id: 27
+}, {
+	away_team_id: 3,
+	home_team_id: 1,
+	schedule_id: 28
+}, {
+	away_team_id: 4,
+	home_team_id: 1,
+	schedule_id: 29
+}, {
+	away_team_id: 4,
+	home_team_id: 1,
+	schedule_id: 30
+}, {
+	away_team_id: 2,
+	home_team_id: 3,
+	schedule_id: 31
+}, {
+	away_team_id: 2,
+	home_team_id: 3,
+	schedule_id: 32
+}, {
+	away_team_id: 3,
+	home_team_id: 5,
+	schedule_id: 33
+}, {
+	away_team_id: 3,
+	home_team_id: 5,
+	schedule_id: 34
+}, {
+	away_team_id: 1,
+	home_team_id: 2,
+	schedule_id: 35
+}, {
+	away_team_id: 1,
+	home_team_id: 2,
+	schedule_id: 36
+}, {
+	away_team_id: 4,
+	home_team_id: 2,
+	schedule_id: 37
+}, {
+	away_team_id: 4,
+	home_team_id: 2,
+	schedule_id: 38
+}, {
+	away_team_id: 5,
+	home_team_id: 1,
+	schedule_id: 39
+}, {
+	away_team_id: 5,
+	home_team_id: 1,
+	schedule_id: 40
+}])
+
+p "Added #{TeamSchedule.count} team schedules"
+
 # Start Player Seeds
 players = Player.create([{
 # Start Botany Swarm
