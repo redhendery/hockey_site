@@ -12,6 +12,6 @@ Rails.application.routes.draw do
     resources :teams
     resources :players
   end
-
-  root 'welcome#index'
+  
+  root 'schedules#index'
 end

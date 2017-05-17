@@ -1,13 +1,15 @@
-<div class="col-12">
-  <h5 class="text-muted">NZIHL Season <%= @schedule.leagueGame %></h5>
-  <h3><%= @schedule.home %> v <%= @schedule.away %></h3>
-  <h5><%= @schedule.venue %> <%= @schedule.prettyDate %></h5>
-</div>
-<div class="row">
-  <div class="col-6">
-    <p class="text-muted">Home Lineup</p>
+<% @schedules.each do |schedule| %>
+  <div class="col-12">
+    <h5 class="text-muted">NZIHL Season <%= schedule.leagueGame %></h5>
+    <h3><%= schedule.home %> v <%= schedule.away %></h3>
+    <h5><%= schedule.venue %> <%= schedule.prettyDate %></h5>
   </div>
-  <div class="col-6">
-    <p class="text-muted float-right">Away Lineup</p>
+  <div class="row">
+    <div class="col-6">
+      <p class="text-muted">Home Lineup</p>
+    </div>
+    <div class="col-6">
+      <p class="text-muted float-right">Away Lineup</p>
+    </div>
   </div>
-</div>
+<% end %>

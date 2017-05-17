@@ -39,18 +39,9 @@ ActiveRecord::Schema.define(version: 20170516202610) do
   end
 
   create_table "schedules", force: :cascade do |t|
-    t.string "leagueGame"
-    t.string "home"
-    t.string "homeAbr"
-    t.string "away"
-    t.string "awayAbr"
-    t.string "venue"
-    t.string "prettyDate"
-    t.string "homeLogo"
-    t.string "homeLogoLarge"
-    t.string "awayLogo"
-    t.string "awayLogoLarge"
     t.date "date"
+    t.string "leagueGame"
+    t.string "prettyDate"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -68,6 +59,7 @@ ActiveRecord::Schema.define(version: 20170516202610) do
     t.string "abr"
     t.string "sm_logo"
     t.string "lg_logo"
+    t.string "venue"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "schedule_id"
