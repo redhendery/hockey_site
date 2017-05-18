@@ -8,10 +8,17 @@ Rails.application.routes.draw do
     resources :players
   end
 
-  resources :schedules do
+  resources :team_schedules do
+    resources :schedules
     resources :teams
     resources :players
   end
-  
-  root 'schedules#index'
+
+  resources :schedules do
+    resources :teams
+    resources :team_schedules
+    resources :players
+  end
+
+  root 'team_schedules#index'
 end

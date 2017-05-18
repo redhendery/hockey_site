@@ -1,3 +1,21 @@
 <div class="row">
-  <img class="img-fluid mx-auto d-block" src="<%= @schedule.awayLogoLarge %>" alt="<%= @schedule.away %>">
+  <img class="img-fluid mx-auto d-block" src="<%= @away.lg_logo %>" alt="<%= @away.team_name %>">
+</div>
+<div class="row">
+  <%= render 'schedules/partials/away/points' %>
+</div>
+<div class="row">
+  <%= render 'schedules/partials/away/goals' %>
+</div>
+<div class="row">
+  <%= render 'schedules/partials/away/assists' %>
+</div>
+<div class="row">
+  <%= render 'schedules/partials/away/plus_minus' %>
+</div>
+<div class="row">
+  <%= render 'schedules/partials/away/gaa' %>
+</div>
+<div class="row">
+  <%= render 'schedules/partials/away/svs' %>
 </div>

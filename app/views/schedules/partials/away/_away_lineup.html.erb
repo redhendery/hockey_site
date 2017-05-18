@@ -4,15 +4,15 @@
       <tr>
         <th class="text-center">#</th>
         <th>Name</th>
-        <th class="text-center">Pos</th>
+        <th>Pos</th>
       </tr>
     </thead>
     <tbody>
-      <% @away_lineup.each do |away| %>
+      <% @away.players.each do |away| %>
         <tr>
-          <td class="text-center"><%= away.number %></td>
-          <td><%= away.name %></td>
-          <td class="text-center"><%= away.posAbr %></td>
+          <td><%= away.number %></td>
+          <td class="float-left"><%= away.name %></td>
+          <td><%= away.posAbr %></td>
         </tr>
       <% end %>
     </tbody>
