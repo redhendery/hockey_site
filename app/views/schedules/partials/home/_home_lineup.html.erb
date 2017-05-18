@@ -1,0 +1,20 @@
+<div class="table-responsive">
+  <table class="table table-condensed table-bordered">
+    <thead>
+      <tr>
+        <th class="text-center">#</th>
+        <th>Name</th>
+        <th>Pos</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @home.players.each do |home| %>
+        <tr>
+          <td><%= home.number %></td>
+          <td class="float-left"><%= home.name %></td>
+          <td><%= home.posAbr %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

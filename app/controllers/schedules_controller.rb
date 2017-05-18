@@ -4,6 +4,10 @@ class SchedulesController < ApplicationController
   end
 
   def show
-    @schedule = Schedule.find(params[:id])
+    @schedule = TeamSchedule.find(params[:id])
+
+    # Lookup Home & Away
+    @away = @schedule.away_team
+    @home = @schedule.home_team
   end
 end
