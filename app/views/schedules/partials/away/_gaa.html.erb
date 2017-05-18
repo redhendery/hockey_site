@@ -1,0 +1,18 @@
+<div class="col-11">
+  <div class="card">
+    <div class="card-header">
+      <strong>Goals Against Average</strong>
+    </div>
+    <div class="card-block">
+      <% @away.players.limit(3).where(posAbr: 'GK').each_with_index do |gaa, i| %>
+        <div class="table-responsive">
+          <strong>
+            <span class="float-left"><%= i += 1 %>. </span>
+            <span class="float-left"><%= gaa.name %></span>
+            <span class="float-right"><%= gaa.gaa %></span>
+          </strong>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

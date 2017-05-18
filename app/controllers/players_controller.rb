@@ -1,5 +1,4 @@
 class PlayersController < ApplicationController
-
   def index
     console
     @players = Player.all

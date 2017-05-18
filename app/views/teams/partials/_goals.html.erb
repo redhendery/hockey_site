@@ -3,11 +3,11 @@
     <strong>Team Goal Leaders</strong>
   </div>
   <div class="card-block">
-    <% @goals.each_with_index do |goals, i| %>
+    <% @skate.limit(5).order(goals: :desc).each_with_index do |skate, i| %>
       <div class="table-responsive">
         <span><strong><%= i += 1 %>. </strong></span>
-        <span><strong><%= goals.name %></strong></span>
-        <span class="float-right"><strong><%= goals.goals %></strong></span>
+        <span><strong><%= skate.name %></strong></span>
+        <span class="float-right"><strong><%= skate.goals %></strong></span>
       </div>
     <% end %>
   </div>

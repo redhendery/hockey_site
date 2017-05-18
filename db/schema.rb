@@ -10,18 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170511211410) do
+ActiveRecord::Schema.define(version: 20170516202610) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "players", force: :cascade do |t|
     t.string "name"
+    t.string "team_name"
+    t.string "team_abr"
     t.string "shoots"
     t.string "catches"
     t.string "position"
     t.string "posAbr"
-    t.string "abr"
     t.integer "number"
     t.integer "gp"
     t.integer "goals"
@@ -34,6 +35,23 @@ ActiveRecord::Schema.define(version: 20170511211410) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "team_id"
+    t.integer "schedule_id"
+  end
+
+  create_table "schedules", force: :cascade do |t|
+    t.date "date"
+    t.string "leagueGame"
+    t.string "prettyDate"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "team_schedules", force: :cascade do |t|
+    t.string "home_team_id"
+    t.string "away_team_id"
+    t.string "schedule_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "teams", force: :cascade do |t|
@@ -41,8 +59,10 @@ ActiveRecord::Schema.define(version: 20170511211410) do
     t.string "abr"
     t.string "sm_logo"
     t.string "lg_logo"
+    t.string "venue"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "schedule_id"
   end
 
 end
