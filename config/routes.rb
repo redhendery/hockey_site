@@ -20,5 +20,5 @@ Rails.application.routes.draw do
     resources :players
   end
 
-  root 'team_schedules#index'
+  root 'schedules#index'
 end
