@@ -1,9 +1,9 @@
 class CreateTeamSchedules < ActiveRecord::Migration[5.1]
   def change
     create_table :team_schedules do |t|
-      t.string :home_team_id
-      t.string :away_team_id
-      t.string :schedule_id
+      t.integer :home_team_id
+      t.integer :away_team_id
+      t.integer :schedule_id
 
       t.timestamps
     end
