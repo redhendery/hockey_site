@@ -1,26 +1,4 @@
 <div class="container-fluid">
-  <div class="row">
-    <% @schedules.each do |schedule| %>
-      <div class="col-md-6 col-lg-6 col-xl-6">
-        <div class="card-deck">
-          <div class="card text-center">
-            <div class="card-header">
-              <span class="text-center">
-                <strong><%= schedule.leagueGame %> - <%= schedule.home %> v <%= schedule.away %></strong>
-              </span>
-            </div>
-            <div class="card-block">
-              <span><img src="<%= schedule.homeLogo %>" alt="<%= schedule.home %>" class="img-fluid float-left"></span>
-              <span><%= link_to 'Game Details', schedule_path(schedule), class: "btn btn-primary" %></span>
-              <span><img src="<%= schedule.awayLogo %>" alt="<%= schedule.away %>" class="img-fluid float-right"></span>
-            </div>
-            <div class="card-footer text-muted">
-              <small><span class="float-left"><%= schedule.prettyDate %></span>
-              <span class="float-right"><%= schedule.prettyDate %></span></small>
-            </div>
-          </div>
-        </div>
-      </div>
-    <% end %>
-  </div>
+  <%= render 'schedules/partials/teams' %>
+  <%= render 'schedules/partials/schedule_item' %>
 </div>
