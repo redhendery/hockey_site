@@ -1,0 +1,6 @@
+<ul class="nav nav-pills nav-justified position">
+  <li class="nav-item"><%= link_to 'All Positions', stats_path, class: 'nav-link active' %></li>
+  <li class="nav-item"><%= link_to 'Forwards', team_stats_path(@teams[0]), class: 'nav-link' %></li>
+  <li class="nav-item"><%= link_to 'Defence', team_stats_path(@teams[1]), class: 'nav-link' %></li>
+  <li class="nav-item"><%= link_to 'Goal Teanders', team_stats_path(@teams[2]), class: 'nav-link' %></li>
+</ul>
