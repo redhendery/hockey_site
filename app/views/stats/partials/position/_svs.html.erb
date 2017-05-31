@@ -1,0 +1,17 @@
+<div class="card">
+  <div class="card-header text-center">
+    <strong>Save Percentage Leaders</strong>
+  </div>
+  <div class="card-block">
+    <% @gk.order(svs: :desc).each_with_index do |gk, i| %>
+      <div class="table-responsive">
+        <strong>
+          <span><%= i += 1 %>. </span>
+          <span><%= gk.name %></span>
+          <span><small><%= gk.team_abr %></small></span>
+          <span class="float-right">. <%= gk.svs %></span>
+        </strong>
+      </div>
+    <% end %>
+  </div>
+</div>

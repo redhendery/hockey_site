@@ -357,7 +357,7 @@ schedule = Schedule.create([{
 
 p "Added #{Schedule.count} schedules"
 
-game = TeamSchedule.create([{
+team_schedules = TeamSchedule.create([{
 	away_team_id: 2,
 	home_team_id: 4,
 	schedule_id: 1,
