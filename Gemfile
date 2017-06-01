@@ -17,6 +17,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'rails-assets-tether', '>= 1.3.3', source: 'https://rails-assets.org'
 
+gem 'jquery-datatables-rails', '~> 3.4.0'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem 'rails-ujs', '~> 0.1.0'

@@ -1710,6 +1710,8 @@ players = Player.create([{
 	team_id: 4
 }, {
 	name: 'Mitchell Frear',
+	team_name: 'Skycity Stampede',
+	team_abr: 'STP',
 	shoots: 'Right',
 	position: 'Defence',
 	posAbr: 'D',

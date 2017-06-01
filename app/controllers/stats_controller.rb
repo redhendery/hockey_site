@@ -7,17 +7,20 @@ class StatsController < ApplicationController
     @gk = @gk.where(team_id: params[:team_id]) if params[:team_id].present?
   end
   def assists
-    @skate
+    @teams = Team.where(nil)
+    @skate = Player.all.where(posAbr: %w[F D])
   end
   def goals
-    @skate
+    @teams = Team.where(nil)
+    @skate = Player.all.where(posAbr: %w[F D])
   end
   def points
     @teams = Team.where(nil)
     @skate = Player.all.where(posAbr: %w[F D])
   end
   def plus_minus
-    @skate
+    @teams = Team.where(nil)
+    @skate = Player.all.where(posAbr: %w[F D])
   end
   def gk
     @teams = Team.where(nil)

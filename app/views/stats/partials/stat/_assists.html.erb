@@ -1,17 +1,32 @@
-<div class="card">
-  <div class="card-header text-center">
-    <strong>Assist Leaders</strong>
-  </div>
-  <div class="card-block">
-    <% @skate.limit(5).order(assists: :desc).each_with_index do |skate, i| %>
-      <div class="table-responsive">
-        <strong>
-          <span><%= i += 1 %>. </span>
-          <span><%= skate.name %></span>
-          <span><small><%= skate.team_abr %></small></span>
-          <span class="float-right"><%= skate.assists %></span>
-        </strong>
-      </div>
+<table id="assists" class="table table-striped" cellspacing="0" width="100%">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Player</th>
+      <th>Team</th>
+      <th>Pos</th>
+      <th>GP</th>
+      <th>G</th>
+      <th>A</th>
+      <th>P</th>
+      <th>+/-</th>
+      <th>PIM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @skate.each_with_index do |skater, i| %>
+      <tr>
+        <td><%= i += 1 %>. </td>
+        <td><%= skater.name %></td>
+        <td><%= skater.team_abr %></td>
+        <td><%= skater.posAbr %></td>
+        <td><%= skater.gp %></td>
+        <td><%= skater.goals %></td>
+        <td><%= skater.assists %></td>
+        <td><%= skater.points %></td>
+        <td><%= skater.plusMinus %></td>
+        <td><%= skater.pim %></td>
+      </tr>
     <% end %>
-  </div>
-</div>
+  </tbody>
+</table>
