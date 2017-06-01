@@ -1,23 +1,23 @@
 <table id="goals" class="table table-striped" cellspacing="0" width="100%">
   <thead>
     <tr>
-      <th>#</th>
+      <th class="text-center">#</th>
       <th>Player</th>
-      <th>Team</th>
-      <th>Pos</th>
-      <th>GP</th>
-      <th>G</th>
-      <th>A</th>
-      <th>P</th>
-      <th>+/-</th>
-      <th>PIM</th>
+      <th class="text-center">Team</th>
+      <th class="text-center">Pos</th>
+      <th class="text-center">GP</th>
+      <th class="text-center">G</th>
+      <th class="text-center">A</th>
+      <th class="text-center">P</th>
+      <th class="text-center">+/-</th>
+      <th class="text-center">PIM</th>
     </tr>
   </thead>
-  <tbody>
+  <tbody class="text-center">
     <% @skate.each_with_index do |skater, i| %>
       <tr>
         <td><%= i += 1 %>. </td>
-        <td><%= skater.name %></td>
+        <td class="float-left"><%= skater.name %></td>
         <td><%= skater.team_abr %></td>
         <td><%= skater.posAbr %></td>
         <td><%= skater.gp %></td>
