@@ -1,0 +1,28 @@
+<table id="gk" class="table table-striped" cellspacing="0" width="100%">
+  <thead>
+    <tr>
+      <th class="text-center">#</th>
+      <th>Player</th>
+      <th class="text-center">Team</th>
+      <th class="text-center">Pos</th>
+      <th class="text-center">Catches</th>
+      <th class="text-center">GP</th>
+      <th class="text-center">GAA</th>
+      <th class="text-center">SVS %</th>
+    </tr>
+  </thead>
+  <tbody class="text-center">
+    <% @gk.each_with_index do |gk, i| %>
+      <tr>
+        <td><%= i += 1 %>. </td>
+        <td class="float-left"><%= gk.name %></td>
+        <td><%= gk.team_abr %></td>
+        <td><%= gk.posAbr %></td>
+        <td><%= gk.catches %></td>
+        <td><%= gk.gp %></td>
+        <td><%= gk.gaa %></td>
+        <td>0.<%= gk.svs %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

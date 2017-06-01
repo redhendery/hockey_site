@@ -3,7 +3,7 @@
     <strong>Point Leaders</strong>
   </div>
   <div class="card-block">
-    <% @skate.limit(5).order(goals: :desc).each_with_index do |skate, i| %>
+    <% @skate.limit(5).order(points: :desc).each_with_index do |skate, i| %>
     <div class="table-responsive">
       <strong>
         <span><%= i += 1 %>. </span>
