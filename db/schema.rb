@@ -64,6 +64,14 @@ ActiveRecord::Schema.define(version: 20170516202610) do
     t.string "sm_logo"
     t.string "lg_logo"
     t.string "venue"
+    t.integer "games"
+    t.integer "wins"
+    t.integer "losses"
+    t.integer "overtime"
+    t.integer "points"
+    t.integer "goals_for"
+    t.integer "goals_against"
+    t.integer "goal_difference"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "schedule_id"

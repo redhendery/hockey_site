@@ -16,7 +16,6 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :players, :schedules, only: [:index, :show]
-
+  resources :players, :schedules, :standings, only: [:index, :show]
   root 'schedules#index'
 end
