@@ -18,8 +18,8 @@
     <tbody>
       <% @standings.each_with_index do |standing, i| %>
         <tr>
-          <td class="align-middle text-center"><%= i += 1 %></td>
-          <td class="text-center" width="8%"><img src="<%= standing.sm_logo %>" class="img-fluid" alt="<%= standing.sm_logo %>"></td>
+          <td class="align-middle text-center" width="6%"><%= i += 1 %></td>
+          <td class="text-center" width="9%"><img src="<%= standing.sm_logo %>" class="img-fluid" alt="<%= standing.sm_logo %>"></td>
           <td class="align-middle" width="25%"><%= standing.team_name %></td>
           <td class="align-middle text-center"><%= standing.games %></td>
           <td class="align-middle text-center"><%= standing.wins %></td>
