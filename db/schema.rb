@@ -30,8 +30,11 @@ ActiveRecord::Schema.define(version: 20170516202610) do
     t.integer "points"
     t.integer "pim"
     t.integer "plusMinus"
-    t.decimal "gaa"
     t.integer "svs"
+    t.integer "sog"
+    t.integer "saves"
+    t.integer "goals_against"
+    t.decimal "gaa"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "team_id"
