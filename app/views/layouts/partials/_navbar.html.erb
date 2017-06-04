@@ -5,10 +5,10 @@
   <a class="navbar-brand" <%= link_to 'NZIHL Home', root_path %> </a>
   <div class="collapse navbar-collapse" id="navbarCollapse">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item"><%= link_to 'Stats', players_path, class: "nav-link active" %></li>
-      <li class="nav-item"><%= link_to 'Standings', players_path, class: "nav-link active" %></li>
-      <li class="nav-item"><%= link_to 'Teams', teams_path, class: "nav-link active" %></li>
-      <li class="nav-item"><%= link_to 'Players', players_path, class: "nav-link active" %></li>
+      <li><%= link_to 'Stats', stats_path, class: "nav-link active nav-item" %></li>
+      <li><%= link_to 'Standings', standings_path, class: "nav-link active nav-item" %></li>
+      <li><%= link_to 'Teams', teams_path, class: "nav-link active nav-item" %></li>
+      <li><%= link_to 'Players', players_path, class: "nav-link active nav-item" %></li>
     </ul>
     <form class="form-inline mt-2 mt-md-0">
       <input class="form-control mr-sm-2" type="text" placeholder="Search">

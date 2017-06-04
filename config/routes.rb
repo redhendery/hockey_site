@@ -1,24 +1,21 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
 
-  resources :players
-
-  resources :teams do
-    resources :schedules
-    resources :players
+  resources :teams, only: [:index, :show] do
+    resources :players, only: [:index, :show]
+    resources :schedules, only: [:index, :show]
+    resources :stats, only: [:index] do
+      collection do
+        get 'assists', 'gk', 'goals', 'points', 'plus-minus'
+      end
+    end
   end
 
-  resources :team_schedules do
-    resources :schedules
-    resources :teams
-    resources :players
+  resources :stats, only: [:index] do
+    collection do
+      get 'assists', 'gk', 'goals', 'points', 'plus-minus'
+    end
   end
 
-  resources :schedules do
-    resources :teams
-    resources :team_schedules
-    resources :players
-  end
-
-  root 'team_schedules#index'
+  resources :players, :schedules, :standings, only: [:index, :show]
+  root 'schedules#index'
 end

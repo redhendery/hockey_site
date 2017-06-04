@@ -1,14 +1,9 @@
 class PlayersController < ApplicationController
   def index
-    console
-    @players = Player.all
-
-    @skate = Player.where(posAbr: ['F', 'D'])
-    @forward = Player.where(posAbr: 'F')
-    @defence = Player.where(posAbr: 'D')
-    @gk = Player.where(posAbr: 'GK')
+    @teams = Team.where(nil)
+    @players = Player.where(nil)
+    @players = @players.where(team_id: params[:team_id]) if params[:team_id].present?
   end
-
   def show
     @player = Player.find(params[:id])
   end

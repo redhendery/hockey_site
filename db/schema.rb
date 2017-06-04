@@ -30,8 +30,11 @@ ActiveRecord::Schema.define(version: 20170516202610) do
     t.integer "points"
     t.integer "pim"
     t.integer "plusMinus"
-    t.decimal "gaa"
     t.integer "svs"
+    t.integer "sog"
+    t.integer "saves"
+    t.integer "goals_against"
+    t.decimal "gaa"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "team_id"
@@ -39,6 +42,10 @@ ActiveRecord::Schema.define(version: 20170516202610) do
   end
 
   create_table "schedules", force: :cascade do |t|
+    t.string "away"
+    t.string "home"
+    t.string "awayLogo"
+    t.string "homeLogo"
     t.date "date"
     t.string "leagueGame"
     t.string "prettyDate"
@@ -47,9 +54,9 @@ ActiveRecord::Schema.define(version: 20170516202610) do
   end
 
   create_table "team_schedules", force: :cascade do |t|
-    t.string "home_team_id"
-    t.string "away_team_id"
-    t.string "schedule_id"
+    t.integer "home_team_id"
+    t.integer "away_team_id"
+    t.integer "schedule_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -60,6 +67,14 @@ ActiveRecord::Schema.define(version: 20170516202610) do
     t.string "sm_logo"
     t.string "lg_logo"
     t.string "venue"
+    t.integer "games"
+    t.integer "wins"
+    t.integer "losses"
+    t.integer "overtime"
+    t.integer "points"
+    t.integer "goals_for"
+    t.integer "goals_against"
+    t.integer "goal_difference"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "schedule_id"

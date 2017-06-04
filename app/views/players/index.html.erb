@@ -1,9 +1,7 @@
 <div class="container-fluid">
-  <%= render 'players/partials/tabs' %>
-</div>
-
-<div class="tab-content">
-  <%= render 'players/partials/name' %>
-  <%= render 'players/partials/position' %>
   <%= render 'players/partials/teams' %>
+
+  <% @players.each do |player| %>
+    <%= player.name %>
+  <% end %>
 </div>
