@@ -1,9 +1,9 @@
 class TeamsController < ApplicationController
   def index
-    @teams = Team.all
+    @teams = Team.where(nil)
   end
   def show
     @team = Team.find(params[:id])
-    @skate = @team.players.where(posAbr: %w[F D])
+    @skate = Player.where(posAbr: %w[D F])
   end
 end

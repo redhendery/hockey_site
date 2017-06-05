@@ -1,19 +1,32 @@
 class SchedulesController < ApplicationController
+  before_action :schedules
   def index
-    @ts = TeamSchedule.where(nil)
+    @schedules
     @teams = Team.where(nil)
-    @schedules = Schedule.where(nil)
-    @swarm = @ts.where(home_team_id: 1).or(@ts.where(away_team_id: 1))
-    @devils = @schedules.where(home: 'Canterbury Red Devils').or(@schedules.where(away: 'Canterbury Red Devils'))
-    @thunder = @ts.where(home_team_id: 3).or(@ts.where(away_team_id: 3))
-    @stampede = @ts.where(home_team_id: 4).or(@ts.where(away_team_id: 4))
-    @admirals = @ts.where(home_team_id: 5).or(@ts.where(away_team_id: 5))
   end
-
   def show
-    @schedule = TeamSchedule.find(params[:id])
-    # Lookup Home & Away
+    @schedule = Schedule.find(params[:id])
     @away = @schedule.away_team
     @home = @schedule.home_team
+  end
+  def swarm
+    @swarm = @schedules.where(home_team_id: 1).or(@schedules.where(away_team_id: 1)).map
+  end
+  def reddevils
+    @devils = @schedules.where(home_team_id: 2).or(@schedules.where(away_team_id: 2)).map
+  end
+  def thunder
+    @thunder = @schedules.where(home_team_id: 3).or(@schedules.where(away_team_id: 3)).map
+  end
+  def stampede
+    @stampede = @schedules.where(home_team_id: 4).or(@schedules.where(away_team_id: 4)).map
+  end
+  def admirals
+    @admirals = @schedules.where(home_team_id: 5).or(@schedules.where(away_team_id: 5)).map
+  end
+
+  private
+  def schedules
+    @schedules = Schedule.where(nil)
   end
 end

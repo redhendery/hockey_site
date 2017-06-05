@@ -1,0 +1,33 @@
+<div class="container-fluid">
+  <%= render 'schedules/partials/teams' %>
+  <div class="row">
+    <% @swarm.each do |schedule| %>
+      <div class="col-md-6 col-lg-6 col-xl-6">
+        <div class="card-deck">
+          <div class="card text-center">
+            <div class="card-header">
+              <span class="text-center">
+                <strong><%= schedule.leagueGame %> - <%= schedule.home_team.team_name %> v <%= schedule.away_team.team_name %></strong>
+              </span>
+            </div>
+            <div class="card-block">
+              <div class="row">
+                <div class="col-4"><img src="<%= schedule.home_team.sm_logo %>" alt="<%= schedule.home_team.sm_logo %>" class="img-fluid float-left"></div>
+                <div class="col-4">
+                  <%= link_to 'Game Details', schedule_path(schedule), class: "btn btn-primary" %>
+                  <%= link_to 'Game Details', schedule_path(schedule), class: "btn btn-primary" %>
+                </div>
+                <div class="col-4"><img src="<%= schedule.away_team.sm_logo %>" alt="<%= schedule.away_team.sm_logo %>" class="img-fluid float-right"></div>
+              </div>
+            </div>
+            <div class="card-footer text-muted">
+              <small><span class="float-left"><%= schedule.home_team.venue %></span>
+              <span class="float-right"><%= schedule.prettyDate %></span></small>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+</div>

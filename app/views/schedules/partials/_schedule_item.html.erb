@@ -5,16 +5,21 @@
         <div class="card text-center">
           <div class="card-header">
             <span class="text-center">
-              <strong><%= schedule.leagueGame %> - <%= schedule.home %> v <%= schedule.away %></strong>
+              <strong><%= schedule.leagueGame %> - <%= schedule.home_team.team_name %> v <%= schedule.away_team.team_name %></strong>
             </span>
           </div>
           <div class="card-block">
-            <span><img src="<%= schedule.homeLogo %>" alt="<%= schedule.home %>" class="img-fluid float-left"></span>
-            <span><%= link_to 'Game Details', schedule_path(schedule), class: "btn btn-primary" %></span>
-            <span><img src="<%= schedule.awayLogo %>" alt="<%= schedule.away %>" class="img-fluid float-right"></span>
+            <div class="row">
+              <div class="col-4"><img src="<%= schedule.home_team.sm_logo %>" alt="<%= schedule.home_team.sm_logo %>" class="img-fluid float-left"></div>
+              <div class="col-4">
+                <%= link_to 'Game Details', schedule_path(schedule), class: "btn btn-primary" %>
+                <%= link_to 'Game Details', schedule_path(schedule), class: "btn btn-primary" %>
+              </div>
+              <div class="col-4"><img src="<%= schedule.away_team.sm_logo %>" alt="<%= schedule.away_team.sm_logo %>" class="img-fluid float-right"></div>
+            </div>
           </div>
           <div class="card-footer text-muted">
-            <small><span class="float-left"><%= schedule.prettyDate %></span>
+            <small><span class="float-left"><%= schedule.home_team.venue %></span>
             <span class="float-right"><%= schedule.prettyDate %></span></small>
           </div>
         </div>
