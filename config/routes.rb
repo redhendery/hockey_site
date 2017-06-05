@@ -2,7 +2,6 @@ Rails.application.routes.draw do
 
   resources :teams, only: [:index, :show] do
     resources :players, only: [:index, :show]
-    resources :schedules, only: [:index, :show]
     resources :stats, only: [:index] do
       collection do
         get 'assists', 'gk', 'goals', 'points', 'plus-minus'
@@ -16,6 +15,12 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :players, :schedules, :standings, only: [:index, :show]
+  resources :schedules, only: [:index, :show] do
+    collection do
+      get 'swarm', 'reddevils', 'thunder', 'stampede', 'admirals'
+    end
+  end
+
+  resources :players, :standings, only: [:index, :show]
   root 'schedules#index'
 end
