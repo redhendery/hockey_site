@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   resources :teams, only: [:index, :show] do
     resources :players, only: [:index, :show]
     resources :stats, only: [:index] do
