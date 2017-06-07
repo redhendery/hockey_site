@@ -21,12 +21,12 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :players, only: [:index, :show] do
+  resources :players, only: [:index] do
     collection do
-      get 'gk'
+      get 'all'
     end
   end
 
-  resources :standings, only: [:index, :show]
+  resources :standings, only: [:index]
   root 'schedules#index'
 end
