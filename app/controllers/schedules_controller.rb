@@ -1,8 +1,6 @@
 class SchedulesController < ApplicationController
-  before_action :schedules
+  before_action :schedules, :teams
   def index
-    @schedules
-    @teams = Team.where(nil)
   end
   def show
     @schedule = Schedule.find(params[:id])
@@ -24,9 +22,11 @@ class SchedulesController < ApplicationController
   def admirals
     @admirals = @schedules.where(home_team_id: 5).or(@schedules.where(away_team_id: 5)).map
   end
-
   private
   def schedules
     @schedules = Schedule.where(nil)
+  end
+  def teams
+    @teams = Team.where(nil)
   end
 end

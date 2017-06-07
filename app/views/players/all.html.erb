@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <%= render 'players/partials/teams' %>
+  <table id="players" class="table table-striped" cellspacing="0" width="100%">
+    <thead>
+      <tr>
+        <th>Player</th>
+        <th>Team</th>
+        <th>Position</th>
+        <th class="text-center">Num</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @players.each do |player| %>
+        <tr>
+          <td><%= player.name %></td>
+          <td><%= player.team_name %></td>
+          <td><%= player.position %></td>
+          <td class="text-center"><%= player.number %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

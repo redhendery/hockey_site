@@ -1,0 +1,40 @@
+<div class="row">
+  <% @gk.each do |player| %>
+    <div class="col-6">
+      <div class="card-deck">
+        <div class="card">
+          <div class="card-header">
+            <div class="row">
+              <div class="col-10">
+                <h5 class="card-title"><%= player.name %></h5>
+                <h6 class="card-subtitle mb-2 text-muted">Shoots: <%= player.shoots %></h6>
+              </div>
+              <div class="col-2">
+                <h5 class="card-title float-right">#<%= player.number %></h5>
+                <h6 class="card-subtitle mb-2 text-muted float-right"><%= player.position %></h6>
+              </div>
+            </div>
+          </div>
+          <div class="card-block">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="text-center col-xs-2">GP</th>
+                    <th class="text-center col-xs-2">GAA</th>
+                    <th class="text-center col-xs-2">SVS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td class="text-center col-xs-2"><%= player.gp %></td>
+                  <td class="text-center col-xs-2"><%= player.gaa %></td>
+                  <td class="text-center col-xs-2">.<%= player.svs %></td>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
