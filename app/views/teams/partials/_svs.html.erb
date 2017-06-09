@@ -1,14 +1,16 @@
-<div class="card">
-  <div class="card-header">
-    <strong>Team SVS Leaders</strong>
-  </div>
-  <div class="card-block">
-    <% @team.players.limit(5).where(posAbr: 'GK').order(svs: :desc).each_with_index do |gk, i| %>
-      <div class="table-responsive">
-        <span><strong><%= i += 1 %>. </strong></span>
-        <span><strong><%= gk.name %></strong></span>
-        <span class="float-right"><strong>.<%= gk.svs %></strong></span>
-      </div>
-    <% end %>
+<div class="card-deck">
+  <div class="card">
+    <div class="card-header">
+      <strong>Team SVS Leaders</strong>
+    </div>
+    <div class="card-block">
+      <% @team.players.limit(5).where(posAbr: 'GK').order(svs: :desc).each_with_index do |gk, i| %>
+        <div class="table-responsive">
+          <span><strong><%= i += 1 %>. </strong></span>
+          <span><strong><%= gk.name %></strong></span>
+          <span class="float-right"><strong>.<%= gk.svs %></strong></span>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>
