@@ -1,17 +1,19 @@
-<div class="card">
-  <div class="card-header text-center">
-    <strong>Goal Leaders</strong>
-  </div>
-  <div class="card-block">
-    <% @skate.limit(5).order(goals: :desc).each_with_index do |skate, i| %>
-    <div class="table-responsive">
-      <strong>
-        <span><%= i += 1 %>. </span>
-        <span><%= skate.name %></span>
-        <span><small><%= skate.team_abr %></small></span>
-        <span class="float-right"><%= skate.goals %></span>
-      </strong>
+<div class="card-deck">
+  <div class="card">
+    <div class="card-header text-center">
+      <strong>Goal Leaders</strong>
     </div>
-    <% end %>
+    <div class="card-block">
+      <% @skate.limit(5).order(goals: :desc).each_with_index do |skate, i| %>
+      <div class="table-responsive">
+        <strong>
+          <span><%= i += 1 %>. </span>
+          <span><%= skate.name %></span>
+          <span><small><%= skate.team_abr %></small></span>
+          <span class="float-right"><%= skate.goals %></span>
+        </strong>
+      </div>
+      <% end %>
+    </div>
   </div>
 </div>

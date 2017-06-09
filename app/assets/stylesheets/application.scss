@@ -7,9 +7,32 @@ html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   padding: 90px 30px 30px 30px;
 }
+
+// Card Spacing
+.card-deck {
+  padding-top: 30px;
+}
+
+// Show Schedule Lineups
+.lineups {
+  padding-top: 15px;
+}
+
+// Data Tables Spacing
+.dataTables_wrapper {
+  padding-top: 30px;
+}
+
+// Team Logos Index
+.team-logos {
+  padding-bottom: 50px;
+  padding-right: 50px;
+}
+
 .footer {
   position: absolute;
   text-align: center;

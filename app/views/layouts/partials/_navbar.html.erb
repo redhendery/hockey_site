@@ -2,17 +2,23 @@
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" <%= link_to 'NZIHL Home', root_path %> </a>
+  <%= link_to 'NZIHL Home', root_path, class: "navbar-brand" %>
   <div class="collapse navbar-collapse" id="navbarCollapse">
     <ul class="navbar-nav mr-auto">
-      <li><%= link_to 'Stats', stats_path, class: "nav-link active nav-item" %></li>
-      <li><%= link_to 'Standings', standings_path, class: "nav-link active nav-item" %></li>
-      <li><%= link_to 'Teams', teams_path, class: "nav-link active nav-item" %></li>
-      <li><%= link_to 'Players', all_players_path, class: "nav-link active nav-item" %></li>
     </ul>
-    <form class="form-inline mt-2 mt-md-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    <ul class="navbar-nav">
+      <li class="<%= 'active' if current_page?(stats_path) %>">
+        <%= link_to 'Stats', stats_path, class: "nav-link nav-item" %>
+      </li>
+      <li class="<%= 'active' if current_page?(standings_path) %>">
+        <%= link_to 'Standings', standings_path, class: "nav-link nav-item" %>
+      </li>
+      <li class="<%= 'active' if current_page?(teams_path) %>">
+        <%= link_to 'Teams', teams_path, class: "nav-link nav-item" %>
+      </li>
+      <li class="<%= 'active' if current_page?(all_players_path) %>">
+        <%= link_to 'Players', all_players_path, class: "nav-link nav-item" %>
+      </li>
+    </ul>
   </div>
 </nav>
