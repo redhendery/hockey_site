@@ -76,8 +76,8 @@ ActiveRecord::Schema.define(version: 20170607180122) do
     t.date "date"
     t.string "leagueGame"
     t.string "prettyDate"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer "away_score"
+    t.integer "home_score"
     t.integer "home_team_id"
     t.integer "away_team_id"
   end
