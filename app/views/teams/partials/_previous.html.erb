@@ -1,0 +1,28 @@
+<% if @previous.blank? %>
+  No previous games
+<% else %>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-header"><strong>Previous</strong></div>
+      <div class="card-block">
+        <div class="row">
+          <div class="col-8"><%= @previous.first.home_team.abr %></div>
+          <div class="col-4 float-right"><%= @previous.first.home_score %></div>
+          <div class="col-8"><%= @previous.first.away_team.abr %></div>
+          <div class="col-4 float-right"><%= @previous.first.away_score %></div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><strong>Games</strong></div>
+      <div class="card-block">
+        <div class="row">
+          <div class="col-8"><%= @previous.last.home_team.abr %></div>
+          <div class="col-4 float-right"><%= @previous.last.home_score %></div>
+          <div class="col-8"><%= @previous.last.away_team.abr %></div>
+          <div class="col-4 float-right"><%= @previous.last.away_score %></div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

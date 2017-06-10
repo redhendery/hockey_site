@@ -1,0 +1,25 @@
+<div class="card-deck">
+  <div class="card">
+    <div class="card-header"><strong>Record</strong></div>
+    <div class="card-block">
+      <div class="row">
+        <table class="table-sm w-100">
+          <thead class="table">
+            <tr>
+              <th class="text-center">GP</th>
+              <th class="text-center">W</th>
+              <th class="text-center">L</th>
+              <th class="text-center">P</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+            <td class="align-middle text-center"><%= @team.games %></td>
+            <td class="align-middle text-center"><%= @team.wins %></td>
+            <td class="align-middle text-center"><%= @team.losses %></td>
+            <td class="align-middle text-center"><%= @team.points %></td>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

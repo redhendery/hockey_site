@@ -4,6 +4,11 @@ class TeamsController < ApplicationController
   end
   def show
     @team = Team.find(params[:id])
-    @skate = Player.where(posAbr: %w[D F])
+    @skate = @team.players.where(posAbr: %w[D F])
+    @schedule = Schedule.where(home_team_id: @team.id).or(Schedule.where(away_team_id: @team.id))
+    @previous = @schedule.where(home_team_id: @team.id).or(@schedule.where(away_team_id: @team.id))
+    @previous = @previous.where('date <= ?', Date.today).limit(2)
+    @upcoming = @schedule.where(home_team_id: @team.id).or(@schedule.where(away_team_id: @team.id))
+    @upcoming = @upcoming.where('date >= ?', Date.today).first
   end
 end

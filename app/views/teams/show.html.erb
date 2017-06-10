@@ -1,20 +1,24 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col">Previous game results here</div>
-    <div class="col-6"><img class="img-fluid mx-auto d-block" src="<%= @team.lg_logo %>" alt="<%= @team.lg_logo %>"></div>
-    <div class="col">Upcoming game goes here</div>
+    <div class="col">
+      <%= render 'teams/partials/previous' %>
+    </div>
+    <div class="col"><img class="img-fluid mx-auto d-block" src="<%= @team.lg_logo %>" alt="<%= @team.lg_logo %>"></div>
+    <div class="col">
+      <%= render 'teams/partials/record' %>
+    </div>
   </div>
   <div class="row">
-    <div class="col-3">
+    <div class="col">
       <%= render 'teams/partials/points' %>
     </div>
-    <div class="col-3">
+    <div class="col">
       <%= render 'teams/partials/goals' %>
     </div>
-    <div class="col-3">
+    <div class="col">
       <%= render 'teams/partials/assists' %>
     </div>
-    <div class="col-3">
+    <div class="col">
       <%= render 'teams/partials/svs' %>
     </div>
   </div>
