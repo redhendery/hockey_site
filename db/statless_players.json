@@ -104,21 +104,6 @@ Start Botany Swarn no game stat players
 	pim: 2,
 	plusMinus: -1,
 	team_id: 1
-}, {
-	name: 'Logan Fraser',
-	team_name: 'Botany Swarm',
-	team_abr: 'BSW',
-	shoots: 'Right',
-	position: 'Defence',
-	posAbr: 'D',
-	number: 24,
-	gp: 13,
-	goals: 2,
-	assists: 3,
-	points: 5,
-	pim: 4,
-	plusMinus: 3,
-	team_id: 1
 },
 Start Canterbury Red Devils no game stat players
  {
@@ -137,21 +122,6 @@ Start Canterbury Red Devils no game stat players
  	plusMinus: 0,
  	team_id: 2
  }, {
-	name: 'Liam Dallimore',
-	team_name: 'Canterbury Red Devils',
-	team_abr: 'CRD',
-	shoots: 'Right',
-	position: 'Forward',
-	posAbr: 'F',
-	number: 14,
-	gp: 12,
-	goals: 4,
-	assists: 1,
-	points: 5,
-	pim: 4,
-	plusMinus: 0,
-	team_id: 2
-}, {
 	name: 'Justin Fuller',
 	team_name: 'Canterbury Red Devils',
 	team_abr: 'CRD',
@@ -180,36 +150,6 @@ Start Canterbury Red Devils no game stat players
 	points: 0,
 	pim: 0,
 	plusMinus: 0,
-	team_id: 2
-}, {
-	name: 'Nik Stefanissin',
-	team_name: 'Canterbury Red Devils',
-	team_abr: 'CRD',
-	shoots: 'Right',
-	position: 'Forward',
-	posAbr: 'F',
-	number: 0,
-	gp: 0,
-	goals: 0,
-	assists: 0,
-	points: 0,
-	pim: 0,
-	plusMinus: 0,
-	team_id: 2
-}, {
-	name: 'Moses Bygate-Smith',
-	team_name: 'Canterbury Red Devils',
-	team_abr: 'CRD',
-	shoots: 'Right',
-	position: 'Defence',
-	posAbr: 'D',
-	number: 12,
-	gp: 10,
-	goals: 0,
-	assists: 0,
-	points: 0,
-	pim: 0,
-	plusMinus: -1,
 	team_id: 2
 }, {
 	name: 'Ryan Fraser',

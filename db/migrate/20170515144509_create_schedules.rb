@@ -4,6 +4,8 @@ class CreateSchedules < ActiveRecord::Migration[5.1]
       t.date :date
       t.string :leagueGame
       t.string :prettyDate
+      t.integer :away_score
+      t.integer :home_score
 
       t.timestamps
     end
