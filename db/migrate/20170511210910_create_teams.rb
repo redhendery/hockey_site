@@ -9,7 +9,8 @@ class CreateTeams < ActiveRecord::Migration[5.1]
       t.integer :games
       t.integer :wins
       t.integer :losses
-      t.integer :overtime
+      t.integer :overtime_wins
+      t.integer :overtime_losses
       t.integer :points
       t.integer :goals_for
       t.integer :goals_against

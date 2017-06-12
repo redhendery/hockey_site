@@ -2,13 +2,25 @@ class SchedulesController < ApplicationController
   before_action :schedules, :teams
 
   def index
-
+    console
+    @next_round = @schedules.where(completed: false).limit(4)
   end
 
   def show
+    console
     @schedule = Schedule.find(params[:id])
     @away = @schedule.away_team
     @home = @schedule.home_team
+  end
+
+  def all
+  end
+
+  def scores
+    @completed = @schedules.where(completed: true)
+  end
+
+  def games
   end
 
   def swarm
@@ -37,6 +49,10 @@ class SchedulesController < ApplicationController
   end
 
   private
+  def date_range
+
+  end
+
   def schedules
     @schedules = Schedule.where(nil).includes(%i[home_team away_team])
   end

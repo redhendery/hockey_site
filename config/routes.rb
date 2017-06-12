@@ -15,7 +15,7 @@ Rails.application.routes.draw do
 
   resources :schedules, only: %i[index show] do
     collection do
-      get 'swarm', 'reddevils', 'thunder', 'stampede', 'admirals'
+      get 'all', 'swarm', 'reddevils', 'thunder', 'stampede', 'admirals', 'games', 'scores'
     end
   end
 
