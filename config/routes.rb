@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
-
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
-  resources :teams, only: [:index, :show] do
-    resources :players, only: [:index, :show]
+  resources :teams, only: %i[index show] do
+    resources :players, only: %i[index show]
     resources :stats, only: [:index]
   end
 
@@ -14,7 +13,7 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :schedules, only: [:index, :show] do
+  resources :schedules, only: %i[index show] do
     collection do
       get 'swarm', 'reddevils', 'thunder', 'stampede', 'admirals'
     end

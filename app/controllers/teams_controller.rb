@@ -2,6 +2,7 @@ class TeamsController < ApplicationController
   def index
     @teams = Team.where(nil)
   end
+
   def show
     @team = Team.find(params[:id])
     @skate = @team.players.where(posAbr: %w[D F])

@@ -19,8 +19,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'rails-assets-tether', '>= 1.3.3', source: 'https://rails-assets.org'
 
-gem 'jquery-datatables-rails', '~> 3.4.0'
 gem 'jbuilder', '~> 2.5'
+gem 'jquery-datatables-rails', '~> 3.4.0'
 gem 'jquery-rails'
 gem 'rails-ujs', '~> 0.1.0'
 gem 'turbolinks', '~> 5'
@@ -36,11 +36,12 @@ group :development, :test do
 end
 
 group :development do
+  gem 'awesome_print', require: 'ap'
+  gem 'bullet', group: 'development'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'web-console', '>= 3.3.0'
-  gem 'awesome_print', require:'ap'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
