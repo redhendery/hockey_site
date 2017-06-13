@@ -8,7 +8,8 @@
         <th class="text-center">GP</th>
         <th class="text-center">W</th>
         <th class="text-center">L</th>
-        <th class="text-center">OT</th>
+        <th class="text-center">OW</th>
+        <th class="text-center">OL</th>
         <th class="text-center">P</th>
         <th class="text-center">GF</th>
         <th class="text-center">GA</th>
@@ -19,12 +20,13 @@
       <% @standings.each_with_index do |standing, i| %>
         <tr>
           <td class="align-middle text-center" width="6%"><%= i += 1 %></td>
-          <td width="9%"><img src="<%= standing.sm_logo %>" class="img-fluid" alt="<%= standing.sm_logo %>"></td>
+          <td width="9%"><img src="<%= standing.logo %>" class="img-fluid" alt="<%= standing.team_name %>"></td>
           <td class="align-middle" width="25%"><%= standing.team_name %></td>
           <td class="align-middle text-center"><%= standing.games %></td>
           <td class="align-middle text-center"><%= standing.wins %></td>
           <td class="align-middle text-center"><%= standing.losses %></td>
-          <td class="align-middle text-center"><%= standing.overtime %></td>
+          <td class="align-middle text-center"><%= standing.overtime_wins %></td>
+          <td class="align-middle text-center"><%= standing.overtime_losses %></td>
           <td class="align-middle text-center"><%= standing.points %></td>
           <td class="align-middle text-center"><%= standing.goals_for %></td>
           <td class="align-middle text-center"><%= standing.goals_against %></td>

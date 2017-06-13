@@ -1,85 +1,110 @@
-teams = Team.create([{
-  abr: 'BSW',
+standings = Standing.create([{
   team_name: 'Botany Swarm',
-  venue: 'Paradice Botany',
-  sm_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarm.png?alt=media&token=78ca16e2-6101-4a14-8b8f-54bc9862bd69',
-  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarmLarge.png?alt=media&token=6f494894-6dcc-4f52-bf9d-facd61ca8ebe',
+  logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarm.png?alt=media&token=78ca16e2-6101-4a14-8b8f-54bc9862bd69',
   games: 4,
   wins: 1,
   losses: 2,
-  overtime: 0,
+  overtime_wins: 0,
+  overtime_losses: 1,
   points: 4,
   goals_for: 15,
   goals_against: 26,
   goal_difference: -11
 }, {
-  abr: 'CRD',
   team_name: 'Canterbury Red Devils',
-  venue: 'Christchurch Alpine Ice',
-  sm_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/devils.png?alt=media&token=b2f7e89b-0882-4c4f-b09d-33cbb2ddd5b5',
-  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/redDevilsLarge.png?alt=media&token=a14bd2d4-a9a0-432b-913c-ef024a9e6a79',
+  logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/devils.png?alt=media&token=b2f7e89b-0882-4c4f-b09d-33cbb2ddd5b5',
   games: 4,
   wins: 0,
   losses: 3,
-  overtime: 1,
+  overtime_wins: 1,
+  overtime_losses: 0,
   points: 2,
   goals_for: 11,
   goals_against: 24,
   goal_difference: -13
 }, {
-  abr: 'DNT',
   team_name: 'Dunedin Thunder',
-  venue: 'Dunedin Ice Stadium',
-  sm_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunder.png?alt=media&token=74c89295-bd10-4b54-b782-8e58b34036be',
-  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunderLarge.png?alt=media&token=0828e20c-2b80-4ffd-adda-3714a328adc6',
+  logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunder.png?alt=media&token=74c89295-bd10-4b54-b782-8e58b34036be',
   games: 2,
   wins: 0,
   losses: 0,
-  overtime: 2,
+  overtime_wins: 0,
+  overtime_losses: 0,
   points: 0,
   goals_for: 6,
   goals_against: 14,
   goal_difference: -8
 }, {
-  abr: 'STP',
   team_name: 'Skycity Stampede',
-  venue: 'Queenstown Ice Arena',
-  sm_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampede.png?alt=media&token=a099d85f-5eca-4ed9-a823-a7eff26e425c',
-  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampedeLarge.png?alt=media&token=2c159e64-1f53-4cda-a79d-2f2cec88ab3a',
+  logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampede.png?alt=media&token=a099d85f-5eca-4ed9-a823-a7eff26e425c',
   games: 2,
   wins: 2,
   losses: 0,
-  overtime: 0,
+  overtime_wins: 0,
+  overtime_losses: 0,
   points: 6,
   goals_for: 13,
   goals_against: 5,
   goal_difference: 7
 }, {
-  abr: 'WAA',
   team_name: 'West Auckland Admirals',
-  venue: 'Paradice Avondale',
-  sm_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admirals.png?alt=media&token=c2d26473-e8f7-45b7-8ddd-b304f7e37bee',
-  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admiralsLarge.png?alt=media&token=d161ea78-7f6b-4b23-a6e8-444aadfd242a',
+  logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admirals.png?alt=media&token=c2d26473-e8f7-45b7-8ddd-b304f7e37bee',
   games: 4,
   wins: 4,
   losses: 0,
-  overtime: 0,
+  overtime_wins: 0,
+  overtime_losses: 0,
   points: 12,
   goals_for: 35,
   goals_against: 9,
   goal_difference: 26
 }])
 
+p "Added #{Standing.count} standings"
+
+teams = Team.create([{
+  abr: 'BSW',
+  team_name: 'Botany Swarm',
+  venue: 'Paradice Botany',
+  sm_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarm.png?alt=media&token=78ca16e2-6101-4a14-8b8f-54bc9862bd69',
+  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarmLarge.png?alt=media&token=6f494894-6dcc-4f52-bf9d-facd61ca8ebe'
+}, {
+  abr: 'CRD',
+  team_name: 'Canterbury Red Devils',
+  venue: 'Christchurch Alpine Ice',
+  sm_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/devils.png?alt=media&token=b2f7e89b-0882-4c4f-b09d-33cbb2ddd5b5',
+  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/redDevilsLarge.png?alt=media&token=a14bd2d4-a9a0-432b-913c-ef024a9e6a79'
+}, {
+  abr: 'DNT',
+  team_name: 'Dunedin Thunder',
+  venue: 'Dunedin Ice Stadium',
+  sm_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunder.png?alt=media&token=74c89295-bd10-4b54-b782-8e58b34036be',
+  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunderLarge.png?alt=media&token=0828e20c-2b80-4ffd-adda-3714a328adc6'
+}, {
+  abr: 'STP',
+  team_name: 'Skycity Stampede',
+  venue: 'Queenstown Ice Arena',
+  sm_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampede.png?alt=media&token=a099d85f-5eca-4ed9-a823-a7eff26e425c',
+  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampedeLarge.png?alt=media&token=2c159e64-1f53-4cda-a79d-2f2cec88ab3a'
+}, {
+  abr: 'WAA',
+  team_name: 'West Auckland Admirals',
+  venue: 'Paradice Avondale',
+  sm_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admirals.png?alt=media&token=c2d26473-e8f7-45b7-8ddd-b304f7e37bee',
+  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admiralsLarge.png?alt=media&token=d161ea78-7f6b-4b23-a6e8-444aadfd242a'
+}])
+
 p "Added #{Team.count} teams"
 
-schedule = Schedule.create([{
+schedules = Schedule.create([{
   away_team_id: 2,
   home_team_id: 4,
   away_score: 1,
   home_score: 6,
   date: '26/05/2017',
   leagueGame: 'Game 1',
-  prettyDate: 'Friday, May 26th, 6:50pm'
+  prettyDate: 'Friday, May 26th, 6:50pm',
+  completed: true
 }, {
   away_team_id: 2,
   home_team_id: 4,
@@ -87,7 +112,8 @@ schedule = Schedule.create([{
   home_score: 7,
   date: '27/05/2017',
   leagueGame: 'Game 2',
-  prettyDate: 'Saturday, May 27th, 6:50pm'
+  prettyDate: 'Saturday, May 27th, 6:50pm',
+  completed: true
 }, {
   away_team_id: 1,
   home_team_id: 5,
@@ -95,7 +121,8 @@ schedule = Schedule.create([{
   home_score: 7,
   date: '27/05/2017',
   leagueGame: 'Game 3',
-  prettyDate: 'Saturday, May 27th, 4:30pm'
+  prettyDate: 'Saturday, May 27th, 4:30pm',
+  completed: true
 }, {
   away_team_id: 1,
   home_team_id: 5,
@@ -103,7 +130,8 @@ schedule = Schedule.create([{
   home_score: 14,
   date: '28/05/2017',
   leagueGame: 'Game 4',
-  prettyDate: 'Sunday, May 28th, 4:30pm'
+  prettyDate: 'Sunday, May 28th, 4:30pm',
+  completed: true
 }, {
   away_team_id: 5,
   home_team_id: 3,
@@ -111,7 +139,8 @@ schedule = Schedule.create([{
   home_score: 3,
   date: '10/06/2017',
   leagueGame: 'Game 5',
-  prettyDate: 'Saturday, June 10th, 4:30pm'
+  prettyDate: 'Saturday, June 10th, 4:30pm',
+  completed: true
 }, {
   away_team_id: 5,
   home_team_id: 3,
@@ -119,15 +148,17 @@ schedule = Schedule.create([{
   home_score: 3,
   date: '11/06/2017',
   leagueGame: 'Game 6',
-  prettyDate: 'Saturday, June 11th, 4:30pm'
+  prettyDate: 'Saturday, June 11th, 4:30pm',
+  completed: true
 }, {
   away_team_id: 2,
   home_team_id: 1,
-  away_score: 5,
-  home_score: 6,
+  away_score: 6,
+  home_score: 5,
   date: '10/06/2017',
   leagueGame: 'Game 7',
-  prettyDate: 'Saturday, June 10th, 4:45pm'
+  prettyDate: 'Saturday, June 10th, 4:45pm',
+  completed: true
 }, {
   away_team_id: 2,
   home_team_id: 1,
@@ -135,7 +166,8 @@ schedule = Schedule.create([{
   home_score: 7,
   date: '11/06/2017',
   leagueGame: 'Game 8',
-  prettyDate: 'Sunday, June 11th, 4:45pm'
+  prettyDate: 'Sunday, June 11th, 4:45pm',
+  completed: true
 }, {
   away_team_id: 4,
   home_team_id: 3,
@@ -143,7 +175,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '17/06/2107',
   leagueGame: 'Game 9',
-  prettyDate: 'Saturday, June 17th, 4:40pm'
+  prettyDate: 'Saturday, June 17th, 4:40pm',
+  completed: false
 }, {
   away_team_id: 4,
   home_team_id: 3,
@@ -151,7 +184,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '18/06/2107',
   leagueGame: 'Game 10',
-  prettyDate: 'Sunday, June 18th, 4:40pm'
+  prettyDate: 'Sunday, June 18th, 4:40pm',
+  completed: false
 }, {
   away_team_id: 2,
   home_team_id: 5,
@@ -159,7 +193,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '17/06/2107',
   leagueGame: 'Game 11',
-  prettyDate: 'Saturday, June 17th, 4:30pm'
+  prettyDate: 'Saturday, June 17th, 4:30pm',
+  completed: false
 }, {
   away_team_id: 2,
   home_team_id: 5,
@@ -167,7 +202,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '18/06/2107',
   leagueGame: 'Game 12',
-  prettyDate: 'Sunday, June 18th, 4:30pm'
+  prettyDate: 'Sunday, June 18th, 4:30pm',
+  completed: false
 }, {
   away_team_id: 1,
   home_team_id: 4,
@@ -175,7 +211,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '23/06/2017',
   leagueGame: 'Game 13',
-  prettyDate: 'Friday, June 23rd, 7:40pm'
+  prettyDate: 'Friday, June 23rd, 7:40pm',
+  completed: false
 }, {
   away_team_id: 1,
   home_team_id: 4,
@@ -183,7 +220,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '24/06/2017',
   leagueGame: 'Game 14',
-  prettyDate: 'Saturday, June 24th, 6:50pm'
+  prettyDate: 'Saturday, June 24th, 6:50pm',
+  completed: false
 }, {
   away_team_id: 3,
   home_team_id: 2,
@@ -191,7 +229,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '24/06/2017',
   leagueGame: 'Game 15',
-  prettyDate: 'Saturday, June 24th, 4:45pm'
+  prettyDate: 'Saturday, June 24th, 4:45pm',
+  completed: false
 }, {
   away_team_id: 3,
   home_team_id: 2,
@@ -199,7 +238,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '25/06/2017',
   leagueGame: 'Game 16',
-  prettyDate: 'Sunday, June 25th, 4:45pm'
+  prettyDate: 'Sunday, June 25th, 4:45pm',
+  completed: false
 }, {
   away_team_id: 4,
   home_team_id: 5,
@@ -207,15 +247,17 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '01/07/2017',
   leagueGame: 'Game 17',
-  prettyDate: 'Saturday, July 1st, 4:30pm'
+  prettyDate: 'Saturday, July 1st, 4:30pm',
+  completed: false
 }, {
   away_team_id: 4,
   home_team_id: 5,
   away_score: 0,
   home_score: 0,
   date: '02/07/2017',
+  leagueGame: 'Game 18',
   prettyDate: 'Sunday, July 2nd, 4:30pm',
-  leagueGame: 'Game 18'
+  completed: false,
 }, {
   away_team_id: 1,
   home_team_id: 3,
@@ -223,7 +265,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '01/07/2017',
   leagueGame: 'Game 19',
-  prettyDate: 'Saturday, July 1st, 4:30pm'
+  prettyDate: 'Saturday, July 1st, 4:30pm',
+  completed: false,
 }, {
   away_team_id: 1,
   home_team_id: 3,
@@ -231,7 +274,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '02/07/2017',
   leagueGame: 'Game 20',
-  prettyDate: 'Sunday, July 2nd, 4:30pm'
+  prettyDate: 'Sunday, July 2nd, 4:30pm',
+  completed: false
 }, {
   away_team_id: 3,
   home_team_id: 4,
@@ -239,7 +283,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '07/07/2017',
   leagueGame: 'Game 21',
-  prettyDate: 'Friday, July 7th, 6:50pm'
+  prettyDate: 'Friday, July 7th, 6:50pm',
+  completed: false
 }, {
   away_team_id: 3,
   home_team_id: 4,
@@ -247,7 +292,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '08/07/2017',
   leagueGame: 'Game 22',
-  prettyDate: 'Saturday, July 8th, 6:50pm'
+  prettyDate: 'Saturday, July 8th, 6:50pm',
+  completed: false
 }, {
   away_team_id: 5,
   home_team_id: 2,
@@ -255,7 +301,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '08/07/2017',
   leagueGame: 'Game 23',
-  prettyDate: 'Saturday, July 8th, 4:35pm'
+  prettyDate: 'Saturday, July 8th, 4:35pm',
+  completed: false
 }, {
   away_team_id: 5,
   home_team_id: 2,
@@ -263,7 +310,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '09/07/2017',
   leagueGame: 'Game 24',
-  prettyDate: 'Sunday, July 9th 2017, 4:30pm'
+  prettyDate: 'Sunday, July 9th 2017, 4:30pm',
+  completed: false
 }, {
   away_team_id: 5,
   home_team_id: 4,
@@ -271,7 +319,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '14/07/2017',
   leagueGame: 'Game 25',
-  prettyDate: 'Friday, July 14th, 6:50pm'
+  prettyDate: 'Friday, July 14th, 6:50pm',
+  completed: false
 }, {
   away_team_id: 5,
   home_team_id: 4,
@@ -279,7 +328,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '15/07/2017',
   leagueGame: 'Game 26',
-  prettyDate: 'Saturday, July 15th, 6:50pm'
+  prettyDate: 'Saturday, July 15th, 6:50pm',
+  completed: false
 }, {
   away_team_id: 3,
   home_team_id: 1,
@@ -287,7 +337,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '16/07/2107',
   leagueGame: 'Game 27',
-  prettyDate: 'Sunday, July 16th, 4:45pm'
+  prettyDate: 'Sunday, July 16th, 4:45pm',
+  completed: false
 }, {
   away_team_id: 3,
   home_team_id: 1,
@@ -295,7 +346,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '22/07/2107',
   leagueGame: 'Game 28',
-  prettyDate: 'Saturday, July 22nd, 4:45pm'
+  prettyDate: 'Saturday, July 22nd, 4:45pm',
+  completed: false
 }, {
   away_team_id: 4,
   home_team_id: 1,
@@ -303,7 +355,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '22/07/2017',
   leagueGame: 'Game 29',
-  prettyDate: 'Saturday, July 22nd, 4:45pm'
+  prettyDate: 'Saturday, July 22nd, 4:45pm',
+  completed: false
 }, {
   away_team_id: 4,
   home_team_id: 1,
@@ -311,7 +364,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '23/07/2017',
   leagueGame: 'Game 30',
-  prettyDate: 'Sunday, July 23rd, 4:45pm'
+  prettyDate: 'Sunday, July 23rd, 4:45pm',
+  completed: false
 }, {
   away_team_id: 2,
   home_team_id: 3,
@@ -319,7 +373,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '22/07/2017',
   leagueGame: 'Game 31',
-  prettyDate: 'Saturday, July 22nd 2017, 4:45pm'
+  prettyDate: 'Saturday, July 22nd 2017, 4:45pm',
+  completed: false
 }, {
   away_team_id: 2,
   home_team_id: 3,
@@ -327,7 +382,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '23/07/2017',
   leagueGame: 'Game 32',
-  prettyDate: 'Sunday, July 23nd 2017, 4:45pm'
+  prettyDate: 'Sunday, July 23nd 2017, 4:45pm',
+  completed: false
 }, {
   away_team_id: 3,
   home_team_id: 5,
@@ -335,7 +391,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '29/07/2017',
   leagueGame: 'Game 33',
-  prettyDate: 'Saturday July 29th, 4:45pm'
+  prettyDate: 'Saturday July 29th, 4:45pm',
+  completed: false
 }, {
   away_team_id: 3,
   home_team_id: 5,
@@ -343,7 +400,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '30/07/2017',
   leagueGame: 'Game 34',
-  prettyDate: 'Sunday July 30th, 4:45pm'
+  prettyDate: 'Sunday July 30th, 4:45pm',
+  completed: false
 }, {
   away_team_id: 1,
   home_team_id: 2,
@@ -351,7 +409,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '29/07/2017',
   leagueGame: 'Game 35',
-  prettyDate: 'Saturday, July 29th, 4:45pm'
+  prettyDate: 'Saturday, July 29th, 4:45pm',
+  completed: false
 }, {
   away_team_id: 1,
   home_team_id: 2,
@@ -359,7 +418,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '30/07/2017',
   leagueGame: 'Game 36',
-  prettyDate: 'Sunday, July 30th, 4:45pm'
+  prettyDate: 'Sunday, July 30th, 4:45pm',
+  completed: false
 }, {
   away_team_id: 4,
   home_team_id: 2,
@@ -367,7 +427,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '05/08/2017',
   leagueGame: 'Game 37',
-  prettyDate: 'Saturday, August 5th, 4:45pm'
+  prettyDate: 'Saturday, August 5th, 4:45pm',
+  completed: false
 }, {
   away_team_id: 4,
   home_team_id: 2,
@@ -375,7 +436,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '06/08/2017',
   leagueGame: 'Game 38',
-  prettyDate: 'Sunday, August 6th, 4:45pm'
+  prettyDate: 'Sunday, August 6th, 4:45pm',
+  completed: false
 }, {
   away_team_id: 5,
   home_team_id: 1,
@@ -383,7 +445,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '05/08/2017',
   leagueGame: 'Game 39',
-  prettyDate: 'Saturday August 5th, 4:45pm'
+  prettyDate: 'Saturday August 5th, 4:45pm',
+  completed: false
 }, {
   away_team_id: 5,
   home_team_id: 1,
@@ -391,7 +454,8 @@ schedule = Schedule.create([{
   home_score: 0,
   date: '06/08/2017',
   leagueGame: 'Game 40',
-  prettyDate: 'Sunday August 6th, 4:45pm'
+  prettyDate: 'Sunday August 6th, 4:45pm',
+  completed: false
 }])
 
 p "Added #{Schedule.count} schedules"
@@ -406,12 +470,12 @@ players = Player.create([{
   position: 'Defence',
   posAbr: 'D',
   number: 2,
-  gp: 1,
+  gp: 2,
   goals: 0,
   assists: 1,
   points: 1,
   pim: 2,
-  plusMinus: 1,
+  plusMinus: 2,
   team_id: 1
 }, {
   name: 'Steven Adams',
@@ -436,12 +500,12 @@ players = Player.create([{
   position: 'Defence',
   posAbr: 'D',
   number: 5,
-  gp: 3,
+  gp: 4,
   goals: 0,
   assists: 1,
   points: 1,
   pim: 2,
-  plusMinus: -3,
+  plusMinus: -1,
   team_id: 1
 }, {
   name: 'Michael Attwell',
@@ -451,12 +515,12 @@ players = Player.create([{
   position: 'Forward',
   posAbr: 'F',
   number: 6,
-  gp: 2,
-  goals: 0,
+  gp: 3,
+  goals: 2,
   assists: 1,
-  points: 1,
+  points: 3,
   pim: 14,
-  plusMinus: -4,
+  plusMinus: -2,
   team_id: 1
 }, {
   name: 'Ryan Widmar',
@@ -466,11 +530,11 @@ players = Player.create([{
   position: 'Forward',
   posAbr: 'F',
   number: 7,
-  gp: 3,
+  gp: 4,
   goals: 0,
   assists: 2,
   points: 2,
-  pim: 0,
+  pim: 2,
   plusMinus: -2,
   team_id: 1
 }, {
@@ -483,10 +547,10 @@ players = Player.create([{
   number: 8,
   gp: 3,
   goals: 0,
-  assists: 0,
-  points: 0,
+  assists: 2,
+  points: 2,
   pim: 6,
-  plusMinus: -4,
+  plusMinus: -1,
   team_id: 1
 }, {
   name: 'Alexander Mitsionis',
@@ -496,12 +560,12 @@ players = Player.create([{
   position: 'Forward',
   posAbr: 'F',
   number: 9,
-  gp: 3,
-  goals: 3,
-  assists: 1,
-  points: 4,
-  pim: 6,
-  plusMinus: -1,
+  gp: 4,
+  goals: 5,
+  assists: 2,
+  points: 7,
+  pim: 8,
+  plusMinus: 3,
   team_id: 1
 }, {
   name: 'Alexander Polosov',
@@ -511,12 +575,12 @@ players = Player.create([{
   position: 'Forward',
   posAbr: 'F',
   number: 10,
-  gp: 2,
+  gp: 3,
   goals: 0,
-  assists: 2,
-  points: 2,
-  pim: 0,
-  plusMinus: -4,
+  assists: 4,
+  points: 4,
+  pim: 2,
+  plusMinus: -1,
   team_id: 1
 }, {
   name: 'Ritchie Hopkinson',
@@ -526,7 +590,7 @@ players = Player.create([{
   position: 'Forward',
   posAbr: 'F',
   number: 11,
-  gp: 3,
+  gp: 4,
   goals: 0,
   assists: 0,
   points: 0,
@@ -541,10 +605,10 @@ players = Player.create([{
   position: 'Forward',
   posAbr: 'F',
   number: 12,
-  gp: 3,
-  goals: 3,
+  gp: 4,
+  goals: 4,
   assists: 0,
-  points: 3,
+  points: 4,
   pim: 6,
   plusMinus: -3,
   team_id: 1
@@ -556,12 +620,12 @@ players = Player.create([{
   position: 'Defence',
   posAbr: 'D',
   number: 13,
-  gp: 3,
+  gp: 4,
   goals: 0,
-  assists: 1,
-  points: 1,
+  assists: 2,
+  points: 2,
   pim: 4,
-  plusMinus: -2,
+  plusMinus: 1,
   team_id: 1
 }, {
   name: 'Stephen Mawson',
@@ -586,12 +650,12 @@ players = Player.create([{
   position: 'Defence',
   posAbr: 'D',
   number: 15,
-  gp: 3,
+  gp: 4,
   goals: 0,
   assists: 0,
   points: 0,
   pim: 2,
-  plusMinus: -5,
+  plusMinus: -3,
   team_id: 1
 }, {
   name: 'Thomas Clow',
@@ -616,12 +680,12 @@ players = Player.create([{
   position: 'Forward',
   posAbr: 'F',
   number: 18,
-  gp: 3,
-  goals: 0,
+  gp: 4,
+  goals: 1,
   assists: 0,
-  points: 0,
+  points: 1,
   pim: 0,
-  plusMinus: -3,
+  plusMinus: -2,
   team_id: 1
 }, {
   name: 'K.C Ball',
@@ -631,12 +695,12 @@ players = Player.create([{
   position: 'Forward',
   posAbr: 'F',
   number: 19,
-  gp: 3,
-  goals: 1,
+  gp: 4,
+  goals: 2,
   assists: 1,
-  points: 2,
+  points: 3,
   pim: 2,
-  plusMinus: -3,
+  plusMinus: 0,
   team_id: 1
 }, {
   name: 'Oliver Hay',
@@ -646,12 +710,12 @@ players = Player.create([{
   position: 'Forward',
   posAbr: 'F',
   number: 20,
-  gp: 3,
+  gp: 4,
   goals: 0,
   assists: 1,
   points: 1,
-  pim: 8,
-  plusMinus: -3,
+  pim: 10,
+  plusMinus: 0,
   team_id: 1
 }, {
   name: 'Joshua Hay',
@@ -661,12 +725,12 @@ players = Player.create([{
   position: 'Forward',
   posAbr: 'F',
   number: 21,
-  gp: 2,
+  gp: 3,
   goals: 0,
   assists: 1,
   points: 1,
-  pim: 8,
-  plusMinus: -3,
+  pim: 10,
+  plusMinus: -2,
   team_id: 1
 }, {
   name: 'Jordan Challis',
@@ -676,11 +740,11 @@ players = Player.create([{
   position: 'Forward',
   posAbr: 'F',
   number: 22,
-  gp: 3,
+  gp: 4,
   goals: 0,
-  assists: 1,
-  points: 1,
-  pim: 6,
+  assists: 2,
+  points: 2,
+  pim: 8,
   plusMinus: -4,
   team_id: 1
 }, {
@@ -706,7 +770,7 @@ players = Player.create([{
   position: 'Defence',
   posAbr: 'D',
   number: 24,
-  gp: 1,
+  gp: 2,
   goals: 0,
   assists: 0,
   points: 0,
@@ -721,12 +785,12 @@ players = Player.create([{
   position: 'Forward',
   posAbr: 'F',
   number: 26,
-  gp: 3,
+  gp: 4,
   goals: 0,
   assists: 0,
   points: 0,
   pim: 2,
-  plusMinus: -2,
+  plusMinus: -1,
   team_id: 1
 }, {
   name: 'Ondrej Kozak',
@@ -736,12 +800,12 @@ players = Player.create([{
   position: 'Forward',
   posAbr: 'F',
   number: 28,
-  gp: 1,
+  gp: 2,
   goals: 1,
-  assists: 0,
-  points: 1,
+  assists: 1,
+  points: 2,
   pim: 0,
-  plusMinus: 1,
+  plusMinus: 2,
   team_id: 1
 }, {
   name: 'Blake Fraser',
@@ -751,7 +815,7 @@ players = Player.create([{
   position: 'Defence',
   posAbr: 'D',
   number: 29,
-  gp: 2,
+  gp: 3,
   goals: 0,
   assists: 0,
   points: 0,
@@ -782,12 +846,12 @@ players = Player.create([{
   position: 'Goalie',
   posAbr: 'GK',
   number: 30,
-  gp: 2,
+  gp: 3,
   goals_against: 12,
-  gaa: 6.00,
-  sog: 68,
-  saves: 56,
-  svs: 824,
+  gaa: 4.00,
+  sog: 87,
+  saves: 75,
+  svs: 862,
   team_id: 1
 }, {
   # Start Canterbury Red Devils
@@ -798,12 +862,12 @@ players = Player.create([{
   position: 'Forward',
   posAbr: 'F',
   number: 3,
-  gp: 2,
+  gp: 3,
   goals: 1,
   assists: 1,
   points: 2,
   pim: 0,
-  plusMinus: -2,
+  plusMinus: -5,
   team_id: 2
 }, {
   name: 'Henry Morley-Hall',
@@ -828,12 +892,12 @@ players = Player.create([{
   position: 'Defence',
   posAbr: 'D',
   number: 8,
-  gp: 3,
+  gp: 4,
   goals: 1,
   assists: 0,
   points: 1,
   pim: 14,
-  plusMinus: -2,
+  plusMinus: -5,
   team_id: 2
 }, {
   name: 'Austin Delonge',
@@ -843,12 +907,12 @@ players = Player.create([{
   position: 'Forward',
   posAbr: 'F',
   number: 9,
-  gp: 2,
+  gp: 3,
   goals: 0,
   assists: 0,
   points: 0,
-  pim: 2,
-  plusMinus: -3,
+  pim: 4,
+  plusMinus: -5,
   team_id: 2
 }, {
   name: 'Jaxson Lane',
@@ -858,12 +922,12 @@ players = Player.create([{
   position: 'Forward',
   posAbr: 'F',
   number: 10,
-  gp: 3,
+  gp: 4,
   goals: 0,
   assists: 1,
   points: 1,
   pim: 4,
-  plusMinus: -6,
+  plusMinus: -8,
   team_id: 2
 }, {
   name: 'Tayler Kennedy',
@@ -873,12 +937,12 @@ players = Player.create([{
   position: 'Defence',
   posAbr: 'D',
   number: 11,
-  gp: 3,
+  gp: 4,
   goals: 0,
   assists: 1,
   points: 1,
   pim: 4,
-  plusMinus: -6,
+  plusMinus: -9,
   team_id: 2
 }, {
  name: 'Liam Dallimore',
@@ -888,7 +952,7 @@ players = Player.create([{
  position: 'Forward',
  posAbr: 'F',
  number: 14,
- gp: 1,
+ gp: 2,
  goals: 1,
  assists: 1,
  points: 2,
@@ -903,12 +967,12 @@ players = Player.create([{
   position: 'Forward',
   posAbr: 'F',
   number: 16,
-  gp: 3,
+  gp: 4,
   goals: 1,
   assists: 2,
   points: 3,
   pim: 0,
-  plusMinus: -7,
+  plusMinus: -10,
   team_id: 2
 }, {
   name: 'Luke Hill',
@@ -918,12 +982,12 @@ players = Player.create([{
   position: 'Forward',
   posAbr: 'F',
   number: 18,
-  gp: 3,
+  gp: 4,
   goals: 0,
   assists: 0,
   points: 0,
   pim: 4,
-  plusMinus: -7,
+  plusMinus: -9,
   team_id: 2
 }, {
   name: 'Shaun Brown',
@@ -933,7 +997,7 @@ players = Player.create([{
   position: 'Forward',
   posAbr: 'F',
   number: 19,
-  gp: 3,
+  gp: 4,
   goals: 0,
   assists: 1,
   points: 1,
@@ -948,12 +1012,12 @@ players = Player.create([{
   position: 'Forward',
   posAbr: 'F',
   number: 20,
-  gp: 1,
+  gp: 2,
   goals: 0,
   assists: 0,
   points: 0,
   pim: 0,
-  plusMinus: -1,
+  plusMinus: -2,
   team_id: 2
 }, {
   name: 'Bradley Apps',
@@ -963,12 +1027,12 @@ players = Player.create([{
   position: 'Forward',
   posAbr: 'F',
   number: 21,
-  gp: 3,
+  gp: 4,
   goals: 0,
   assists: 3,
   points: 3,
-  pim: 25,
-  plusMinus: -3,
+  pim: 27,
+  plusMinus: -6,
   team_id: 2
 }, {
   name: 'Moses Bygate-Smith',
@@ -978,7 +1042,7 @@ players = Player.create([{
   position: 'Defence',
   posAbr: 'D',
   number: 12,
-  gp: 1,
+  gp: 2,
   goals: 0,
   assists: 0,
   points: 0,
@@ -993,12 +1057,12 @@ players = Player.create([{
   position: 'Forward',
   posAbr: 'F',
   number: 43,
-  gp: 3,
+  gp: 4,
   goals: 2,
   assists: 1,
   points: 3,
-  pim: 2,
-  plusMinus: -9,
+  pim: 27,
+  plusMinus: -12,
   team_id: 2
 }, {
   name: 'Alex Ashwell',
@@ -1023,12 +1087,12 @@ players = Player.create([{
   position: 'Forward',
   posAbr: 'F',
   number: 61,
-  gp: 3,
+  gp: 4,
   goals: 0,
   assists: 1,
   points: 1,
   pim: 0,
-  plusMinus: -3,
+  plusMinus: -5,
   team_id: 2
 }, {
   name: 'Kyle Nash',
@@ -1038,12 +1102,12 @@ players = Player.create([{
   position: 'Defence',
   posAbr: 'D',
   number: 79,
-  gp: 3,
+  gp: 4,
   goals: 1,
   assists: 1,
   points: 2,
   pim: 4,
-  plusMinus: -3,
+  plusMinus: -2,
   team_id: 2
 }, {
   name: 'Matej Kos',
@@ -1068,12 +1132,12 @@ players = Player.create([{
   position: 'Forward',
   posAbr: 'F',
   number: 88,
-  gp: 3,
+  gp: 4,
   goals: 1,
   assists: 1,
   points: 2,
   pim: 0,
-  plusMinus: 0,
+  plusMinus: -1,
   team_id: 2
 }, {
   # Start Canterbury Red Devils Goaltenders
@@ -1084,12 +1148,12 @@ players = Player.create([{
   position: 'Goalie',
   posAbr: 'GK',
   number: 1,
-  gp: 3,
-  goals_against: 15,
-  gaa: 5.00,
-  sog: 151,
-  saves: 166,
-  svs: 910,
+  gp: 4,
+  goals_against: 19,
+  gaa: 4.75,
+  sog: 195,
+  saves: 176,
+  svs: 903,
   team_id: 2
 }, {
   name: 'Richard Bigsby',
@@ -1099,12 +1163,12 @@ players = Player.create([{
   position: 'Goalie',
   posAbr: 'GK',
   number: 22,
-  gp: 2,
-  goals_against: 3,
-  gaa: 1.50,
-  sog: 25,
-  saves: 22,
-  svs: 880,
+  gp: 3,
+  goals_against: 6,
+  gaa: 2.00,
+  sog: 45,
+  saves: 39,
+  svs: 867,
   team_id: 2
 }, {
   # Start Dunedin Thunder
