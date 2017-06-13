@@ -3,7 +3,7 @@
 */
 @import 'bootstrap';
 
-html {
+html, body {
   position: relative;
   min-height: 100%;
 }
@@ -33,6 +33,17 @@ body {
   padding-right: 50px;
 }
 
+// Show score on Schedule Item
+.item-score {
+  font-size: 350%;
+}
+
+// Show Score on Completed Games
+.score {
+  font-size: 500%;
+}
+
+// Footer
 .footer {
   position: relative;
   padding-top: 20px;

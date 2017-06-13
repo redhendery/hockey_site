@@ -67,31 +67,36 @@ teams = Team.create([{
   team_name: 'Botany Swarm',
   venue: 'Paradice Botany',
   sm_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarm.png?alt=media&token=78ca16e2-6101-4a14-8b8f-54bc9862bd69',
-  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarmLarge.png?alt=media&token=6f494894-6dcc-4f52-bf9d-facd61ca8ebe'
+  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarmLarge.png?alt=media&token=6f494894-6dcc-4f52-bf9d-facd61ca8ebe',
+  standing_id: 1
 }, {
   abr: 'CRD',
   team_name: 'Canterbury Red Devils',
   venue: 'Christchurch Alpine Ice',
   sm_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/devils.png?alt=media&token=b2f7e89b-0882-4c4f-b09d-33cbb2ddd5b5',
-  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/redDevilsLarge.png?alt=media&token=a14bd2d4-a9a0-432b-913c-ef024a9e6a79'
+  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/redDevilsLarge.png?alt=media&token=a14bd2d4-a9a0-432b-913c-ef024a9e6a79',
+  standing_id: 2
 }, {
   abr: 'DNT',
   team_name: 'Dunedin Thunder',
   venue: 'Dunedin Ice Stadium',
   sm_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunder.png?alt=media&token=74c89295-bd10-4b54-b782-8e58b34036be',
-  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunderLarge.png?alt=media&token=0828e20c-2b80-4ffd-adda-3714a328adc6'
+  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunderLarge.png?alt=media&token=0828e20c-2b80-4ffd-adda-3714a328adc6',
+  standing_id: 3
 }, {
   abr: 'STP',
   team_name: 'Skycity Stampede',
   venue: 'Queenstown Ice Arena',
   sm_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampede.png?alt=media&token=a099d85f-5eca-4ed9-a823-a7eff26e425c',
-  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampedeLarge.png?alt=media&token=2c159e64-1f53-4cda-a79d-2f2cec88ab3a'
+  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampedeLarge.png?alt=media&token=2c159e64-1f53-4cda-a79d-2f2cec88ab3a',
+  standing_id: 4
 }, {
   abr: 'WAA',
   team_name: 'West Auckland Admirals',
   venue: 'Paradice Avondale',
   sm_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admirals.png?alt=media&token=c2d26473-e8f7-45b7-8ddd-b304f7e37bee',
-  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admiralsLarge.png?alt=media&token=d161ea78-7f6b-4b23-a6e8-444aadfd242a'
+  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admiralsLarge.png?alt=media&token=d161ea78-7f6b-4b23-a6e8-444aadfd242a',
+  standing_id: 5
 }])
 
 p "Added #{Team.count} teams"
@@ -106,22 +111,22 @@ schedules = Schedule.create([{
   prettyDate: 'Friday, May 26th, 6:50pm',
   completed: true
 }, {
-  away_team_id: 2,
-  home_team_id: 4,
-  away_score: 4,
-  home_score: 7,
-  date: '27/05/2017',
-  leagueGame: 'Game 2',
-  prettyDate: 'Saturday, May 27th, 6:50pm',
-  completed: true
-}, {
   away_team_id: 1,
   home_team_id: 5,
   away_score: 3,
   home_score: 7,
   date: '27/05/2017',
-  leagueGame: 'Game 3',
+  leagueGame: 'Game 2',
   prettyDate: 'Saturday, May 27th, 4:30pm',
+  completed: true
+}, {
+  away_team_id: 2,
+  home_team_id: 4,
+  away_score: 4,
+  home_score: 7,
+  date: '27/05/2017',
+  leagueGame: 'Game 3',
+  prettyDate: 'Saturday, May 27th, 6:50pm',
   completed: true
 }, {
   away_team_id: 1,
@@ -142,22 +147,22 @@ schedules = Schedule.create([{
   prettyDate: 'Saturday, June 10th, 4:30pm',
   completed: true
 }, {
-  away_team_id: 5,
-  home_team_id: 3,
-  away_score: 7,
-  home_score: 3,
-  date: '11/06/2017',
-  leagueGame: 'Game 6',
-  prettyDate: 'Saturday, June 11th, 4:30pm',
-  completed: true
-}, {
   away_team_id: 2,
   home_team_id: 1,
   away_score: 6,
   home_score: 5,
   date: '10/06/2017',
-  leagueGame: 'Game 7',
+  leagueGame: 'Game 6',
   prettyDate: 'Saturday, June 10th, 4:45pm',
+  completed: true
+}, {
+  away_team_id: 5,
+  home_team_id: 3,
+  away_score: 7,
+  home_score: 3,
+  date: '11/06/2017',
+  leagueGame: 'Game 7',
+  prettyDate: 'Saturday, June 11th, 4:30pm',
   completed: true
 }, {
   away_team_id: 2,
@@ -169,13 +174,31 @@ schedules = Schedule.create([{
   prettyDate: 'Sunday, June 11th, 4:45pm',
   completed: true
 }, {
-  away_team_id: 4,
-  home_team_id: 3,
+  away_team_id: 2,
+  home_team_id: 5,
   away_score: 0,
   home_score: 0,
   date: '17/06/2107',
   leagueGame: 'Game 9',
+  prettyDate: 'Saturday, June 17th, 4:30pm',
+  completed: false
+}, {
+  away_team_id: 4,
+  home_team_id: 3,
+  away_score: 0,
+  home_score: 0,
+  date: '17/06/2107',
+  leagueGame: 'Game 10',
   prettyDate: 'Saturday, June 17th, 4:40pm',
+  completed: false
+}, {
+  away_team_id: 2,
+  home_team_id: 5,
+  away_score: 0,
+  home_score: 0,
+  date: '18/06/2107',
+  leagueGame: 'Game 11',
+  prettyDate: 'Sunday, June 18th, 4:30pm',
   completed: false
 }, {
   away_team_id: 4,
@@ -183,26 +206,8 @@ schedules = Schedule.create([{
   away_score: 0,
   home_score: 0,
   date: '18/06/2107',
-  leagueGame: 'Game 10',
-  prettyDate: 'Sunday, June 18th, 4:40pm',
-  completed: false
-}, {
-  away_team_id: 2,
-  home_team_id: 5,
-  away_score: 0,
-  home_score: 0,
-  date: '17/06/2107',
-  leagueGame: 'Game 11',
-  prettyDate: 'Saturday, June 17th, 4:30pm',
-  completed: false
-}, {
-  away_team_id: 2,
-  home_team_id: 5,
-  away_score: 0,
-  home_score: 0,
-  date: '18/06/2107',
   leagueGame: 'Game 12',
-  prettyDate: 'Sunday, June 18th, 4:30pm',
+  prettyDate: 'Sunday, June 18th, 4:40pm',
   completed: false
 }, {
   away_team_id: 1,
@@ -214,22 +219,22 @@ schedules = Schedule.create([{
   prettyDate: 'Friday, June 23rd, 7:40pm',
   completed: false
 }, {
-  away_team_id: 1,
-  home_team_id: 4,
-  away_score: 0,
-  home_score: 0,
-  date: '24/06/2017',
-  leagueGame: 'Game 14',
-  prettyDate: 'Saturday, June 24th, 6:50pm',
-  completed: false
-}, {
   away_team_id: 3,
   home_team_id: 2,
   away_score: 0,
   home_score: 0,
   date: '24/06/2017',
-  leagueGame: 'Game 15',
+  leagueGame: 'Game 14',
   prettyDate: 'Saturday, June 24th, 4:45pm',
+  completed: false
+}, {
+  away_team_id: 1,
+  home_team_id: 4,
+  away_score: 0,
+  home_score: 0,
+  date: '24/06/2017',
+  leagueGame: 'Game 15',
+  prettyDate: 'Saturday, June 24th, 6:50pm',
   completed: false
 }, {
   away_team_id: 3,
@@ -250,22 +255,22 @@ schedules = Schedule.create([{
   prettyDate: 'Saturday, July 1st, 4:30pm',
   completed: false
 }, {
-  away_team_id: 4,
-  home_team_id: 5,
-  away_score: 0,
-  home_score: 0,
-  date: '02/07/2017',
-  leagueGame: 'Game 18',
-  prettyDate: 'Sunday, July 2nd, 4:30pm',
-  completed: false,
-}, {
   away_team_id: 1,
   home_team_id: 3,
   away_score: 0,
   home_score: 0,
   date: '01/07/2017',
-  leagueGame: 'Game 19',
+  leagueGame: 'Game 18',
   prettyDate: 'Saturday, July 1st, 4:30pm',
+  completed: false,
+}, {
+  away_team_id: 4,
+  home_team_id: 5,
+  away_score: 0,
+  home_score: 0,
+  date: '02/07/2017',
+  leagueGame: 'Game 19',
+  prettyDate: 'Sunday, July 2nd, 4:30pm',
   completed: false,
 }, {
   away_team_id: 1,
@@ -286,22 +291,22 @@ schedules = Schedule.create([{
   prettyDate: 'Friday, July 7th, 6:50pm',
   completed: false
 }, {
-  away_team_id: 3,
-  home_team_id: 4,
-  away_score: 0,
-  home_score: 0,
-  date: '08/07/2017',
-  leagueGame: 'Game 22',
-  prettyDate: 'Saturday, July 8th, 6:50pm',
-  completed: false
-}, {
   away_team_id: 5,
   home_team_id: 2,
   away_score: 0,
   home_score: 0,
   date: '08/07/2017',
-  leagueGame: 'Game 23',
+  leagueGame: 'Game 22',
   prettyDate: 'Saturday, July 8th, 4:35pm',
+  completed: false
+}, {
+  away_team_id: 3,
+  home_team_id: 4,
+  away_score: 0,
+  home_score: 0,
+  date: '08/07/2017',
+  leagueGame: 'Game 23',
+  prettyDate: 'Saturday, July 8th, 6:50pm',
   completed: false
 }, {
   away_team_id: 5,
@@ -322,12 +327,21 @@ schedules = Schedule.create([{
   prettyDate: 'Friday, July 14th, 6:50pm',
   completed: false
 }, {
+  away_team_id: 3,
+  home_team_id: 1,
+  away_score: 0,
+  home_score: 0,
+  date: '15/07/2107',
+  leagueGame: 'Game 26',
+  prettyDate: 'Saturday, July 15th, 4:45pm',
+  completed: false
+}, {
   away_team_id: 5,
   home_team_id: 4,
   away_score: 0,
   home_score: 0,
   date: '15/07/2017',
-  leagueGame: 'Game 26',
+  leagueGame: 'Game 27',
   prettyDate: 'Saturday, July 15th, 6:50pm',
   completed: false
 }, {
@@ -336,17 +350,8 @@ schedules = Schedule.create([{
   away_score: 0,
   home_score: 0,
   date: '16/07/2107',
-  leagueGame: 'Game 27',
-  prettyDate: 'Sunday, July 16th, 4:45pm',
-  completed: false
-}, {
-  away_team_id: 3,
-  home_team_id: 1,
-  away_score: 0,
-  home_score: 0,
-  date: '22/07/2107',
   leagueGame: 'Game 28',
-  prettyDate: 'Saturday, July 22nd, 4:45pm',
+  prettyDate: 'Sunday, July 16th, 4:45pm',
   completed: false
 }, {
   away_team_id: 4,
@@ -358,22 +363,22 @@ schedules = Schedule.create([{
   prettyDate: 'Saturday, July 22nd, 4:45pm',
   completed: false
 }, {
-  away_team_id: 4,
-  home_team_id: 1,
-  away_score: 0,
-  home_score: 0,
-  date: '23/07/2017',
-  leagueGame: 'Game 30',
-  prettyDate: 'Sunday, July 23rd, 4:45pm',
-  completed: false
-}, {
   away_team_id: 2,
   home_team_id: 3,
   away_score: 0,
   home_score: 0,
   date: '22/07/2017',
-  leagueGame: 'Game 31',
+  leagueGame: 'Game 30',
   prettyDate: 'Saturday, July 22nd 2017, 4:45pm',
+  completed: false
+}, {
+  away_team_id: 4,
+  home_team_id: 1,
+  away_score: 0,
+  home_score: 0,
+  date: '23/07/2017',
+  leagueGame: 'Game 31',
+  prettyDate: 'Sunday, July 23rd, 4:45pm',
   completed: false
 }, {
   away_team_id: 2,
@@ -394,22 +399,22 @@ schedules = Schedule.create([{
   prettyDate: 'Saturday July 29th, 4:45pm',
   completed: false
 }, {
-  away_team_id: 3,
-  home_team_id: 5,
-  away_score: 0,
-  home_score: 0,
-  date: '30/07/2017',
-  leagueGame: 'Game 34',
-  prettyDate: 'Sunday July 30th, 4:45pm',
-  completed: false
-}, {
   away_team_id: 1,
   home_team_id: 2,
   away_score: 0,
   home_score: 0,
   date: '29/07/2017',
-  leagueGame: 'Game 35',
+  leagueGame: 'Game 34',
   prettyDate: 'Saturday, July 29th, 4:45pm',
+  completed: false
+}, {
+  away_team_id: 3,
+  home_team_id: 5,
+  away_score: 0,
+  home_score: 0,
+  date: '30/07/2017',
+  leagueGame: 'Game 35',
+  prettyDate: 'Sunday July 30th, 4:45pm',
   completed: false
 }, {
   away_team_id: 1,
@@ -430,22 +435,22 @@ schedules = Schedule.create([{
   prettyDate: 'Saturday, August 5th, 4:45pm',
   completed: false
 }, {
-  away_team_id: 4,
-  home_team_id: 2,
-  away_score: 0,
-  home_score: 0,
-  date: '06/08/2017',
-  leagueGame: 'Game 38',
-  prettyDate: 'Sunday, August 6th, 4:45pm',
-  completed: false
-}, {
   away_team_id: 5,
   home_team_id: 1,
   away_score: 0,
   home_score: 0,
   date: '05/08/2017',
-  leagueGame: 'Game 39',
+  leagueGame: 'Game 38',
   prettyDate: 'Saturday August 5th, 4:45pm',
+  completed: false
+}, {
+  away_team_id: 4,
+  home_team_id: 2,
+  away_score: 0,
+  home_score: 0,
+  date: '06/08/2017',
+  leagueGame: 'Game 39',
+  prettyDate: 'Sunday, August 6th, 4:45pm',
   completed: false
 }, {
   away_team_id: 5,

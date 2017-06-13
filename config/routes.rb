@@ -15,7 +15,7 @@ Rails.application.routes.draw do
 
   resources :schedules, only: %i[index show] do
     collection do
-      get 'all', 'swarm', 'reddevils', 'thunder', 'stampede', 'admirals', 'games', 'scores'
+      get 'swarm', 'reddevils', 'thunder', 'stampede', 'admirals', 'scores', 'next'
     end
   end
 
@@ -27,5 +27,5 @@ Rails.application.routes.draw do
 
   resources :standings, only: [:index]
 
-  root 'schedules#index'
+  root 'schedules#next'
 end

@@ -2,7 +2,6 @@ class SchedulesController < ApplicationController
   before_action :schedules, :teams
 
   def index
-    @next_round = @schedules.where(completed: false).limit(4)
   end
 
   def show
@@ -11,7 +10,8 @@ class SchedulesController < ApplicationController
     @home = @schedule.home_team
   end
 
-  def all
+  def next
+    @next_round = @schedules.where(completed: false).limit(4)
   end
 
   def scores
