@@ -7,7 +7,7 @@ teams = Team.create([{
   games: 4,
   wins: 1,
   losses: 2,
-  overtime: 1,
+  overtime: 0,
   points: 4,
   goals_for: 15,
   goals_against: 26,
@@ -22,7 +22,7 @@ teams = Team.create([{
   wins: 0,
   losses: 3,
   overtime: 1,
-  points: 1,
+  points: 2,
   goals_for: 11,
   goals_against: 24,
   goal_difference: -13
