@@ -1,3 +1,17 @@
 <h5 class="text-muted"><%= @schedule.leagueGame %></h5>
 <h3><%= @home.team_name %> v <%= @away.team_name %></h3>
 <h5><%= @home.venue %> <%= @schedule.prettyDate %></h5>
+<% if @schedule.completed %>
+  </br>
+  <div class="row">
+    <div class="col-5">
+      <h1 class="float-right score"><%= @schedule.home_score %></h1>
+    </div>
+    <div class="col-2">
+      <h1 class=" score">-</h1>
+    </div>
+    <div class="col-5">
+      <h1 class="float-left score"><%= @schedule.away_score %></h1>
+    </div>
+  </div>
+<% end %>

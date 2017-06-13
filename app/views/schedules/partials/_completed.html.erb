@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-3 text-center">
+      <div class="row">
+        <img class="img-fluid mx-auto d-block" src="<%= @home.lg_logo %>" alt="<%= @home.team_name %>">
+      </div>
+    </div>
+    <div class="col-6 text-center">
+      <%= render 'schedules/partials/game_info' %>
+    </div>
+    <div class="col-3 text-center">
+      <div class="row">
+        <img class="img-fluid mx-auto d-block" src="<%= @away.lg_logo %>" alt="<%= @away.team_name %>">
+      </div>
+    </div>
+  </div>
+</div>

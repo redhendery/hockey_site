@@ -1,5 +1,5 @@
 <div class="row">
-  <% @next_round.each do |schedule| %>
+  <% @schedules.each do |schedule| %>
     <div class="col-md-6 col-lg-6 col-xl-6">
       <div class="card-deck">
         <div class="card text-center">
@@ -13,7 +13,13 @@
           <div class="card-block">
             <div class="row">
               <div class="col-4"><img src="<%= schedule.home_team.sm_logo %>" alt="<%= schedule.home_team.sm_logo %>" class="img-fluid float-left"></div>
-              <div class="col-4"><%= link_to 'Game Details', schedule_path(schedule), class: "btn btn-primary" %></div>
+              <div class="col-4 align-self-center">
+                <% if schedule.completed %>
+                  <h1 class="align-middle item-score"><%= schedule.home_score %> - <%= schedule.away_score %></h1>
+                <% else %>
+                  <%= link_to 'Game Details', schedule_path(schedule), class: "btn btn-primary" %>
+                <% end %>
+              </div>
               <div class="col-4"><img src="<%= schedule.away_team.sm_logo %>" alt="<%= schedule.away_team.sm_logo %>" class="img-fluid float-right"></div>
             </div>
           </div>
