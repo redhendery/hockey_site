@@ -2,6 +2,7 @@ class PlayersController < ApplicationController
   before_action :teams
 
   def index
+    console
     @gk = Player.where(posAbr: 'GK')
     @skaters = Player.where(posAbr: %w[D F]).order(:posAbr)
     @skaters = @skaters.where(team_id: params[:team_id]) if params[:team_id].present?

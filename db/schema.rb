@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170607180122) do
+ActiveRecord::Schema.define(version: 20170612213501) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -69,7 +69,6 @@ ActiveRecord::Schema.define(version: 20170607180122) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "team_id"
-    t.integer "schedule_id"
   end
 
   create_table "schedules", force: :cascade do |t|
@@ -85,12 +84,9 @@ ActiveRecord::Schema.define(version: 20170607180122) do
     t.boolean "completed", default: false
   end
 
-  create_table "teams", force: :cascade do |t|
+  create_table "standings", force: :cascade do |t|
     t.string "team_name"
-    t.string "abr"
-    t.string "sm_logo"
-    t.string "lg_logo"
-    t.string "venue"
+    t.string "logo"
     t.integer "games"
     t.integer "wins"
     t.integer "losses"
@@ -100,6 +96,17 @@ ActiveRecord::Schema.define(version: 20170607180122) do
     t.integer "goals_for"
     t.integer "goals_against"
     t.integer "goal_difference"
+    t.integer "team_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "teams", force: :cascade do |t|
+    t.string "team_name"
+    t.string "abr"
+    t.string "sm_logo"
+    t.string "lg_logo"
+    t.string "venue"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

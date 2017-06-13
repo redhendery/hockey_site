@@ -26,5 +26,6 @@ Rails.application.routes.draw do
   end
 
   resources :standings, only: [:index]
+
   root 'schedules#index'
 end
