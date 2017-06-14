@@ -81,8 +81,6 @@ ActiveRecord::Schema.define(version: 20170612213501) do
   end
 
   create_table "standings", force: :cascade do |t|
-    t.string "team_name"
-    t.string "logo"
     t.integer "games"
     t.integer "wins"
     t.integer "losses"
