@@ -1,3 +1,3 @@
 class Standing < ApplicationRecord
-  has_many :teams
+  belongs_to :team
 end

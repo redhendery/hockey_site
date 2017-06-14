@@ -66,8 +66,6 @@ ActiveRecord::Schema.define(version: 20170612213501) do
     t.integer "saves"
     t.integer "goals_against"
     t.decimal "gaa"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.integer "team_id"
   end
 
@@ -79,8 +77,6 @@ ActiveRecord::Schema.define(version: 20170612213501) do
     t.integer "home_score"
     t.integer "away_team_id"
     t.integer "home_team_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.boolean "completed", default: false
   end
 
@@ -97,8 +93,6 @@ ActiveRecord::Schema.define(version: 20170612213501) do
     t.integer "goals_against"
     t.integer "goal_difference"
     t.integer "team_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "teams", force: :cascade do |t|
@@ -107,9 +101,6 @@ ActiveRecord::Schema.define(version: 20170612213501) do
     t.string "sm_logo"
     t.string "lg_logo"
     t.string "venue"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "standing_id"
   end
 
 end

@@ -1,6 +1,38 @@
-standings = Standing.create([{
+teams = Team.create([{
+  abr: 'BSW',
   team_name: 'Botany Swarm',
-  logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarm.png?alt=media&token=78ca16e2-6101-4a14-8b8f-54bc9862bd69',
+  venue: 'Paradice Botany',
+  sm_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarm.png?alt=media&token=78ca16e2-6101-4a14-8b8f-54bc9862bd69',
+  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarmLarge.png?alt=media&token=6f494894-6dcc-4f52-bf9d-facd61ca8ebe'
+}, {
+  abr: 'CRD',
+  team_name: 'Canterbury Red Devils',
+  venue: 'Christchurch Alpine Ice',
+  sm_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/devils.png?alt=media&token=b2f7e89b-0882-4c4f-b09d-33cbb2ddd5b5',
+  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/redDevilsLarge.png?alt=media&token=a14bd2d4-a9a0-432b-913c-ef024a9e6a79'
+}, {
+  abr: 'DNT',
+  team_name: 'Dunedin Thunder',
+  venue: 'Dunedin Ice Stadium',
+  sm_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunder.png?alt=media&token=74c89295-bd10-4b54-b782-8e58b34036be',
+  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunderLarge.png?alt=media&token=0828e20c-2b80-4ffd-adda-3714a328adc6'
+}, {
+  abr: 'STP',
+  team_name: 'Skycity Stampede',
+  venue: 'Queenstown Ice Arena',
+  sm_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampede.png?alt=media&token=a099d85f-5eca-4ed9-a823-a7eff26e425c',
+  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampedeLarge.png?alt=media&token=2c159e64-1f53-4cda-a79d-2f2cec88ab3a'
+}, {
+  abr: 'WAA',
+  team_name: 'West Auckland Admirals',
+  venue: 'Paradice Avondale',
+  sm_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admirals.png?alt=media&token=c2d26473-e8f7-45b7-8ddd-b304f7e37bee',
+  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admiralsLarge.png?alt=media&token=d161ea78-7f6b-4b23-a6e8-444aadfd242a'
+}])
+
+p "Added #{Team.count} teams"
+
+standings = Standing.create([{
   games: 4,
   wins: 1,
   losses: 2,
@@ -9,10 +41,9 @@ standings = Standing.create([{
   points: 4,
   goals_for: 15,
   goals_against: 26,
-  goal_difference: -11
+  goal_difference: -11,
+  team_id: 1
 }, {
-  team_name: 'Canterbury Red Devils',
-  logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/devils.png?alt=media&token=b2f7e89b-0882-4c4f-b09d-33cbb2ddd5b5',
   games: 4,
   wins: 0,
   losses: 3,
@@ -21,10 +52,9 @@ standings = Standing.create([{
   points: 2,
   goals_for: 11,
   goals_against: 24,
-  goal_difference: -13
+  goal_difference: -13,
+  team_id: 2
 }, {
-  team_name: 'Dunedin Thunder',
-  logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunder.png?alt=media&token=74c89295-bd10-4b54-b782-8e58b34036be',
   games: 2,
   wins: 0,
   losses: 0,
@@ -33,10 +63,9 @@ standings = Standing.create([{
   points: 0,
   goals_for: 6,
   goals_against: 14,
-  goal_difference: -8
+  goal_difference: -8,
+  team_id: 3
 }, {
-  team_name: 'Skycity Stampede',
-  logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampede.png?alt=media&token=a099d85f-5eca-4ed9-a823-a7eff26e425c',
   games: 2,
   wins: 2,
   losses: 0,
@@ -45,10 +74,9 @@ standings = Standing.create([{
   points: 6,
   goals_for: 13,
   goals_against: 5,
-  goal_difference: 7
+  goal_difference: 7,
+  team_id: 4
 }, {
-  team_name: 'West Auckland Admirals',
-  logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admirals.png?alt=media&token=c2d26473-e8f7-45b7-8ddd-b304f7e37bee',
   games: 4,
   wins: 4,
   losses: 0,
@@ -57,49 +85,11 @@ standings = Standing.create([{
   points: 12,
   goals_for: 35,
   goals_against: 9,
-  goal_difference: 26
+  goal_difference: 26,
+  team_id: 5
 }])
 
 p "Added #{Standing.count} standings"
-
-teams = Team.create([{
-  abr: 'BSW',
-  team_name: 'Botany Swarm',
-  venue: 'Paradice Botany',
-  sm_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarm.png?alt=media&token=78ca16e2-6101-4a14-8b8f-54bc9862bd69',
-  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarmLarge.png?alt=media&token=6f494894-6dcc-4f52-bf9d-facd61ca8ebe',
-  standing_id: 1
-}, {
-  abr: 'CRD',
-  team_name: 'Canterbury Red Devils',
-  venue: 'Christchurch Alpine Ice',
-  sm_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/devils.png?alt=media&token=b2f7e89b-0882-4c4f-b09d-33cbb2ddd5b5',
-  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/redDevilsLarge.png?alt=media&token=a14bd2d4-a9a0-432b-913c-ef024a9e6a79',
-  standing_id: 2
-}, {
-  abr: 'DNT',
-  team_name: 'Dunedin Thunder',
-  venue: 'Dunedin Ice Stadium',
-  sm_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunder.png?alt=media&token=74c89295-bd10-4b54-b782-8e58b34036be',
-  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/thunderLarge.png?alt=media&token=0828e20c-2b80-4ffd-adda-3714a328adc6',
-  standing_id: 3
-}, {
-  abr: 'STP',
-  team_name: 'Skycity Stampede',
-  venue: 'Queenstown Ice Arena',
-  sm_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampede.png?alt=media&token=a099d85f-5eca-4ed9-a823-a7eff26e425c',
-  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/stampedeLarge.png?alt=media&token=2c159e64-1f53-4cda-a79d-2f2cec88ab3a',
-  standing_id: 4
-}, {
-  abr: 'WAA',
-  team_name: 'West Auckland Admirals',
-  venue: 'Paradice Avondale',
-  sm_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admirals.png?alt=media&token=c2d26473-e8f7-45b7-8ddd-b304f7e37bee',
-  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/admiralsLarge.png?alt=media&token=d161ea78-7f6b-4b23-a6e8-444aadfd242a',
-  standing_id: 5
-}])
-
-p "Added #{Team.count} teams"
 
 schedules = Schedule.create([{
   away_team_id: 2,

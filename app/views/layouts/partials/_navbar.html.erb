@@ -10,11 +10,11 @@
       <li class="<%= 'active' if current_page?(schedules_path) %>">
         <%= link_to 'Schedules', schedules_path, class: "nav-link nav-item" %>
       </li>
-      <li class="<%= 'active' if current_page?(stats_path) %>">
-        <%= link_to 'Stats', stats_path, class: "nav-link nav-item" %>
-      </li>
       <li class="<%= 'active' if current_page?(standings_path) %>">
         <%= link_to 'Standings', standings_path, class: "nav-link nav-item" %>
+      </li>
+      <li class="<%= 'active' if current_page?(stats_path) %>">
+        <%= link_to 'Stats', stats_path, class: "nav-link nav-item" %>
       </li>
       <li class="<%= 'active' if current_page?(teams_path) %>">
         <%= link_to 'Teams', teams_path, class: "nav-link nav-item" %>
