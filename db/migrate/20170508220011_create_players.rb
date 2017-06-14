@@ -21,7 +21,7 @@ class CreatePlayers < ActiveRecord::Migration[5.1]
       t.integer :goals_against
       t.decimal :gaa
 
-      t.timestamps
+      t.integer :team_id
     end
   end
 end
