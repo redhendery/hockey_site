@@ -1,4 +1,4 @@
-teams = Team.create([{
+Team.create([{
   abr: 'BSW',
   team_name: 'Botany Swarm',
   venue: 'Paradice Botany',
@@ -32,7 +32,7 @@ teams = Team.create([{
 
 p "Added #{Team.count} teams"
 
-standings = Standing.create([{
+Standing.create([{
   games: 4,
   wins: 1,
   losses: 2,
@@ -91,7 +91,7 @@ standings = Standing.create([{
 
 p "Added #{Standing.count} standings"
 
-schedules = Schedule.create([{
+Schedule.create([{
   away_team_id: 2,
   home_team_id: 4,
   away_score: 1,
@@ -252,7 +252,7 @@ schedules = Schedule.create([{
   date: '01/07/2017',
   leagueGame: 'Game 18',
   prettyDate: 'Saturday, July 1st, 4:30pm',
-  completed: false,
+  completed: false
 }, {
   away_team_id: 4,
   home_team_id: 5,
@@ -261,7 +261,7 @@ schedules = Schedule.create([{
   date: '02/07/2017',
   leagueGame: 'Game 19',
   prettyDate: 'Sunday, July 2nd, 4:30pm',
-  completed: false,
+  completed: false
 }, {
   away_team_id: 1,
   home_team_id: 3,
@@ -456,7 +456,7 @@ schedules = Schedule.create([{
 p "Added #{Schedule.count} schedules"
 
 # Start Player Seeds
-players = Player.create([{
+Player.create([{
   # Start Botany Swarm
   name: 'Jamie Lawrence',
   team_name: 'Botany Swarm',
@@ -940,20 +940,20 @@ players = Player.create([{
   plusMinus: -9,
   team_id: 2
 }, {
- name: 'Liam Dallimore',
- team_name: 'Canterbury Red Devils',
- team_abr: 'CRD',
- shoots: 'Right',
- position: 'Forward',
- posAbr: 'F',
- number: 14,
- gp: 2,
- goals: 1,
- assists: 1,
- points: 2,
- pim: 2,
- plusMinus: 1,
- team_id: 2
+  name: 'Liam Dallimore',
+  team_name: 'Canterbury Red Devils',
+  team_abr: 'CRD',
+  shoots: 'Right',
+  position: 'Forward',
+  posAbr: 'F',
+  number: 14,
+  gp: 2,
+  goals: 1,
+  assists: 1,
+  points: 2,
+  pim: 2,
+  plusMinus: 1,
+  team_id: 2
 }, {
   name: 'Robert Banks',
   team_name: 'Canterbury Red Devils',
@@ -2179,6 +2179,3 @@ players = Player.create([{
 }])
 
 p "Added #{Player.count} players"
-
-AdminUser.create!(email: 'admin@example.com',
-  password: 'password', password_confirmation: 'password')
