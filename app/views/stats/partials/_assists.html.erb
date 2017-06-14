@@ -6,12 +6,10 @@
     <div class="card-block">
       <% @skate.limit(5).order(assists: :desc).each_with_index do |skate, i| %>
         <div class="table-responsive">
-          <strong>
-            <span><%= i += 1 %>. </span>
-            <span><%= skate.name %></span>
-            <span><small><%= skate.team_abr %></small></span>
-            <span class="float-right"><%= skate.assists %></span>
-          </strong>
+          <span><%= i += 1 %>. </span>
+          <span><%= skate.name %></span>
+          <span><small class="stats"><%= skate.team_abr %></small></span>
+          <span class="float-right"><%= skate.assists %></span>
         </div>
       <% end %>
     </div>
