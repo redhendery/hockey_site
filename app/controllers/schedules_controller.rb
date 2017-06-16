@@ -11,6 +11,7 @@ class SchedulesController < ApplicationController
   end
 
   def next
+    console
     @next_round = @schedules.where(completed: false).limit(4)
   end
 
@@ -44,11 +45,13 @@ class SchedulesController < ApplicationController
   end
 
   private
-  def schedules
-    @schedules = Schedule.where(nil).includes(%i[home_team away_team])
-  end
 
-  def teams
-    @teams = Team.where(nil)
-  end
+    def schedules
+      @schedules = Schedule.where(nil).includes(%i[home_team away_team])
+    end
+
+    def teams
+      @teams = Team.where(nil)
+    end
+    
 end
