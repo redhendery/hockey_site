@@ -18,7 +18,7 @@ class PlayersController < ApplicationController
 
   private
 
-  def teams
-    @teams = Team.where(nil)
-  end
+    def teams
+      @teams = Team.where(nil)
+    end
 end
