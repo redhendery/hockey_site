@@ -6,12 +6,10 @@
     <div class="card-block">
       <% @gk.limit(5).order(svs: :desc).each_with_index do |gk, i| %>
         <div class="table-responsive">
-          <strong>
-            <span><%= i += 1 %>. </span>
-            <span><%= gk.name %></span>
-            <span><small><%= gk.team_abr %></small></span>
-            <span class="float-right">.<%= gk.svs %></span>
-          </strong>
+          <span><%= i += 1 %>. </span>
+          <span><%= gk.name %></span>
+          <span><small class="stats"><%= gk.team_abr %></small></span>
+          <span class="float-right">.<%= gk.svs %></span>
         </div>
       <% end %>
     </div>

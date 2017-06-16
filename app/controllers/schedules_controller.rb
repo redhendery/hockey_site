@@ -53,5 +53,5 @@ class SchedulesController < ApplicationController
     def teams
       @teams = Team.where(nil)
     end
-    
+
 end

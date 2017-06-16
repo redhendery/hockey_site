@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  devise_for :admin_users, ActiveAdmin::Devise.config
-  ActiveAdmin.routes(self)
+
+  get 'sessions/new'
 
   resources :teams, only: %i[index show] do
     resources :players, only: %i[index show]
@@ -26,6 +26,12 @@ Rails.application.routes.draw do
   end
 
   resources :standings, only: %i[index edit]
+
+# Login routes
+  get    '/login',   to: 'sessions#new'
+  post   '/login',   to: 'sessions#create'
+  delete '/logout',  to: 'sessions#destroy'
+  resources :users
 
   root 'schedules#next'
 end
