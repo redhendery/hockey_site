@@ -5,11 +5,13 @@
   <%= link_to 'NZIHL Home', root_path, class: "navbar-brand" %>
   <div class="collapse navbar-collapse" id="navbarCollapse">
     <ul class="navbar-nav mr-auto">
+      <% if logged_in? %>
+      <ul class="navbar-nav">
+        <li><%= link_to 'Log Out', logout_path, class: "nav-link nav-item active", method: :delete %></li>
+      </ul>
+      <% end %>
     </ul>
     <ul class="navbar-nav">
-      <% if logged_in? %>
-        <li><%= link_to 'Log Out', logout_path, class: "nav-link nav-item active", method: :delete %></li>
-      <% end %>
       <li class="<%= 'active' if current_page?(schedules_path) %>">
         <%= link_to 'Schedules', schedules_path, class: "nav-link nav-item" %>
       </li>

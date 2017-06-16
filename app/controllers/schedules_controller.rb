@@ -44,7 +44,7 @@ class SchedulesController < ApplicationController
   end
 
   private
-  
+
     def schedules
       @schedules = Schedule.where(nil).includes(%i[home_team away_team])
     end
