@@ -1,9 +1,34 @@
-<h1>Edit Standing</h1>
+<h1 class="text-center">Edit Standing for <%= @standing.team.team_name %></h1>
+<img src="<%= @standing.team.sm_logo %>" class="img-fluid" alt="<%= @standing.team.team_name %>">
 
 <%= form_for(@standing) do |f| %>
-  <% if logged_in? %>
+  <%= f.label :games %>
+  <%= f.text_field :games %>
 
-  <% end %>
+  <%= f.label :wins %>
+  <%= f.text_field :wins %>
+
+  <%= f.label :losses %>
+  <%= f.text_field :losses %>
+
+  <%= f.label :overtime_wins %>
+  <%= f.text_field :overtime_wins %>
+
+  <%= f.label :overtime_losses %>
+  <%= f.text_field :overtime_losses %>
+
+  <%= f.label :points %>
+  <%= f.text_field :points %>
+
+  <%= f.label :goals_for %>
+  <%= f.text_field :goals_for %>
+
+  <%= f.label :goals_against %>
+  <%= f.text_field :goals_against %>
+
+  <%= f.label :goal_difference %>
+  <%= f.text_field :goal_difference %>
+<%= f.submit %>
 <% end %>
 
 <%= link_to 'Back to Standings', standings_path %>

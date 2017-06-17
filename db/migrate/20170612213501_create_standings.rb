@@ -11,6 +11,8 @@ class CreateStandings < ActiveRecord::Migration[5.1]
       t.integer :goals_against
       t.integer :goal_difference
       t.integer :team_id
+
+      t.timestamps
     end
   end
 end

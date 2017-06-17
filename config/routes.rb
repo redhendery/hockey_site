@@ -25,7 +25,7 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :standings, only: %i[index edit]
+  resources :standings
 
 # Login routes
   get    '/login',   to: 'sessions#new'

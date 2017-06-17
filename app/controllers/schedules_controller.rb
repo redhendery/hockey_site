@@ -11,7 +11,6 @@ class SchedulesController < ApplicationController
   end
 
   def next
-    console
     @next_round = @schedules.where(completed: false).limit(4)
   end
 
