@@ -243,36 +243,6 @@ Start Skycity Stampede no game stat players
 	plusMinus: 28,
 	team_id: 4
 }, {
-	name: 'Callum Burns',
-	team_name: 'Skycity Stampede',
-	team_abr: 'STP',
-	shoots: 'Right',
-	position: 'Forward',
-	posAbr: 'F',
-	number: 14,
-	gp: 2,
-	goals: 2,
-	assists: 4,
-	points: 6,
-	pim: 25,
-	plusMinus: 6,
-	team_id: 4
-}, {
-	name: 'Harrison Macharg',
-	team_name: 'Skycity Stampede',
-	team_abr: 'STP',
-	shoots: 'Right',
-	position: 'Forward',
-	posAbr: 'F',
-	number: 17,
-	gp: 8,
-	goals: 3,
-	assists: 3,
-	points: 6,
-	pim: 27,
-	plusMinus: 9,
-	team_id: 4
-}, {
 	name: 'Taylor Stewart',
 	team_name: 'Skycity Stampede',
 	team_abr: 'STP',
