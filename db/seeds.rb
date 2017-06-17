@@ -70,7 +70,7 @@ Standing.create([{
   team_id: 3
 }, {
   # Skycity Stampede Standings
-  games: 23,
+  games: 3,
   wins: 2,
   losses: 1,
   overtime_wins: 0,
