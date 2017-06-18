@@ -26,7 +26,7 @@
           <td width="9%"><img src="<%= standing.team.sm_logo %>" class="img-fluid" alt="<%= standing.team.team_name %>"></td>
           <td class="align-middle" width="25%"><%= standing.team.team_name %></td>
           <% if logged_in? %>
-            <td><%= link_to 'Edit', edit_standing_path(standing) %><td>
+            <td class="align-middle"><%= link_to 'Edit', edit_standing_path(standing) %><td>
           <% end %>
           <td class="align-middle text-center"><%= standing.games %></td>
           <td class="align-middle text-center"><%= standing.wins %></td>

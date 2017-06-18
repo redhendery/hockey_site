@@ -1,34 +1,52 @@
-<h1 class="text-center">Edit Standing for <%= @standing.team.team_name %></h1>
-<img src="<%= @standing.team.sm_logo %>" class="img-fluid" alt="<%= @standing.team.team_name %>">
+<div class="container-fluid">
+  <h1 class="text-center">Edit Standing for <%= @standing.team.team_name %></h1>
 
-<%= form_for(@standing) do |f| %>
-  <%= f.label :games %>
-  <%= f.text_field :games %>
+  <%= form_for(@standing) do |f| %>
 
-  <%= f.label :wins %>
-  <%= f.text_field :wins %>
+    <p>
+      <%= f.label :games %>
+      <%= f.text_field :games %>
+    </p>
+    <p>
+      <%= f.label :wins %>
+      <%= f.text_field :wins %>
+    </p>
+    <p>
+      <%= f.label :losses %>
+      <%= f.text_field :losses %>
+    </p>
 
-  <%= f.label :losses %>
-  <%= f.text_field :losses %>
+    <p>
+      <%= f.label :overtime_wins %>
+      <%= f.text_field :overtime_wins %>
+    </p>
+    <p>
+      <%= f.label :overtime_losses %>
+      <%= f.text_field :overtime_losses %>
+    </p>
+    <p>
+      <%= f.label :points %>
+      <%= f.text_field :points %>
+    </p>
 
-  <%= f.label :overtime_wins %>
-  <%= f.text_field :overtime_wins %>
+    <p>
+      <%= f.label :goals_for %>
+      <%= f.text_field :goals_for %>
+    </p>
+    <p>
+      <%= f.label :goals_against %>
+      <%= f.text_field :goals_against %>
+    </p>
+    <p>
+      <%= f.label :goal_difference %>
+      <%= f.text_field :goal_difference %>
+    </p>
 
-  <%= f.label :overtime_losses %>
-  <%= f.text_field :overtime_losses %>
+    <%= f.submit %>
+    <% end %>
 
-  <%= f.label :points %>
-  <%= f.text_field :points %>
+  <%= link_to 'Back to Standings', standings_path %>
 
-  <%= f.label :goals_for %>
-  <%= f.text_field :goals_for %>
+  <img src="<%= @standing.team.sm_logo %>" class="img-fluid" alt="<%= @standing.team.team_name %>">
 
-  <%= f.label :goals_against %>
-  <%= f.text_field :goals_against %>
-
-  <%= f.label :goal_difference %>
-  <%= f.text_field :goal_difference %>
-<%= f.submit %>
-<% end %>
-
-<%= link_to 'Back to Standings', standings_path %>
+</div>
