@@ -107,21 +107,6 @@ Start Botany Swarn no game stat players
 },
 Start Canterbury Red Devils no game stat players
  {
- 	name: 'Alex Damm',
- 	team_name: 'Canterbury Red Devils',
- 	team_abr: 'CRD',
- 	shoots: 'Right',
- 	position: 'Forward',
- 	posAbr: 'F',
- 	number: 0,
- 	gp: 0,
- 	goals: 0,
- 	assists: 0,
- 	points: 0,
- 	pim: 0,
- 	plusMinus: 0,
- 	team_id: 2
- }, {
 	name: 'Justin Fuller',
 	team_name: 'Canterbury Red Devils',
 	team_abr: 'CRD',
@@ -226,51 +211,6 @@ Start Skycity Stampede no game stat players
 	points: 1,
 	pim: 4,
 	plusMinus: -3,
-	team_id: 4
-}, {
-	name: 'Mike McRae',
-	team_name: 'Skycity Stampede',
-	team_abr: 'STP',
-	shoots: 'Right',
-	position: 'Forward',
-	posAbr: 'F',
-	number: 13,
-	gp: 16,
-	goals: 12,
-	assists: 25,
-	points: 37,
-	pim: 24,
-	plusMinus: 28,
-	team_id: 4
-}, {
-	name: 'Callum Burns',
-	team_name: 'Skycity Stampede',
-	team_abr: 'STP',
-	shoots: 'Right',
-	position: 'Forward',
-	posAbr: 'F',
-	number: 14,
-	gp: 2,
-	goals: 2,
-	assists: 4,
-	points: 6,
-	pim: 25,
-	plusMinus: 6,
-	team_id: 4
-}, {
-	name: 'Harrison Macharg',
-	team_name: 'Skycity Stampede',
-	team_abr: 'STP',
-	shoots: 'Right',
-	position: 'Forward',
-	posAbr: 'F',
-	number: 17,
-	gp: 8,
-	goals: 3,
-	assists: 3,
-	points: 6,
-	pim: 27,
-	plusMinus: 9,
 	team_id: 4
 }, {
 	name: 'Taylor Stewart',
