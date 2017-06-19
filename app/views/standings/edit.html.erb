@@ -1,52 +1,46 @@
 <div class="container-fluid">
-  <h1 class="text-center">Edit Standing for <%= @standing.team.team_name %></h1>
+  <div class="row">
+    <div class="col-2">
+      <img src="<%= @standing.team.sm_logo %>" class="img-fluid" alt="<%= @standing.team.team_name %>">
+    </div>
+    <div class="col">
+      <h1 class="text-center">Edit Standing for <%= @standing.team.team_name %></h1>
+      <p class="text-center"><%= link_to 'Back to Standings', standings_path %></p>
+    </div>
+    <div class="col-2">
+      <img src="<%= @standing.team.sm_logo %>" class="img-fluid float-right" alt="<%= @standing.team.team_name %>">
+    </div>
+  </div>
 
-  <%= form_for(@standing) do |f| %>
-
-    <p>
-      <%= f.label :games %>
-      <%= f.text_field :games %>
-    </p>
-    <p>
-      <%= f.label :wins %>
-      <%= f.text_field :wins %>
-    </p>
-    <p>
-      <%= f.label :losses %>
-      <%= f.text_field :losses %>
-    </p>
-
-    <p>
-      <%= f.label :overtime_wins %>
-      <%= f.text_field :overtime_wins %>
-    </p>
-    <p>
-      <%= f.label :overtime_losses %>
-      <%= f.text_field :overtime_losses %>
-    </p>
-    <p>
-      <%= f.label :points %>
-      <%= f.text_field :points %>
-    </p>
-
-    <p>
-      <%= f.label :goals_for %>
-      <%= f.text_field :goals_for %>
-    </p>
-    <p>
-      <%= f.label :goals_against %>
-      <%= f.text_field :goals_against %>
-    </p>
-    <p>
-      <%= f.label :goal_difference %>
-      <%= f.text_field :goal_difference %>
-    </p>
-
-    <%= f.submit %>
-    <% end %>
-
-  <%= link_to 'Back to Standings', standings_path %>
-
-  <img src="<%= @standing.team.sm_logo %>" class="img-fluid" alt="<%= @standing.team.team_name %>">
-
+  <%= form_for @standing, html: { class: 'form-row' } do |f| %>
+    <div class="row">
+      <div class="col-4">
+        <%= f.label :games %>:
+        <%= f.text_field :games, class: 'col form-control' %>
+        <%= f.label :wins %>:
+        <%= f.text_field :wins, class: 'col form-control' %>
+        <%= f.label :losses %>:
+        <%= f.text_field :losses, class: 'col form-control' %>
+      </div>
+      <div class="col-4">
+        <%= f.label :overtime_wins %>:
+        <%= f.text_field :overtime_wins, class: 'col form-control' %>
+        <%= f.label :overtime_losses %>:
+        <%= f.text_field :overtime_losses, class: 'col form-control' %>
+        <%= f.label :points %>:
+        <%= f.text_field :points, class: 'col form-control' %>
+      </div>
+      <div class="col-4">
+        <%= f.label :goals_for %>:
+        <%= f.text_field :goals_for, class: 'col form-control' %>
+        <%= f.label :goals_against %>:
+        <%= f.text_field :goals_against, class: 'col form-control' %>
+        <%= f.label :goal_difference %>:
+        <%= f.text_field :goal_difference, class: 'col form-control' %>
+      </div>
+    </div>
+    <div class="update-button">
+      <%= f.submit 'Update Standings', class: 'btn btn-primary btn-lg btn-block' %>
+    </div>
+  <% end %>
 </div>
