@@ -16,30 +16,30 @@
     <div class="row">
       <div class="col-4">
         <%= f.label :games %>:
-        <%= f.text_field :games, class: 'col form-control' %>
+        <%= f.text_field :games, class: 'form-control' %>
         <%= f.label :wins %>:
-        <%= f.text_field :wins, class: 'col form-control' %>
+        <%= f.text_field :wins, class: 'form-control' %>
         <%= f.label :losses %>:
-        <%= f.text_field :losses, class: 'col form-control' %>
+        <%= f.text_field :losses, class: 'form-control' %>
       </div>
       <div class="col-4">
         <%= f.label :overtime_wins %>:
-        <%= f.text_field :overtime_wins, class: 'col form-control' %>
+        <%= f.text_field :overtime_wins, class: 'form-control' %>
         <%= f.label :overtime_losses %>:
-        <%= f.text_field :overtime_losses, class: 'col form-control' %>
+        <%= f.text_field :overtime_losses, class: 'form-control' %>
         <%= f.label :points %>:
-        <%= f.text_field :points, class: 'col form-control' %>
+        <%= f.text_field :points, class: 'form-control' %>
       </div>
       <div class="col-4">
         <%= f.label :goals_for %>:
-        <%= f.text_field :goals_for, class: 'col form-control' %>
+        <%= f.text_field :goals_for, class: 'form-control' %>
         <%= f.label :goals_against %>:
-        <%= f.text_field :goals_against, class: 'col form-control' %>
+        <%= f.text_field :goals_against, class: 'form-control' %>
         <%= f.label :goal_difference %>:
-        <%= f.text_field :goal_difference, class: 'col form-control' %>
+        <%= f.text_field :goal_difference, class: 'form-control' %>
       </div>
     </div>
-    <div class="update-button">
+    <div class="col update-button">
       <%= f.submit 'Update Standings', class: 'btn btn-primary btn-lg btn-block' %>
     </div>
   <% end %>
