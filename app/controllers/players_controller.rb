@@ -21,4 +21,5 @@ class PlayersController < ApplicationController
     def teams
       @teams = Team.where(nil)
     end
+    
 end

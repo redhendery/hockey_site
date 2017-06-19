@@ -7,7 +7,7 @@
             <div class="row">
               <div class="col-10">
                 <h5 class="card-title"><%= player.name %></h5>
-                <h6 class="card-subtitle mb-2 text-muted">Shoots: <%= player.shoots %></h6>
+                <h6 class="card-subtitle mb-2 text-muted">Catches: <%= player.catches %></h6>
               </div>
               <div class="col-2">
                 <h5 class="card-title float-right">#<%= player.number %></h5>
@@ -32,6 +32,9 @@
                 </tbody>
               </table>
             </div>
+          </div>
+          <div class="card-footer text-muted text-center">
+            <%= link_to 'Player Card', player_path(player) %>
           </div>
         </div>
       </div>

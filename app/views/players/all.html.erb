@@ -12,10 +12,12 @@
     <tbody>
       <% @players.each do |player| %>
         <tr>
-          <td><%= player.name %></td>
-          <td><%= player.team_name %></td>
-          <td><%= player.position %></td>
-          <td class="text-center"><%= player.number %></td>
+          <%= link_to player_path(player) do %>
+            <td><%= player.name %></td>
+            <td><%= player.team_name %></td>
+            <td><%= player.position %></td>
+            <td class="text-center"><%= player.number %></td>
+          <% end %>
         </tr>
       <% end %>
     </tbody>

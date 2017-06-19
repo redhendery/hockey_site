@@ -19,13 +19,13 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :players, only: [:index] do
+  resources :players, only: %i[index show] do
     collection do
       get 'all'
     end
   end
 
-  resources :standings
+  resources :standings, only: %i[edit index show update]
 
 # Login routes
   get    '/login',   to: 'sessions#new'
