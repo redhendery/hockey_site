@@ -43,7 +43,8 @@ class PlayersController < ApplicationController
       params.require(:player).permit(
           :name, :shoots, :position, :pos_abr,
           :number, :games_played, :goals, :assists,
-          :points, :pim, :plusMinus, :team_id
+          :goals_against, :gaa, :sog, :saves, :svs,
+          :shutouts, :points, :pim, :plusMinus, :team_id
       )
     end
 

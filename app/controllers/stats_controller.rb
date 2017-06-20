@@ -3,7 +3,7 @@ class StatsController < ApplicationController
 
   def index
     @skate = @skate.where(team_id: params[:team_id]) if params[:team_id].present?
-    @gk = Player.all.where.not(pos_abr: %w[D F], games_played: '0').includes(:team)
+    @gk = Player.all.where.not(pos_abr: %w[D F], games_played: ['0', '1']).includes(:team)
     @gk = @gk.where(team_id: params[:team_id]) if params[:team_id].present?
   end
 

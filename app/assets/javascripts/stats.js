@@ -68,7 +68,7 @@ $(document).on("turbolinks:load", function() {
   var t;
   t = $('#gk').DataTable({
     'pageLength': 25,
-    'order': [[6, "asc"]]
+    'order': [[9, "desc"]]
   });
   t.on('order.dt search.dt', function() {
     t.column(0, {

@@ -14,21 +14,23 @@
       <table class="table">
         <thead class="table-inverse">
           <tr>
-            <th class="text-center col-xs-2">GP</th>
-            <th class="text-center col-xs-2">GA</th>
-            <th class="text-center col-xs-2">GAA</th>
-            <th class="text-center col-xs-2">SOG</th>
-            <th class="text-center col-xs-2">SV</th>
-            <th class="text-center col-xs-2">SVS</th>
+            <th class="text-center">GP</th>
+            <th class="text-center">SOG</th>
+            <th class="text-center">SVS</th>
+            <th class="text-center">GA</th>
+            <th class="text-center">SV%</th>
+            <th class="text-center">GAA</th>
+            <th class="text-center">SO</th>
           </tr>
         </thead>
         <tbody>
-          <td class="text-center col-xs-2"><%= @player.games_played %></td>
-          <td class="text-center col-xs-2"><%= @player.goals_against %></td>
-          <td class="text-center col-xs-2"><%= '%.2f' % @player.gaa %></td>
-          <td class="text-center col-xs-2"><%= @player.sog %></td>
-          <td class="text-center col-xs-2"><%= @player.saves %></td>
-          <td class="text-center col-xs-2"><%= @player.svs %></td>
+          <td class="text-center"><%= @player.games_played %></td>
+          <td class="text-center"><%= @player.sog %></td>
+          <td class="text-center"><%= @player.saves %></td>
+          <td class="text-center"><%= @player.goals_against %></td>
+          <td class="text-center"><%= @player.svs %></td>
+          <td class="text-center"><%= '%.2f' % @player.gaa %></td>
+          <td class="text-center"><%= @player.shutouts %></td>
         </tbody>
       </table>
     </div>
