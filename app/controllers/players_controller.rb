@@ -12,8 +12,25 @@ class PlayersController < ApplicationController
     @player = Player.find(params[:id])
   end
 
+  def edit
+    if logged_in?
+      @player = Player.find(params[:id])
+    else
+      redirect_to all_players_path
+    end
+  end
+
+  def update
+    @player = Player.find(params[:id])
+    if @player.update(player_params)
+      redirect_to @player
+    else
+      render 'edit'
+    end
+  end
+
   def all
-    @players = Player.all
+    @players = Player.all.includes(:team)
   end
 
   private
@@ -21,5 +38,13 @@ class PlayersController < ApplicationController
     def teams
       @teams = Team.where(nil)
     end
-    
+
+    def player_params
+      params.require(:player).permit(
+          :name, :shoots, :position, :posAbr,
+          :number, :games_played, :goals, :assists,
+          :points, :pim, :plusMinus, :team_id
+      )
+    end
+
 end
