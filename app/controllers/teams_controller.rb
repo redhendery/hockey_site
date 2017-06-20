@@ -5,7 +5,7 @@ class TeamsController < ApplicationController
 
   def show
     @team = Team.find(params[:id])
-    @skate = @team.players.where(posAbr: %w[D F])
+    @skate = @team.players.where(pos_abr: %w[D F])
     @schedule = Schedule.where(home_team_id: @team.id)
                         .or(Schedule.where(away_team_id: @team.id))
     @previous = @schedule.where(home_team_id: @team.id)

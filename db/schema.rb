@@ -17,14 +17,12 @@ ActiveRecord::Schema.define(version: 20170616185736) do
 
   create_table "players", force: :cascade do |t|
     t.string "name"
-    t.string "team_name"
-    t.string "team_abr"
     t.string "shoots"
     t.string "catches"
     t.string "position"
-    t.string "posAbr"
+    t.string "pos_abr"
     t.integer "number"
-    t.integer "gp"
+    t.integer "games_played"
     t.integer "goals"
     t.integer "assists"
     t.integer "points"
@@ -60,6 +58,8 @@ ActiveRecord::Schema.define(version: 20170616185736) do
     t.integer "goals_against"
     t.integer "goal_difference"
     t.integer "team_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "teams", force: :cascade do |t|

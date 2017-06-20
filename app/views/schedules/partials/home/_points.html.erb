@@ -5,7 +5,7 @@
         <strong>Point Leaders</strong>
       </div>
       <div class="card-block">
-        <% @home.players.limit(3).where(posAbr: %w[F D]).order(points: :desc).each_with_index do |points, i| %>
+        <% @home.players.limit(3).where(pos_abr: %w[F D]).order(points: :desc).each_with_index do |points, i| %>
           <div class="table-responsive">
             <strong>
               <span class="float-left"><%= i += 1 %>. </span>
