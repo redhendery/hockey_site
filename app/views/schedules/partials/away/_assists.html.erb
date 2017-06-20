@@ -5,7 +5,7 @@
         <strong>Assists Leaders</strong>
       </div>
       <div class="card-block">
-        <% @away.players.limit(3).where(posAbr: %w[F D]).order(assists: :desc).each_with_index do |assists, i| %>
+        <% @away.players.limit(3).where(pos_abr: %w[F D]).order(assists: :desc).each_with_index do |assists, i| %>
           <div class="table-responsive">
             <strong>
               <span class="float-left"><%= i += 1 %>. </span>

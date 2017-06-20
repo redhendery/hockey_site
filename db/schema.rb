@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20170616185736) do
     t.string "shoots"
     t.string "catches"
     t.string "position"
-    t.string "posAbr"
+    t.string "pos_abr"
     t.integer "number"
     t.integer "games_played"
     t.integer "goals"

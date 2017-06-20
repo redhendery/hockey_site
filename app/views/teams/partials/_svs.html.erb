@@ -4,7 +4,7 @@
       <strong>Team SVS Leaders</strong>
     </div>
     <div class="card-block">
-      <% @team.players.limit(5).where(posAbr: 'GK').order(svs: :desc).each_with_index do |gk, i| %>
+      <% @team.players.limit(5).where(pos_abr: 'GK').order(svs: :desc).each_with_index do |gk, i| %>
         <div class="table-responsive">
           <span><%= i += 1 %>. </span>
           <span><%= gk.name %></span>

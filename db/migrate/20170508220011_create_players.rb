@@ -5,7 +5,7 @@ class CreatePlayers < ActiveRecord::Migration[5.1]
       t.string :shoots
       t.string :catches
       t.string :position
-      t.string :posAbr
+      t.string :pos_abr
       t.integer :number
       t.integer :games_played
       t.integer :goals

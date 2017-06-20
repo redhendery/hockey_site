@@ -2,8 +2,8 @@ class PlayersController < ApplicationController
   before_action :teams
 
   def index
-    @gk = Player.where(posAbr: 'GK')
-    @skaters = Player.where(posAbr: %w[D F]).order(:posAbr)
+    @gk = Player.where(pos_abr: 'GK')
+    @skaters = Player.where(pos_abr: %w[D F]).order(:pos_abr)
     @skaters = @skaters.where(team_id: params[:team_id]) if params[:team_id].present?
     @gk = @gk.where(team_id: params[:team_id]) if params[:team_id].present?
   end
@@ -41,7 +41,7 @@ class PlayersController < ApplicationController
 
     def player_params
       params.require(:player).permit(
-          :name, :shoots, :position, :posAbr,
+          :name, :shoots, :position, :pos_abr,
           :number, :games_played, :goals, :assists,
           :points, :pim, :plusMinus, :team_id
       )

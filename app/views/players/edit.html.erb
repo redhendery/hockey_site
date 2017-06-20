@@ -4,51 +4,16 @@
       <img src="<%= @player.team.sm_logo %>" class="img-fluid" alt="<%= @player.team.team_name %>">
     </div>
     <div class="col">
-      <h1 class="text-center">Edit Standing for <%= @player.team.team_name %></h1>
-      <p class="text-center"><%= link_to 'Back to Standings', players_path %></p>
+      <h1 class="text-center">Edit Stats for <%= @player.name %></h1>
+      <p class="text-center"><%= link_to 'Back to Players', players_path %></p>
     </div>
     <div class="col-2">
       <img src="<%= @player.team.sm_logo %>" class="img-fluid float-right" alt="<%= @player.team.team_name %>">
     </div>
   </div>
-
-  <%= form_for @player, html: { class: 'form-row' } do |f| %>
-    <div class="row">
-      <div class="col-3">
-        <p> Name:</p>
-        <%= f.text_field :name, class: 'form-control' %>
-        <p> Shoots:</p>
-        <%= f.text_field :shoots, class: 'form-control' %>
-        <p> Position:</p>
-        <%= f.text_field :position, class: 'form-control' %>
-      </div>
-      <div class="col-3">
-        <p> Position Abreviation:</p>
-        <%= f.text_field :posAbr, class: 'form-control' %>
-        <p> Number:</p>
-        <%= f.text_field :number, class: 'form-control' %>
-        <p> Games Played:</p>
-        <%= f.text_field :games_played, class: 'form-control' %>
-      </div>
-      <div class="col-3">
-        <p> Goals:</p>
-        <%= f.text_field :goals, class: 'form-control' %>
-        <p> Assists:</p>
-        <%= f.text_field :assists, class: 'form-control' %>
-        <p> Points:</p>
-        <%= f.text_field :points, class: 'form-control' %>
-      </div>
-      <div class="col-3">
-        <p> Penalty Minutes:</p>
-        <%= f.text_field :pim, class: 'form-control' %>
-        <p> Plus Minus:</p>
-        <%= f.text_field :plusMinus, class: 'form-control' %>
-        <p> team_id:</p>
-        <%= f.text_field :team_id, class: 'form-control' %>
-      </div>
-    </div>
-    <div class="col update-button">
-      <%= f.submit 'Update Player', class: 'btn btn-primary btn-lg btn-block' %>
-    </div>
+  <% if @player.pos_abr == 'GK' %>
+    <%= render 'players/partials/edit/gk' %>
+  <% else %>
+    <%= render 'players/partials/edit/skater' %>
   <% end %>
 </div>
