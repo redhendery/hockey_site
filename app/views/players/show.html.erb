@@ -1,41 +1,7 @@
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-8">
-      <div class="row">
-        <div class="col-11">
-          <h5 class="card-title"><%= @player.name %></h5>
-          <h6 class="card-subtitle mb-2 text-muted">Shoots: <%= @player.shoots %></h6>
-        </div>
-        <div class="col-1">
-          <h5 class="card-title float-right">#<%= @player.number %></h5>
-          <h6 class="card-subtitle mb-2 text-muted float-right"><%= @player.position %></h6>
-        </div>
-      </div>
-      <div class="table-responsive">
-        <table class="table">
-          <thead class="table-inverse">
-            <tr>
-              <th class="text-center col-xs-2">GP</th>
-              <th class="text-center col-xs-2">G</th>
-              <th class="text-center col-xs-2">A</th>
-              <th class="text-center col-xs-2">P</th>
-              <th class="text-center col-xs-2">PIM</th>
-              <th class="text-center col-xs-2">+/-</th>
-            </tr>
-          </thead>
-          <tbody>
-            <td class="text-center col-xs-2"><%= @player.games_played %></td>
-            <td class="text-center col-xs-2"><%= @player.goals %></td>
-            <td class="text-center col-xs-2"><%= @player.assists %></td>
-            <td class="text-center col-xs-2"><%= @player.points %></td>
-            <td class="text-center col-xs-2"><%= @player.pim %></td>
-            <td class="text-center col-xs-2"><%= @player.plusMinus %></td>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="col-4 text-center">
-      <img src="<%= @player.team.lg_logo %>" alt="<%= @player.team.team_name %>">
-    </div>
-  </div>
+  <% if @player.pos_abr == 'GK' %>
+    <%= render 'players/partials/show/gk' %>
+  <% else %>
+    <%= render 'players/partials/show/skater' %>
+  <% end %>
 </div>

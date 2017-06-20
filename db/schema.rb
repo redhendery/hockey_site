@@ -31,9 +31,12 @@ ActiveRecord::Schema.define(version: 20170616185736) do
     t.integer "svs"
     t.integer "sog"
     t.integer "saves"
+    t.integer "shutouts"
     t.integer "goals_against"
     t.decimal "gaa"
     t.integer "team_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "schedules", force: :cascade do |t|

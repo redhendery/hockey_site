@@ -9,7 +9,7 @@
           <span><%= i += 1 %>. </span>
           <span><%= gk.name %></span>
           <span><small class="stats"><%= gk.team.abr %></small></span>
-          <span class="float-right"><%= gk.gaa %></span>
+          <span class="float-right"><%= '%.2f' % gk.gaa %></span>
         </div>
       <% end %>
     </div>

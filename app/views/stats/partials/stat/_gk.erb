@@ -20,7 +20,7 @@
         <td><%= gk.pos_abr %></td>
         <td><%= gk.catches %></td>
         <td><%= gk.games_played %></td>
-        <td><%= gk.gaa %></td>
+        <td><%= '%.2f' % gk.gaa %></td>
         <td>.<%= gk.svs %></td>
       </tr>
     <% end %>

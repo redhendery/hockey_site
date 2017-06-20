@@ -16,10 +16,12 @@ class CreatePlayers < ActiveRecord::Migration[5.1]
       t.integer :svs
       t.integer :sog
       t.integer :saves
+      t.integer :shutouts
       t.integer :goals_against
       t.decimal :gaa
-
       t.integer :team_id
+
+      t.timestamps
     end
   end
 end
