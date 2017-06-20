@@ -787,6 +787,7 @@ Player.create([{
   sog: 68,
   saves: 53,
   svs: 779,
+  shutouts: 0,
   team_id: 1
 }, {
   name: 'Alain Giauque',
@@ -800,6 +801,7 @@ Player.create([{
   sog: 87,
   saves: 75,
   svs: 862,
+  shutouts: 1,
   team_id: 1
 }, {
   # Start Canterbury Red Devils
@@ -1088,6 +1090,7 @@ Player.create([{
   sog: 265,
   saves: 238,
   svs: 898,
+  shutouts: 0,
   team_id: 2
 }, {
   name: 'Richard Bigsby',
@@ -1101,6 +1104,7 @@ Player.create([{
   sog: 106,
   saves: 84,
   svs: 792,
+  shutouts: 0,
   team_id: 2
 }, {
   # Start Dunedin Thunder
@@ -1415,6 +1419,7 @@ Player.create([{
   sog: 170,
   saves: 151,
   svs: 888,
+  shutouts: 1,
   team_id: 3
 }, {
   name: 'Jonas Barakauskas',
@@ -1428,6 +1433,7 @@ Player.create([{
   sog: 12,
   saves: 11,
   svs: 917,
+  shutouts: 0,
   team_id: 3
 }, {
   # Start Skycity Stampede
@@ -1729,6 +1735,7 @@ Player.create([{
   sog: 103,
   saves: 92,
   svs: 893,
+  shutouts: 0,
   team_id: 4
 }, {
   name: 'Matt Swirtz',
@@ -1742,6 +1749,7 @@ Player.create([{
   sog: 0,
   saves: 0,
   svs: 000,
+  shutouts: 0,
   team_id: 4
 }, {
   # Start West Auckland Admirals
@@ -2043,6 +2051,7 @@ Player.create([{
   sog: 108,
   saves: 100,
   svs: 926,
+  shutouts: 1,
   team_id: 5
 }, {
   name: 'Csaba Kercso-Magos',
@@ -2056,6 +2065,7 @@ Player.create([{
   sog: 52,
   saves: 47,
   svs: 904,
+  shutouts: 0,
   team_id: 5
 }])
 

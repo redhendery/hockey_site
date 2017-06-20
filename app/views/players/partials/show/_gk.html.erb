@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col-8">
+    <div class="row">
+      <div class="col-11">
+        <h5 class="card-title"><%= @player.name %></h5>
+        <h6 class="card-subtitle mb-2 text-muted">Catches: <%= @player.catches %></h6>
+      </div>
+      <div class="col-1">
+        <h5 class="card-title float-right">#<%= @player.number %></h5>
+        <h6 class="card-subtitle mb-2 text-muted float-right"><%= @player.position %></h6>
+      </div>
+    </div>
+    <div class="table-responsive">
+      <table class="table">
+        <thead class="table-inverse">
+          <tr>
+            <th class="text-center col-xs-2">GP</th>
+            <th class="text-center col-xs-2">GA</th>
+            <th class="text-center col-xs-2">GAA</th>
+            <th class="text-center col-xs-2">SOG</th>
+            <th class="text-center col-xs-2">SV</th>
+            <th class="text-center col-xs-2">SVS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <td class="text-center col-xs-2"><%= @player.games_played %></td>
+          <td class="text-center col-xs-2"><%= @player.goals_against %></td>
+          <td class="text-center col-xs-2"><%= '%.2f' % @player.gaa %></td>
+          <td class="text-center col-xs-2"><%= @player.sog %></td>
+          <td class="text-center col-xs-2"><%= @player.saves %></td>
+          <td class="text-center col-xs-2"><%= @player.svs %></td>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="col-4 text-center">
+    <img src="<%= @player.team.lg_logo %>" alt="<%= @player.team.team_name %>">
+  </div>
+</div>

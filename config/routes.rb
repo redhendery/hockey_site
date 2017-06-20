@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'sessions/new'
-
   resources :teams, only: %i[index show] do
     resources :players, only: %i[index show]
     resources :stats, only: [:index]
@@ -28,6 +26,7 @@ Rails.application.routes.draw do
   resources :standings, only: %i[edit index show update]
 
 # Login routes
+  get 'sessions/new'
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
