@@ -19,7 +19,7 @@
                   <% if schedule.completed %>
                     <h1 class="align-middle item-score"><%= schedule.home_score %> - <%= schedule.away_score %></h1>
                   <% else %>
-                    <%= link_to 'Game Details', schedule_path(schedule), class: "btn btn-primary" %>
+                    <%= link_to 'Game Details', schedule_path(schedule), class: "btn btn-primary btn-responsive" %>
                   <% end %>
                 </div>
                 <div class="col-4"><img src="<%= schedule.away_team.sm_logo %>" alt="<%= schedule.away_team.sm_logo %>" class="img-fluid float-right"></div>
