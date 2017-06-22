@@ -1238,7 +1238,7 @@ Player.create([{
   plusMinus: 0,
   team_id: 3
 }, {
-  name: 'Padraig MaacKenzie',
+  name: 'Padraig MacKenzie',
   shoots: 'Left',
   position: 'Forward',
   pos_abr: 'F',
