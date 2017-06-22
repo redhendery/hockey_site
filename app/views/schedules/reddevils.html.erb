@@ -24,8 +24,10 @@
               </div>
             </div>
             <div class="card-footer text-muted">
-              <small><span class="float-left"><%= schedule.home_team.venue %></span>
-              <span class="float-right"><%= schedule.prettyDate %></span></small>
+              <div class="row">
+                <div class="col-6"><small><span class="float-left"><%= schedule.home_team.venue %></span></div>
+                <div class="col-6"><span class="float-right"><%= schedule.prettyDate %></span></small></div>
+              </div>
             </div>
           </div>
         </div>
