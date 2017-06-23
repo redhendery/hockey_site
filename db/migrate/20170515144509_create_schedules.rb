@@ -10,5 +10,6 @@ class CreateSchedules < ActiveRecord::Migration[5.1]
       t.integer :home_team_id
     end
     add_column :schedules, :completed, :boolean, :default => false
+    add_column :schedules, :overtime, :boolean, :default => false
   end
 end

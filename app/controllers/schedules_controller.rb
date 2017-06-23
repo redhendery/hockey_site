@@ -1,7 +1,7 @@
 class SchedulesController < ApplicationController
-  before_action :schedules
 
   def index
+    @schedules = Schedule.where(nil).includes(%i[home_team away_team])
   end
 
   def show
@@ -11,6 +11,7 @@ class SchedulesController < ApplicationController
   end
 
   def next
+    @schedules = Schedule.where(nil).includes(%i[home_team away_team])
     if Date.today.tuesday? || Date.today.wednesday? || Date.today.thursday?
       @schedules = @schedules.where(completed: :false).limit(4)
     else
@@ -20,34 +21,28 @@ class SchedulesController < ApplicationController
   end
 
   def swarm
-    @swarm = @schedules.where(home_team_id: 1)
-      .or(@schedules.where(away_team_id: 1))
+    @swarm = Schedule.where(home_team_id: 1)
+      .or(Schedule.where(away_team_id: 1)).includes(%i[home_team away_team])
   end
 
   def reddevils
-    @devils = @schedules.where(home_team_id: 2)
-      .or(@schedules.where(away_team_id: 2))
+    @devils = Schedule.where(home_team_id: 2)
+      .or(Schedule.where(away_team_id: 2)).includes(%i[home_team away_team])
   end
 
   def thunder
-    @thunder = @schedules.where(home_team_id: 3)
-      .or(@schedules.where(away_team_id: 3))
+    @thunder = Schedule.where(home_team_id: 3)
+      .or(Schedule.where(away_team_id: 3)).includes(%i[home_team away_team])
   end
 
   def stampede
-    @stampede = @schedules.where(home_team_id: 4)
-      .or(@schedules.where(away_team_id: 4))
+    @stampede = Schedule.where(home_team_id: 4)
+      .or(Schedule.where(away_team_id: 4)).includes(%i[home_team away_team])
   end
 
   def admirals
-    @admirals = @schedules.where(home_team_id: 5)
-      .or(@schedules.where(away_team_id: 5))
+    @admirals = Schedule.where(home_team_id: 5)
+      .or(Schedule.where(away_team_id: 5)).includes(%i[home_team away_team])
   end
-
-  private
-
-    def schedules
-      @schedules = Schedule.where(nil).includes(%i[home_team away_team])
-    end
 
 end
