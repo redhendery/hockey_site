@@ -207,12 +207,12 @@ Schedule.create([{
 }, {
   away_team_id: 1,
   home_team_id: 4,
-  away_score: 0,
-  home_score: 0,
+  away_score: 2,
+  home_score: 6,
   date: '23/06/2017',
   leagueGame: 'Game 13',
   prettyDate: 'Friday, June 23rd, 7:40pm',
-  completed: false
+  completed: true
 }, {
   away_team_id: 3,
   home_team_id: 2,
