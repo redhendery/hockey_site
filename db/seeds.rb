@@ -34,15 +34,15 @@ p "Added #{Team.count} teams"
 
 Standing.create([{
   # Botany Swarm Standings
-  games: 4,
+  games: 5,
   wins: 1,
-  losses: 2,
+  losses: 3,
   overtime_wins: 0,
   overtime_losses: 1,
   points: 4,
-  goals_for: 15,
-  goals_against: 26,
-  goal_difference: -11,
+  goals_for: 17,
+  goals_against: 32,
+  goal_difference: -15,
   team_id: 1
 }, {
   # Canterbury Red Devils Standings
@@ -70,15 +70,15 @@ Standing.create([{
   team_id: 3
 }, {
   # Skycity Stampede Standings
-  games: 4,
-  wins: 3,
+  games: 5,
+  wins: 4,
   losses: 1,
   overtime_wins: 0,
   overtime_losses: 0,
-  points: 9,
-  goals_for: 19,
-  goals_against: 11,
-  goal_difference: 8,
+  points: 12,
+  goals_for: 25,
+  goals_against: 13,
+  goal_difference: 12,
   team_id: 4
 }, {
   # West Auckland Admirals Standings
