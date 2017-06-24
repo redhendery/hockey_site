@@ -170,25 +170,26 @@ TeamStat.create([{
   team_id: 4
 }, {
   # West Auckland Admirals Team Stats
-  sog: ,
-  goals_scored: ,
-  scoring_percentage: ,
-  sog_allowed: ,
-  goals_against: ,
-  gaa_perecentage: ,
-  pp: ,
-  ppg: ,
-  pp_perecent: ,
-  pim: ,
-  shg: ,
-  shg_allowed: 0,
-  pk: ,
-  ppg_allowed: ,
-  pk_percent: ,
+  sog: 333,
+  goals_scored: 59,
+  scoring_percentage: 17.70,
+  sog_allowed: 144,
+  goals_against: 13,
+  gaa_perecentage: 9.00,
+  pp: 45,
+  ppg: 14,
+  pp_perecent: 31.10,
+  pim: 78,
+  shg: 1,
+  shg_allowed: 1,
+  pk: 34,
+  ppg_allowed: 3,
+  pk_percent: 8.80,
   team_id: 5
 }])
 
 p "Added #{TeamStat.count} team stats"
+
 Schedule.create([{
   away_team_id: 2,
   home_team_id: 4,
