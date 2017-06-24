@@ -2,7 +2,7 @@ class CreateSchedules < ActiveRecord::Migration[5.1]
   def change
     create_table :schedules do |t|
       t.date :date
-      t.string :leagueGame
+      t.string :league_game
       t.string :prettyDate
       t.integer :away_score
       t.integer :home_score

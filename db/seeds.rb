@@ -34,51 +34,51 @@ p "Added #{Team.count} teams"
 
 Standing.create([{
   # Botany Swarm Standings
-  games: 5,
+  games: 6,
   wins: 1,
-  losses: 3,
+  losses: 4,
   overtime_wins: 0,
   overtime_losses: 1,
   points: 4,
   goals_for: 17,
-  goals_against: 32,
-  goal_difference: -15,
+  goals_against: 40,
+  goal_difference: -23,
   team_id: 1
 }, {
   # Canterbury Red Devils Standings
-  games: 6,
+  games: 7,
   wins: 0,
   losses: 5,
   overtime_wins: 1,
-  overtime_losses: 0,
-  points: 2,
-  goals_for: 15,
-  goals_against: 48,
-  goal_difference: -33,
+  overtime_losses: 1,
+  points: 3,
+  goals_for: 19,
+  goals_against: 53,
+  goal_difference: -34,
   team_id: 2
 }, {
   # Dunedin Thunder Standings
-  games: 4,
+  games: 5,
   wins: 1,
   losses: 3,
-  overtime_wins: 0,
+  overtime_wins: 1,
   overtime_losses: 0,
-  points: 3,
-  goals_for: 12,
-  goals_against: 20,
-  goal_difference: -8,
+  points: 5,
+  goals_for: 17,
+  goals_against: 24,
+  goal_difference: -7,
   team_id: 3
 }, {
   # Skycity Stampede Standings
-  games: 5,
-  wins: 4,
+  games: 6,
+  wins: 5,
   losses: 1,
   overtime_wins: 0,
   overtime_losses: 0,
-  points: 12,
-  goals_for: 25,
+  points: 15,
+  goals_for: 31,
   goals_against: 13,
-  goal_difference: 12,
+  goal_difference: 18,
   team_id: 4
 }, {
   # West Auckland Admirals Standings
@@ -102,7 +102,7 @@ Schedule.create([{
   away_score: 1,
   home_score: 6,
   date: '26/05/2017',
-  leagueGame: 'Game 1',
+  league_game: 'Game 1',
   prettyDate: 'Friday, May 26th, 6:50pm',
   overtime: false,
   completed: true
@@ -112,7 +112,7 @@ Schedule.create([{
   away_score: 3,
   home_score: 7,
   date: '27/05/2017',
-  leagueGame: 'Game 2',
+  league_game: 'Game 2',
   prettyDate: 'Saturday, May 27th, 4:30pm',
   overtime: false,
   completed: true
@@ -122,7 +122,7 @@ Schedule.create([{
   away_score: 4,
   home_score: 7,
   date: '27/05/2017',
-  leagueGame: 'Game 3',
+  league_game: 'Game 3',
   prettyDate: 'Saturday, May 27th, 6:50pm',
   overtime: false,
   completed: true
@@ -132,7 +132,7 @@ Schedule.create([{
   away_score: 0,
   home_score: 14,
   date: '28/05/2017',
-  leagueGame: 'Game 4',
+  league_game: 'Game 4',
   prettyDate: 'Sunday, May 28th, 4:30pm',
   overtime: false,
   completed: true
@@ -142,7 +142,7 @@ Schedule.create([{
   away_score: 7,
   home_score: 3,
   date: '10/06/2017',
-  leagueGame: 'Game 5',
+  league_game: 'Game 5',
   prettyDate: 'Saturday, June 10th, 4:30pm',
   overtime: false,
   completed: true
@@ -152,7 +152,7 @@ Schedule.create([{
   away_score: 6,
   home_score: 5,
   date: '10/06/2017',
-  leagueGame: 'Game 6',
+  league_game: 'Game 6',
   prettyDate: 'Saturday, June 10th, 4:45pm',
   overtime: true,
   completed: true
@@ -162,7 +162,7 @@ Schedule.create([{
   away_score: 7,
   home_score: 3,
   date: '11/06/2017',
-  leagueGame: 'Game 7',
+  league_game: 'Game 7',
   prettyDate: 'Saturday, June 11th, 4:30pm',
   overtime: false,
   completed: true
@@ -172,7 +172,7 @@ Schedule.create([{
   away_score: 0,
   home_score: 7,
   date: '11/06/2017',
-  leagueGame: 'Game 8',
+  league_game: 'Game 8',
   prettyDate: 'Sunday, June 11th, 4:45pm',
   overtime: false,
   completed: true
@@ -182,7 +182,7 @@ Schedule.create([{
   away_score: 2,
   home_score: 16,
   date: '17/06/2107',
-  leagueGame: 'Game 9',
+  league_game: 'Game 9',
   prettyDate: 'Saturday, June 17th, 4:30pm',
   overtime: false,
   completed: true
@@ -192,7 +192,7 @@ Schedule.create([{
   away_score: 0,
   home_score: 4,
   date: '17/06/2107',
-  leagueGame: 'Game 10',
+  league_game: 'Game 10',
   prettyDate: 'Saturday, June 17th, 4:40pm',
   overtime: false,
   completed: true
@@ -202,7 +202,7 @@ Schedule.create([{
   away_score: 2,
   home_score: 8,
   date: '18/06/2107',
-  leagueGame: 'Game 11',
+  league_game: 'Game 11',
   prettyDate: 'Sunday, June 18th, 4:30pm',
   overtime: false,
   completed: true
@@ -212,7 +212,7 @@ Schedule.create([{
   away_score: 6,
   home_score: 2,
   date: '18/06/2107',
-  leagueGame: 'Game 12',
+  league_game: 'Game 12',
   prettyDate: 'Sunday, June 18th, 4:40pm',
   overtime: false,
   completed: true
@@ -222,8 +222,28 @@ Schedule.create([{
   away_score: 2,
   home_score: 6,
   date: '23/06/2017',
-  leagueGame: 'Game 13',
+  league_game: 'Game 13',
   prettyDate: 'Friday, June 23rd, 7:40pm',
+  overtime: false,
+  completed: true
+}, {
+  away_team_id: 3,
+  home_team_id: 2,
+  away_score: 5,
+  home_score: 4,
+  date: '24/06/2017',
+  league_game: 'Game 14',
+  prettyDate: 'Saturday, June 24th, 4:45pm',
+  overtime: true,
+  completed: true
+}, {
+  away_team_id: 1,
+  home_team_id: 4,
+  away_score: 0,
+  home_score: 8,
+  date: '24/06/2017',
+  league_game: 'Game 15',
+  prettyDate: 'Saturday, June 24th, 6:50pm',
   overtime: false,
   completed: true
 }, {
@@ -231,28 +251,8 @@ Schedule.create([{
   home_team_id: 2,
   away_score: 0,
   home_score: 0,
-  date: '24/06/2017',
-  leagueGame: 'Game 14',
-  prettyDate: 'Saturday, June 24th, 4:45pm',
-  overtime: false,
-  completed: false
-}, {
-  away_team_id: 1,
-  home_team_id: 4,
-  away_score: 0,
-  home_score: 0,
-  date: '24/06/2017',
-  leagueGame: 'Game 15',
-  prettyDate: 'Saturday, June 24th, 6:50pm',
-  overtime: false,
-  completed: false
-}, {
-  away_team_id: 3,
-  home_team_id: 2,
-  away_score: 0,
-  home_score: 0,
   date: '25/06/2017',
-  leagueGame: 'Game 16',
+  league_game: 'Game 16',
   prettyDate: 'Sunday, June 25th, 4:45pm',
   overtime: false,
   completed: false
@@ -262,7 +262,7 @@ Schedule.create([{
   away_score: 0,
   home_score: 0,
   date: '01/07/2017',
-  leagueGame: 'Game 17',
+  league_game: 'Game 17',
   prettyDate: 'Saturday, July 1st, 4:30pm',
   overtime: false,
   completed: false
@@ -272,7 +272,7 @@ Schedule.create([{
   away_score: 0,
   home_score: 0,
   date: '01/07/2017',
-  leagueGame: 'Game 18',
+  league_game: 'Game 18',
   prettyDate: 'Saturday, July 1st, 4:30pm',
   overtime: false,
   completed: false
@@ -282,7 +282,7 @@ Schedule.create([{
   away_score: 0,
   home_score: 0,
   date: '02/07/2017',
-  leagueGame: 'Game 19',
+  league_game: 'Game 19',
   prettyDate: 'Sunday, July 2nd, 4:30pm',
   overtime: false,
   completed: false
@@ -292,7 +292,7 @@ Schedule.create([{
   away_score: 0,
   home_score: 0,
   date: '02/07/2017',
-  leagueGame: 'Game 20',
+  league_game: 'Game 20',
   prettyDate: 'Sunday, July 2nd, 4:30pm',
   overtime: false,
   completed: false
@@ -302,7 +302,7 @@ Schedule.create([{
   away_score: 0,
   home_score: 0,
   date: '07/07/2017',
-  leagueGame: 'Game 21',
+  league_game: 'Game 21',
   prettyDate: 'Friday, July 7th, 6:50pm',
   overtime: false,
   completed: false
@@ -312,7 +312,7 @@ Schedule.create([{
   away_score: 0,
   home_score: 0,
   date: '08/07/2017',
-  leagueGame: 'Game 22',
+  league_game: 'Game 22',
   prettyDate: 'Saturday, July 8th, 4:35pm',
   overtime: false,
   completed: false
@@ -322,7 +322,7 @@ Schedule.create([{
   away_score: 0,
   home_score: 0,
   date: '08/07/2017',
-  leagueGame: 'Game 23',
+  league_game: 'Game 23',
   prettyDate: 'Saturday, July 8th, 6:50pm',
   overtime: false,
   completed: false
@@ -332,7 +332,7 @@ Schedule.create([{
   away_score: 0,
   home_score: 0,
   date: '09/07/2017',
-  leagueGame: 'Game 24',
+  league_game: 'Game 24',
   prettyDate: 'Sunday, July 9th 2017, 4:30pm',
   overtime: false,
   completed: false
@@ -342,7 +342,7 @@ Schedule.create([{
   away_score: 0,
   home_score: 0,
   date: '14/07/2017',
-  leagueGame: 'Game 25',
+  league_game: 'Game 25',
   prettyDate: 'Friday, July 14th, 6:50pm',
   overtime: false,
   completed: false
@@ -352,7 +352,7 @@ Schedule.create([{
   away_score: 0,
   home_score: 0,
   date: '15/07/2107',
-  leagueGame: 'Game 26',
+  league_game: 'Game 26',
   prettyDate: 'Saturday, July 15th, 4:45pm',
   overtime: false,
   completed: false
@@ -362,7 +362,7 @@ Schedule.create([{
   away_score: 0,
   home_score: 0,
   date: '15/07/2017',
-  leagueGame: 'Game 27',
+  league_game: 'Game 27',
   prettyDate: 'Saturday, July 15th, 6:50pm',
   overtime: false,
   completed: false
@@ -372,7 +372,7 @@ Schedule.create([{
   away_score: 0,
   home_score: 0,
   date: '16/07/2107',
-  leagueGame: 'Game 28',
+  league_game: 'Game 28',
   prettyDate: 'Sunday, July 16th, 4:45pm',
   overtime: false,
   completed: false
@@ -382,7 +382,7 @@ Schedule.create([{
   away_score: 0,
   home_score: 0,
   date: '22/07/2017',
-  leagueGame: 'Game 29',
+  league_game: 'Game 29',
   prettyDate: 'Saturday, July 22nd, 4:45pm',
   overtime: false,
   completed: false
@@ -392,7 +392,7 @@ Schedule.create([{
   away_score: 0,
   home_score: 0,
   date: '22/07/2017',
-  leagueGame: 'Game 30',
+  league_game: 'Game 30',
   prettyDate: 'Saturday, July 22nd 2017, 4:45pm',
   overtime: false,
   completed: false
@@ -402,7 +402,7 @@ Schedule.create([{
   away_score: 0,
   home_score: 0,
   date: '23/07/2017',
-  leagueGame: 'Game 31',
+  league_game: 'Game 31',
   prettyDate: 'Sunday, July 23rd, 4:45pm',
   overtime: false,
   completed: false
@@ -412,7 +412,7 @@ Schedule.create([{
   away_score: 0,
   home_score: 0,
   date: '23/07/2017',
-  leagueGame: 'Game 32',
+  league_game: 'Game 32',
   prettyDate: 'Sunday, July 23nd 2017, 4:45pm',
   overtime: false,
   completed: false
@@ -422,7 +422,7 @@ Schedule.create([{
   away_score: 0,
   home_score: 0,
   date: '29/07/2017',
-  leagueGame: 'Game 33',
+  league_game: 'Game 33',
   prettyDate: 'Saturday July 29th, 4:45pm',
   overtime: false,
   completed: false
@@ -432,7 +432,7 @@ Schedule.create([{
   away_score: 0,
   home_score: 0,
   date: '29/07/2017',
-  leagueGame: 'Game 34',
+  league_game: 'Game 34',
   prettyDate: 'Saturday, July 29th, 4:45pm',
   overtime: false,
   completed: false
@@ -442,7 +442,7 @@ Schedule.create([{
   away_score: 0,
   home_score: 0,
   date: '30/07/2017',
-  leagueGame: 'Game 35',
+  league_game: 'Game 35',
   prettyDate: 'Sunday July 30th, 4:45pm',
   overtime: false,
   completed: false
@@ -452,7 +452,7 @@ Schedule.create([{
   away_score: 0,
   home_score: 0,
   date: '30/07/2017',
-  leagueGame: 'Game 36',
+  league_game: 'Game 36',
   prettyDate: 'Sunday, July 30th, 4:45pm',
   overtime: false,
   completed: false
@@ -462,7 +462,7 @@ Schedule.create([{
   away_score: 0,
   home_score: 0,
   date: '05/08/2017',
-  leagueGame: 'Game 37',
+  league_game: 'Game 37',
   prettyDate: 'Saturday, August 5th, 4:45pm',
   overtime: false,
   completed: false
@@ -472,7 +472,7 @@ Schedule.create([{
   away_score: 0,
   home_score: 0,
   date: '05/08/2017',
-  leagueGame: 'Game 38',
+  league_game: 'Game 38',
   prettyDate: 'Saturday August 5th, 4:45pm',
   overtime: false,
   completed: false
@@ -482,7 +482,7 @@ Schedule.create([{
   away_score: 0,
   home_score: 0,
   date: '06/08/2017',
-  leagueGame: 'Game 39',
+  league_game: 'Game 39',
   prettyDate: 'Sunday, August 6th, 4:45pm',
   overtime: false,
   completed: false
@@ -492,7 +492,7 @@ Schedule.create([{
   away_score: 0,
   home_score: 0,
   date: '06/08/2017',
-  leagueGame: 'Game 40',
+  league_game: 'Game 40',
   prettyDate: 'Sunday August 6th, 4:45pm',
   overtime: false,
   completed: false
