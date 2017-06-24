@@ -44,7 +44,7 @@ class PlayersController < ApplicationController
           :name, :shoots, :position, :pos_abr,
           :number, :games_played, :goals, :assists,
           :goals_against, :gaa, :sog, :saves, :svs,
-          :shutouts, :points, :pim, :plusMinus, :team_id
+          :shutouts, :points, :pim, :plus_minus, :team_id
       )
     end
 
