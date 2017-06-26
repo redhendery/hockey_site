@@ -72,7 +72,7 @@ ActiveRecord::Schema.define(version: 20170623172103) do
     t.decimal "scoring_percentage"
     t.integer "sog_allowed"
     t.integer "goals_against"
-    t.decimal "gaa_perecentage"
+    t.decimal "gaa"
     t.integer "pp"
     t.integer "ppg"
     t.decimal "pp_perecent"
