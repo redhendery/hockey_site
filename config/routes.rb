@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'team_stats/index'
-
   resources :teams, only: %i[index show] do
     resources :players, only: %i[index show]
     resources :stats, only: [:index]
@@ -19,7 +17,7 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :players, only: %i[edit index show update] do
+  resources :players do
     collection do
       get 'all'
     end
