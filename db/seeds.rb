@@ -1934,7 +1934,7 @@ Player.create([{
   gaa: 2.17,
   sog: 146,
   saves: 133,
-  svs: 91.1,
+  svs: 911,
   shutouts: 1,
   team_id: 4
 }, {
