@@ -7,11 +7,9 @@
       <div class="card-block">
         <% @away.players.limit(3).where(pos_abr: %w[F D]).order(assists: :desc).each_with_index do |assists, i| %>
           <div class="table-responsive">
-            <strong>
-              <span class="float-left"><%= i += 1 %>. </span>
-              <span class="float-left"> <%= assists.name %></span>
-              <span class="float-right"><%= assists.assists %></span>
-            </strong>
+            <span class="float-left"><%= i += 1 %>. </span>
+            <span class="float-left"> <%= assists.name %></span>
+            <span class="float-right"><%= assists.assists %></span>
           </div>
         <% end %>
       </div>
