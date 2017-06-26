@@ -343,13 +343,13 @@ Schedule.create([{
 }, {
   away_team_id: 3,
   home_team_id: 2,
-  away_score: 0,
-  home_score: 0,
+  away_score: 4,
+  home_score: 6,
   date: '25/06/2017',
   league_game: 'Game 16',
   prettyDate: 'Sunday, June 25th, 4:45pm',
   overtime: false,
-  completed: false
+  completed: true
 }, {
   away_team_id: 4,
   home_team_id: 5,

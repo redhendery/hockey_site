@@ -11,6 +11,6 @@ class TeamsController < ApplicationController
     @previous = @schedule.where(home_team_id: @team.id)
         .or(@schedule.where(away_team_id: @team.id))
     @previous = @previous.where('date <= ?', Date.today)
-        .limit(2).includes(%i[home_team away_team])
+        .order(date: :desc).limit(2).includes(%i[home_team away_team])
   end
 end
