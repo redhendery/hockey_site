@@ -46,27 +46,27 @@ Standing.create([{
   team_id: 1
 }, {
   # Canterbury Red Devils Standings
-  games: 7,
-  wins: 0,
+  games: 8,
+  wins: 1,
   losses: 5,
   overtime_wins: 1,
   overtime_losses: 1,
-  points: 3,
-  goals_for: 19,
-  goals_against: 53,
-  goal_difference: -34,
+  points: 6,
+  goals_for: 26,
+  goals_against: 57,
+  goal_difference: -31,
   team_id: 2
 }, {
   # Dunedin Thunder Standings
-  games: 5,
+  games: 6,
   wins: 1,
-  losses: 3,
+  losses: 4,
   overtime_wins: 1,
   overtime_losses: 0,
   points: 5,
-  goals_for: 17,
-  goals_against: 24,
-  goal_difference: -7,
+  goals_for: 21,
+  goals_against: 30,
+  goal_difference: -9,
   team_id: 3
 }, {
   # Skycity Stampede Standings
@@ -95,6 +95,100 @@ Standing.create([{
 }])
 
 p "Added #{Standing.count} standings"
+
+TeamStat.create([{
+  # Botany Swarm Team Stats
+  sog: 210,
+  goals_scored: 17,
+  scoring_percentage: 8.10,
+  sog_allowed: 251,
+  goals_against: 40,
+  gaa: 15.90,
+  pp: 45,
+  ppg: 3,
+  pp_perecent: 6.70,
+  pim: 203,
+  shg: 0,
+  shg_allowed: 1,
+  pk: 48,
+  ppg_allowed: 13,
+  pk_percent: 72.90,
+  team_id: 1
+}, {
+  # Canterbury Red Devils Team Stats
+  sog: 202,
+  goals_scored: 15,
+  scoring_percentage: 11.90,
+  sog_allowed: 461,
+  goals_against: 48,
+  gaa: 6.00,
+  pp: 38,
+  ppg: 10,
+  pp_perecent: 26.30,
+  pim: 162,
+  shg: 0,
+  shg_allowed: 4,
+  pk: 35,
+  ppg_allowed: 11,
+  pk_percent: 68.60,
+  team_id: 2
+}, {
+  # Dunedin Thunder Team Stats
+  sog: 252,
+  goals_scored: 21,
+  scoring_percentage: 8.30,
+  sog_allowed: 173,
+  goals_against: 30,
+  gaa: 5.00,
+  pp: 30,
+  ppg: 2,
+  pp_perecent: 6.70,
+  pim: 88,
+  shg: 1,
+  shg_allowed: 0,
+  pk: 28,
+  ppg_allowed: 5,
+  pk_percent: 82.10,
+  team_id: 3
+}, {
+  # Skycity Stampede Team Stats
+  sog: 310,
+  goals_scored: 31,
+  scoring_percentage: 10.00,
+  sog_allowed: 124,
+  goals_against: 13,
+  gaa: 11.30,
+  pp: 35,
+  ppg: 6,
+  pp_perecent: 17.10,
+  pim: 290,
+  shg: 3,
+  shg_allowed: 1,
+  pk: 44,
+  ppg_allowed: 4,
+  pk_percent: 90.90,
+  team_id: 4
+}, {
+  # West Auckland Admirals Team Stats
+  sog: 333,
+  goals_scored: 59,
+  scoring_percentage: 17.70,
+  sog_allowed: 144,
+  goals_against: 13,
+  gaa: 2.17,
+  pp: 45,
+  ppg: 14,
+  pp_perecent: 31.10,
+  pim: 78,
+  shg: 1,
+  shg_allowed: 1,
+  pk: 34,
+  ppg_allowed: 3,
+  pk_percent: 91.20,
+  team_id: 5
+}])
+
+p "Added #{TeamStat.count} team stats"
 
 Schedule.create([{
   away_team_id: 2,
@@ -513,7 +607,7 @@ Player.create([{
   assists: 1,
   points: 1,
   pim: 2,
-  plusMinus: 2,
+  plus_minus: 2,
   team_id: 1
 }, {
   name: 'Steven Adams',
@@ -521,12 +615,12 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 3,
-  games_played: 2,
+  games_played: 4,
   goals: 0,
   assists: 0,
   points: 0,
   pim: 0,
-  plusMinus: -2,
+  plus_minus: -6,
   team_id: 1
 }, {
   name: 'Kahu Joyce',
@@ -534,12 +628,12 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 5,
-  games_played: 4,
+  games_played: 6,
   goals: 0,
   assists: 1,
   points: 1,
-  pim: 2,
-  plusMinus: -1,
+  pim: 4,
+  plus_minus: -3,
   team_id: 1
 }, {
   name: 'Michael Attwell',
@@ -547,12 +641,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 6,
-  games_played: 3,
+  games_played: 5,
   goals: 2,
-  assists: 1,
-  points: 3,
-  pim: 14,
-  plusMinus: -2,
+  assists: 2,
+  points: 4,
+  pim: 16,
+  plus_minus: -3,
   team_id: 1
 }, {
   name: 'Ryan Widmar',
@@ -560,12 +654,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 7,
-  games_played: 4,
+  games_played: 6,
   goals: 0,
   assists: 2,
   points: 2,
   pim: 2,
-  plusMinus: -2,
+  plus_minus: -5,
   team_id: 1
 }, {
   name: 'Robyn Vortanov',
@@ -573,12 +667,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 8,
-  games_played: 3,
-  goals: 0,
+  games_played: 5,
+  goals: 1,
   assists: 2,
-  points: 2,
-  pim: 6,
-  plusMinus: -1,
+  points: 3,
+  pim: 14,
+  plus_minus: -3,
   team_id: 1
 }, {
   name: 'Alexander Mitsionis',
@@ -586,12 +680,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 9,
-  games_played: 4,
-  goals: 5,
+  games_played: 6,
+  goals: 6,
   assists: 2,
-  points: 7,
+  points: 8,
   pim: 8,
-  plusMinus: 3,
+  plus_minus: 0,
   team_id: 1
 }, {
   name: 'Alexander Polosov',
@@ -599,12 +693,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 10,
-  games_played: 3,
+  games_played: 5,
   goals: 0,
   assists: 4,
   points: 4,
-  pim: 2,
-  plusMinus: -1,
+  pim: 4,
+  plus_minus: -5,
   team_id: 1
 }, {
   name: 'Ritchie Hopkinson',
@@ -612,12 +706,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 11,
-  games_played: 4,
+  games_played: 6,
   goals: 0,
   assists: 0,
   points: 0,
-  pim: 0,
-  plusMinus: -2,
+  pim: 2,
+  plus_minus: -4,
   team_id: 1
 }, {
   name: 'Max Hadraschek',
@@ -625,12 +719,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 12,
-  games_played: 4,
+  games_played: 5,
   goals: 4,
   assists: 0,
   points: 4,
-  pim: 6,
-  plusMinus: -3,
+  pim: 8,
+  plus_minus: -5,
   team_id: 1
 }, {
   name: 'Andrew Hay',
@@ -638,12 +732,12 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 13,
-  games_played: 4,
+  games_played: 6,
   goals: 0,
   assists: 2,
   points: 2,
-  pim: 4,
-  plusMinus: 1,
+  pim: 31,
+  plus_minus: -2,
   team_id: 1
 }, {
   name: 'Stephen Mawson',
@@ -656,7 +750,7 @@ Player.create([{
   assists: 0,
   points: 0,
   pim: 4,
-  plusMinus: -3,
+  plus_minus: -3,
   team_id: 1
 }, {
   name: 'Petr Zitka',
@@ -664,12 +758,12 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 15,
-  games_played: 4,
+  games_played: 5,
   goals: 0,
   assists: 0,
   points: 0,
   pim: 2,
-  plusMinus: -3,
+  plus_minus: -2,
   team_id: 1
 }, {
   name: 'Thomas Clow',
@@ -682,7 +776,7 @@ Player.create([{
   assists: 0,
   points: 0,
   pim: 2,
-  plusMinus: -3,
+  plus_minus: -3,
   team_id: 1
 }, {
   name: 'Kyle Jonsson',
@@ -695,7 +789,7 @@ Player.create([{
   assists: 0,
   points: 1,
   pim: 0,
-  plusMinus: -2,
+  plus_minus: -2,
   team_id: 1
 }, {
   name: 'K.C Ball',
@@ -703,12 +797,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 19,
-  games_played: 4,
+  games_played: 6,
   goals: 2,
-  assists: 1,
-  points: 3,
+  assists: 2,
+  points: 4,
   pim: 2,
-  plusMinus: 0,
+  plus_minus: -3,
   team_id: 1
 }, {
   name: 'Oliver Hay',
@@ -716,12 +810,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 20,
-  games_played: 4,
+  games_played: 6,
   goals: 0,
-  assists: 1,
-  points: 1,
-  pim: 10,
-  plusMinus: 0,
+  assists: 2,
+  points: 2,
+  pim: 74,
+  plus_minus: -5,
   team_id: 1
 }, {
   name: 'Joshua Hay',
@@ -729,12 +823,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 21,
-  games_played: 3,
+  games_played: 5,
   goals: 0,
   assists: 1,
   points: 1,
-  pim: 10,
-  plusMinus: -2,
+  pim: 24,
+  plus_minus: -2,
   team_id: 1
 }, {
   name: 'Jordan Challis',
@@ -742,12 +836,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 22,
-  games_played: 4,
+  games_played: 6,
   goals: 0,
   assists: 2,
   points: 2,
-  pim: 8,
-  plusMinus: -4,
+  pim: 10,
+  plus_minus: -8,
   team_id: 1
 }, {
   name: 'Leith Thompson',
@@ -760,7 +854,7 @@ Player.create([{
   assists: 0,
   points: 0,
   pim: 2,
-  plusMinus: 0,
+  plus_minus: 0,
   team_id: 1
 }, {
   name: 'Logan Fraser',
@@ -768,12 +862,12 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 24,
-  games_played: 2,
+  games_played: 4,
   goals: 0,
   assists: 0,
   points: 0,
   pim: 0,
-  plusMinus: 1,
+  plus_minus: -2,
   team_id: 1
 }, {
   name: 'Lewis Commons',
@@ -781,12 +875,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 26,
-  games_played: 4,
+  games_played: 6,
   goals: 0,
   assists: 0,
   points: 0,
   pim: 2,
-  plusMinus: -1,
+  plus_minus: -4,
   team_id: 1
 }, {
   name: 'Ondrej Kozak',
@@ -799,7 +893,7 @@ Player.create([{
   assists: 1,
   points: 2,
   pim: 0,
-  plusMinus: 2,
+  plus_minus: 2,
   team_id: 1
 }, {
   name: 'Blake Fraser',
@@ -812,7 +906,7 @@ Player.create([{
   assists: 0,
   points: 0,
   pim: 0,
-  plusMinus: -1,
+  plus_minus: -1,
   team_id: 1
 }, {
   # Start Botany Swarm Goaltenders
@@ -821,12 +915,12 @@ Player.create([{
   position: 'Goalie',
   pos_abr: 'GK',
   number: 1,
-  games_played: 2,
-  goals_against: 15,
-  gaa: 7.50,
-  sog: 68,
-  saves: 53,
-  svs: 779,
+  games_played: 3,
+  goals_against: 23,
+  gaa: 7.67,
+  sog: 113,
+  saves: 90,
+  svs: 776,
   shutouts: 0,
   team_id: 1
 }, {
@@ -835,12 +929,12 @@ Player.create([{
   position: 'Goalie',
   pos_abr: 'GK',
   number: 30,
-  games_played: 3,
-  goals_against: 12,
-  gaa: 4.00,
-  sog: 87,
-  saves: 75,
-  svs: 862,
+  games_played: 4,
+  goals_against: 18,
+  gaa: 4.50,
+  sog: 138,
+  saves: 120,
+  svs: 870,
   shutouts: 1,
   team_id: 1
 }, {
@@ -850,12 +944,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 2,
-  games_played: 2,
+  games_played: 3,
   goals: 1,
   assists: 0,
   points: 1,
   pim: 0,
-  plusMinus: 2,
+  plus_minus: 2,
   team_id: 2
 }, {
   name: 'Christoph Hechtl',
@@ -863,12 +957,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 3,
-  games_played: 5,
+  games_played: 7,
   goals: 1,
   assists: 2,
   points: 3,
   pim: 0,
-  plusMinus: -11,
+  plus_minus: -11,
   team_id: 2
 }, {
   name: 'Henry Morley-Hall',
@@ -876,12 +970,12 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 7,
-  games_played: 4,
+  games_played: 6,
   goals: 0,
-  assists: 0,
-  points: 0,
+  assists: 1,
+  points: 1,
   pim: 0,
-  plusMinus: -9,
+  plus_minus: -9,
   team_id: 2
 }, {
   name: 'Mason Kennedy',
@@ -889,12 +983,12 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 8,
-  games_played: 4,
+  games_played: 6,
   goals: 1,
-  assists: 0,
-  points: 1,
+  assists: 1,
+  points: 2,
   pim: 14,
-  plusMinus: -5,
+  plus_minus: -3,
   team_id: 2
 }, {
   name: 'Jaxson Lane',
@@ -902,12 +996,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 10,
-  games_played: 6,
+  games_played: 8,
   goals: 0,
   assists: 1,
   points: 1,
-  pim: 6,
-  plusMinus: -13,
+  pim: 8,
+  plus_minus: -11,
   team_id: 2
 }, {
   name: 'Tayler Kennedy',
@@ -915,12 +1009,12 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 11,
-  games_played: 6,
-  goals: 0,
+  games_played: 8,
+  goals: 1,
   assists: 1,
-  points: 1,
+  points: 2,
   pim: 20,
-  plusMinus: -18,
+  plus_minus: -17,
   team_id: 2
 }, {
   name: 'Liam Dallimore',
@@ -933,7 +1027,7 @@ Player.create([{
   assists: 1,
   points: 2,
   pim: 2,
-  plusMinus: 1,
+  plus_minus: 1,
   team_id: 2
 }, {
   name: 'Robert Banks',
@@ -941,12 +1035,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 16,
-  games_played: 6,
-  goals: 2,
-  assists: 3,
-  points: 5,
-  pim: 0,
-  plusMinus: -13,
+  games_played: 8,
+  goals: 3,
+  assists: 5,
+  points: 8,
+  pim: 4,
+  plus_minus: -15,
   team_id: 2
 }, {
  name: 'Alex Damm',
@@ -954,12 +1048,12 @@ Player.create([{
  position: 'Forward',
  pos_abr: 'F',
  number: 0,
- games_played: 2,
+ games_played: 4,
  goals: 1,
  assists: 1,
  points: 2,
  pim: 0,
- plusMinus: -2,
+ plus_minus: -2,
  team_id: 2
 }, {
   name: 'Luke Hill',
@@ -967,12 +1061,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 18,
-  games_played: 6,
+  games_played: 8,
   goals: 0,
   assists: 0,
   points: 0,
   pim: 4,
-  plusMinus: -15,
+  plus_minus: -17,
   team_id: 2
 }, {
   name: 'Shaun Brown',
@@ -985,7 +1079,7 @@ Player.create([{
   assists: 1,
   points: 1,
   pim: 2,
-  plusMinus: -3,
+  plus_minus: -3,
   team_id: 2
 }, {
   name: 'Nik Stefanissin',
@@ -993,12 +1087,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 20,
-  games_played: 3,
+  games_played: 5,
   goals: 0,
   assists: 0,
   points: 0,
   pim: 0,
-  plusMinus: -7,
+  plus_minus: -7,
   team_id: 2
 }, {
   name: 'Bradley Apps',
@@ -1006,25 +1100,51 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 21,
-  games_played: 6,
-  goals: 0,
-  assists: 3,
-  points: 3,
-  pim: 41,
-  plusMinus: -11,
+  games_played: 8,
+  goals: 1,
+  assists: 4,
+  points: 5,
+  pim: 43,
+  plus_minus: -11,
   team_id: 2
 }, {
   name: 'Moses Bygate-Smith',
   shoots: 'Right',
   position: 'Defence',
   pos_abr: 'D',
-  number: 12,
-  games_played: 4,
+  number: 24,
+  games_played: 6,
   goals: 0,
   assists: 0,
   points: 0,
   pim: 0,
-  plusMinus: -4,
+  plus_minus: -4,
+  team_id: 2
+}, {
+	name: 'Mason Rees',
+	shoots: 'Right',
+	position: 'Forward',
+	pos_abr: 'F',
+	number: 27,
+	games_played: 2,
+	goals: 0,
+	assists: 0,
+	points: 0,
+	pim: 6,
+	plus_minus: -2,
+	team_id: 2
+}, {
+  name: 'Dean Toks',
+  shoots: 'Right',
+  position: 'Forward',
+  pos_abr: 'F',
+  number: 28,
+  games_played: 1,
+  goals: 2,
+  assists: 2,
+  points: 4,
+  pim: 0,
+  plus_minus: 2,
   team_id: 2
 }, {
   name: 'Chris Eaden',
@@ -1032,12 +1152,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 43,
-  games_played: 5,
-  goals: 2,
-  assists: 1,
-  points: 3,
-  pim: 29,
-  plusMinus: -12,
+  games_played: 7,
+  goals: 4,
+  assists: 3,
+  points: 7,
+  pim: 31,
+  plus_minus: -12,
   team_id: 2
 }, {
   name: 'Alex Ashwell',
@@ -1045,12 +1165,12 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 44,
-  games_played: 4,
+  games_played: 5,
   goals: 0,
   assists: 2,
   points: 2,
   pim: 8,
-  plusMinus: -2,
+  plus_minus: -2,
   team_id: 2
 }, {
   name: 'Anton Purver',
@@ -1058,12 +1178,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 61,
-  games_played: 6,
+  games_played: 7,
   goals: 1,
-  assists: 1,
-  points: 2,
+  assists: 2,
+  points: 3,
   pim: 0,
-  plusMinus: -12,
+  plus_minus: -11,
   team_id: 2
 }, {
   name: 'Kyle Nash',
@@ -1071,12 +1191,12 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 79,
-  games_played: 6,
-  goals: 1,
+  games_played: 8,
+  goals: 2,
   assists: 1,
-  points: 2,
+  points: 3,
   pim: 4,
-  plusMinus: -3,
+  plus_minus: -4,
   team_id: 2
 }, {
   name: 'Matej Kos',
@@ -1089,7 +1209,7 @@ Player.create([{
   assists: 0,
   points: 3,
   pim: 0,
-  plusMinus: -5,
+  plus_minus: -5,
   team_id: 2
 }, {
   name: 'Alex Egan',
@@ -1097,12 +1217,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 88,
-  games_played: 6,
-  goals: 1,
+  games_played: 8,
+  goals: 2,
   assists: 2,
-  points: 3,
+  points: 4,
   pim: 0,
-  plusMinus: -10,
+  plus_minus: -11,
   team_id: 2
 }, {
   name: 'Austin Delonge',
@@ -1110,12 +1230,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 89,
-  games_played: 5,
+  games_played: 6,
   goals: 0,
   assists: 0,
   points: 0,
   pim: 8,
-  plusMinus: -12,
+  plus_minus: -12,
   team_id: 2
 }, {
   # Start Canterbury Red Devils Goaltenders
@@ -1125,11 +1245,11 @@ Player.create([{
   pos_abr: 'GK',
   number: 1,
   games_played: 5,
-  goals_against: 27,
-  gaa: 5.40,
-  sog: 265,
-  saves: 238,
-  svs: 898,
+  goals_against: 36,
+  gaa: 7.20,
+  sog: 355,
+  saves: 319,
+  svs: 899,
   shutouts: 0,
   team_id: 2
 }, {
@@ -1153,12 +1273,12 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 2,
-  games_played: 4,
-  goals: 1,
-  assists: 2,
-  points: 3,
+  games_played: 6,
+  goals: 2,
+  assists: 4,
+  points: 6,
   pim: 12,
-  plusMinus: -3,
+  plus_minus: -1,
   team_id: 3
 }, {
   name: 'Easton Oliver ',
@@ -1166,64 +1286,12 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 5,
-  games_played: 4,
-  goals: 1,
+  games_played: 6,
+  goals: 2,
   assists: 3,
-  points: 4,
+  points: 5,
   pim: 8,
-  plusMinus: 0,
-  team_id: 3
-}, {
-  name: 'Charlie Lilly',
-  shoots: 'Right',
-  position: 'Defence',
-  pos_abr: 'D',
-  number: 17,
-  games_played: 4,
-  goals: 0,
-  assists: 0,
-  points: 0,
-  pim: 0,
-  plusMinus: 0,
-  team_id: 3
-}, {
-  name: 'Regan Wilson',
-  shoots: 'Right',
-  position: 'Defence',
-  pos_abr: 'D',
-  number: 19,
-  games_played: 4,
-  goals: 0,
-  assists: 0,
-  points: 0,
-  pim: 4,
-  plusMinus: -3,
-  team_id: 3
-}, {
-  name: 'Dylan Devlin',
-  shoots: 'Right',
-  position: 'Defence',
-  pos_abr: 'D',
-  number: 21,
-  games_played: 4,
-  goals: 1,
-  assists: 0,
-  points: 1,
-  pim: 0,
-  plusMinus: -1,
-  team_id: 3
-}, {
-  name: 'George Coslett',
-  shoots: 'Right',
-  position: 'Defence',
-  pos_abr: 'D',
-  number: 59,
-  games_played: 4,
-  goals: 0,
-  assists: 0,
-  points: 0,
-  pim: 4,
-  plusMinus: -3,
+  plus_minus: 2,
   team_id: 3
 }, {
   name: 'Matas Barakauskas',
@@ -1231,38 +1299,25 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 6,
-  games_played: 4,
+  games_played: 6,
   goals: 0,
   assists: 0,
   points: 0,
   pim: 0,
-  plusMinus: -4,
+  plus_minus: -5,
   team_id: 3
 }, {
-  name: 'Liam Kinraid',
+  name: 'Joe Orr',
   shoots: 'Right',
   position: 'Forward',
   pos_abr: 'F',
-  number: 23,
-  games_played: 4,
-  goals: 0,
-  assists: 0,
-  points: 0,
-  pim: 0,
-  plusMinus: -3,
-  team_id: 3
-}, {
-  name: 'Tristan Darling',
-  shoots: 'Right',
-  position: 'Forward',
-  pos_abr: 'F',
-  number: 23,
+  number: 9,
   games_played: 4,
   goals: 1,
   assists: 1,
   points: 2,
-  pim: 6,
-  plusMinus: -3,
+  pim: 12,
+  plus_minus: -4,
   team_id: 3
 }, {
   name: 'George Hopkins',
@@ -1275,7 +1330,7 @@ Player.create([{
   assists: 0,
   points: 0,
   pim: 0,
-  plusMinus: 0,
+  plus_minus: 0,
   team_id: 3
 }, {
   name: 'Padraig MacKenzie',
@@ -1288,7 +1343,98 @@ Player.create([{
   assists: 0,
   points: 0,
   pim: 0,
-  plusMinus: 0,
+  plus_minus: 0,
+  team_id: 3
+}, {
+  name: 'Paris Heyd',
+  shoots: 'Right',
+  position: 'Forward',
+  pos_abr: 'F',
+  number: 16,
+  games_played: 6,
+  goals: 5,
+  assists: 5,
+  points: 10,
+  pim: 4,
+  plus_minus: -5,
+  team_id: 3
+}, {
+  name: 'Charlie Lilly',
+  shoots: 'Right',
+  position: 'Defence',
+  pos_abr: 'D',
+  number: 17,
+  games_played: 6,
+  goals: 0,
+  assists: 0,
+  points: 0,
+  pim: 0,
+  plus_minus: 0,
+  team_id: 3
+}, {
+  name: 'Regan Wilson',
+  shoots: 'Right',
+  position: 'Defence',
+  pos_abr: 'D',
+  number: 19,
+  games_played: 4,
+  goals: 0,
+  assists: 0,
+  points: 0,
+  pim: 4,
+  plus_minus: -3,
+  team_id: 3
+}, {
+  name: 'Dylan Devlin',
+  shoots: 'Right',
+  position: 'Defence',
+  pos_abr: 'D',
+  number: 21,
+  games_played: 6,
+  goals: 2,
+  assists: 0,
+  points: 2,
+  pim: 0,
+  plus_minus: 1,
+  team_id: 3
+}, {
+  name: 'Liam Kinraid',
+  shoots: 'Right',
+  position: 'Forward',
+  pos_abr: 'F',
+  number: 23,
+  games_played: 4,
+  goals: 0,
+  assists: 0,
+  points: 0,
+  pim: 0,
+  plus_minus: -3,
+  team_id: 3
+}, {
+  name: 'Tristan Darling',
+  shoots: 'Right',
+  position: 'Forward',
+  pos_abr: 'F',
+  number: 26,
+  games_played: 6,
+  goals: 2,
+  assists: 1,
+  points: 3,
+  pim: 6,
+  plus_minus: -5,
+  team_id: 3
+}, {
+  name: 'Noah Leahy',
+  shoots: 'Left',
+  position: 'Forward',
+  pos_abr: 'F',
+  number: 35,
+  games_played: 5,
+  goals: 0,
+  assists: 0,
+  points: 0,
+  pim: 0,
+  plus_minus: -6,
   team_id: 3
 }, {
   name: 'Felipe Aguirre',
@@ -1301,20 +1447,20 @@ Player.create([{
   assists: 0,
   points: 0,
   pim: 0,
-  plusMinus: -1,
+  plus_minus: -1,
   team_id: 3
 }, {
-  name: 'Noah Leahy',
-  shoots: 'Left',
-  position: 'Forward',
-  pos_abr: 'F',
-  number: 35,
-  games_played: 3,
+  name: 'George Coslett',
+  shoots: 'Right',
+  position: 'Defence',
+  pos_abr: 'D',
+  number: 59,
+  games_played: 5,
   goals: 0,
   assists: 0,
   points: 0,
-  pim: 0,
-  plusMinus: -4,
+  pim: 14,
+  plus_minus: -3,
   team_id: 3
 }, {
   name: 'Pierre-Luc Coulombe',
@@ -1327,7 +1473,33 @@ Player.create([{
   assists: 0,
   points: 1,
   pim: 4,
-  plusMinus: 1,
+  plus_minus: 1,
+  team_id: 3
+}, {
+  name: 'Gregory Wilson',
+  shoots: 'Right',
+  position: 'Forward',
+  pos_abr: 'F',
+  number: 36,
+  games_played: 6,
+  goals: 3,
+  assists: 3,
+  points: 6,
+  pim: 0,
+  plus_minus: -3,
+  team_id: 3
+}, {
+  name: 'Kevin Jagau',
+  shoots: 'Right',
+  position: 'Forward',
+  pos_abr: 'F',
+  number: 56,
+  games_played: 6,
+  goals: 1,
+  assists: 2,
+  points: 3,
+  pim: 0,
+  plus_minus: -5,
   team_id: 3
 }, {
   name: 'Jacob Hurring',
@@ -1335,12 +1507,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 61,
-  games_played: 2,
-  goals: 0,
-  assists: 0,
-  points: 0,
-  pim: 0,
-  plusMinus: -2,
+  games_played: 4,
+  goals: 1,
+  assists: 3,
+  points: 4,
+  pim: 6,
+  plus_minus: 2,
   team_id: 3
 }, {
   name: 'Liam Roth',
@@ -1348,12 +1520,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 68,
-  games_played: 4,
+  games_played: 6,
   goals: 0,
   assists: 0,
   points: 0,
   pim: 4,
-  plusMinus: -4,
+  plus_minus: -5,
   team_id: 3
 }, {
   name: 'Liam Kinney',
@@ -1366,7 +1538,7 @@ Player.create([{
   assists: 0,
   points: 0,
   pim: 0,
-  plusMinus: -3,
+  plus_minus: -3,
   team_id: 3
 }, {
   name: 'Benjamin Gavoille',
@@ -1374,12 +1546,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 74,
-  games_played: 4,
+  games_played: 6,
   goals: 2,
-  assists: 0,
-  points: 2,
+  assists: 1,
+  points: 3,
   pim: 4,
-  plusMinus: -2,
+  plus_minus: -1,
   team_id: 3
 }, {
   name: 'Ben Roth',
@@ -1387,64 +1559,25 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 81,
-  games_played: 4,
+  games_played: 6,
   goals: 0,
   assists: 0,
   points: 0,
-  pim: 2,
-  plusMinus: -4,
+  pim: 6,
+  plus_minus: -6,
   team_id: 3
 }, {
-  name: 'Paris Heyd',
+  name: 'Pierre-Luc Coulombe',
   shoots: 'Right',
-  position: 'Forward',
-  pos_abr: 'F',
-  number: 16,
-  games_played: 4,
-  goals: 2,
-  assists: 2,
-  points: 4,
-  pim: 2,
-  plusMinus: -1,
-  team_id: 3
-}, {
-  name: 'Gregory Wilson',
-  shoots: 'Right',
-  position: 'Forward',
-  pos_abr: 'F',
-  number: 36,
-  games_played: 4,
-  goals: 2,
-  assists: 2,
-  points: 4,
-  pim: 0,
-  plusMinus: 0,
-  team_id: 3
-}, {
-  name: 'Kevin Jagau',
-  shoots: 'Right',
-  position: 'Forward',
-  pos_abr: 'F',
-  number: 56,
-  games_played: 4,
+  position: 'Defence',
+  pos_abr: 'D',
+  number: 98,
+  games_played: 6,
   goals: 1,
-  assists: 1,
-  points: 2,
-  pim: 0,
-  plusMinus: -2,
-  team_id: 3
-}, {
-  name: 'Joe Orr',
-  shoots: 'Right',
-  position: 'Forward',
-  pos_abr: 'F',
-  number: 9,
-  games_played: 4,
-  goals: 1,
-  assists: 1,
-  points: 2,
-  pim: 0,
-  plusMinus: -3,
+  assists: 0,
+  points: 1,
+  pim: 10,
+  plus_minus: 0,
   team_id: 3
 }, {
   # Start Thunder Goaltenders
@@ -1453,13 +1586,27 @@ Player.create([{
   position: 'Goalie',
   pos_abr: 'GK',
   number: 55,
-  games_played: 4,
-  goals_against: 19,
-  gaa: 4.75,
-  sog: 170,
-  saves: 151,
-  svs: 888,
+  games_played: 6,
+  goals_against: 28,
+  gaa: 4.67,
+  sog: 237,
+  saves: 209,
+  svs: 873,
   shutouts: 1,
+  team_id: 3
+}, {
+  name: 'Kane Easterbrok',
+  catches: 'Left',
+  position: 'Goalie',
+  pos_abr: 'GK',
+  number: 72,
+  games_played: 1,
+  goals_against: 1,
+  gaa: 1.00,
+  sog: 9,
+  saves: 8,
+  svs: 889,
+  shutouts: 0,
   team_id: 3
 }, {
   name: 'Jonas Barakauskas',
@@ -1482,12 +1629,12 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 2,
-  games_played: 4,
+  games_played: 6,
   goals: 0,
   assists: 0,
   points: 0,
   pim: 6,
-  plusMinus: -1,
+  plus_minus: -1,
   team_id: 4
 }, {
   name: 'Stefan Helmersson',
@@ -1495,12 +1642,12 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 3,
-  games_played: 4,
-  goals: 0,
-  assists: 2,
-  points: 2,
+  games_played: 6,
+  goals: 1,
+  assists: 6,
+  points: 7,
   pim: 2,
-  plusMinus: 3,
+  plus_minus: 7,
   team_id: 4
 }, {
   name: 'Matt Schneider',
@@ -1508,12 +1655,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 4,
-  games_played: 4,
-  goals: 1,
-  assists: 6,
-  points: 7,
+  games_played: 6,
+  goals: 3,
+  assists: 7,
+  points: 10,
   pim: 14,
-  plusMinus: 3,
+  plus_minus: 8,
   team_id: 4
 }, {
   name: 'Kyle Mulder',
@@ -1526,7 +1673,7 @@ Player.create([{
   assists: 1,
   points: 1,
   pim: 4,
-  plusMinus: 1,
+  plus_minus: 1,
   team_id: 4
 }, {
   name: 'Cameron Trew',
@@ -1534,12 +1681,12 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 8,
-  games_played: 4,
+  games_played: 6,
   goals: 0,
   assists: 1,
   points: 1,
   pim: 0,
-  plusMinus: 4,
+  plus_minus: 5,
   team_id: 4
 }, {
   name: 'Cameron Frear',
@@ -1547,12 +1694,12 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 9,
-  games_played: 4,
+  games_played: 6,
   goals: 0,
   assists: 2,
   points: 2,
   pim: 4,
-  plusMinus: 1,
+  plus_minus: 2,
   team_id: 4
 }, {
   name: 'Tomi Martikainen',
@@ -1560,12 +1707,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 11,
-  games_played: 4,
-  goals: 3,
-  assists: 3,
-  points: 6,
+  games_played: 6,
+  goals: 4,
+  assists: 4,
+  points: 8,
   pim: 0,
-  plusMinus: 3,
+  plus_minus: 8,
   team_id: 4
 }, {
   name: 'Braden Lee',
@@ -1573,12 +1720,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 12,
-  games_played: 4,
-  goals: 3,
+  games_played: 6,
+  goals: 5,
   assists: 2,
-  points: 5,
+  points: 7,
   pim: 2,
-  plusMinus: 3,
+  plus_minus: 5,
   team_id: 4
 }, {
 	name: 'Mike McRae',
@@ -1586,12 +1733,12 @@ Player.create([{
 	position: 'Forward',
 	pos_abr: 'F',
 	number: 13,
-	games_played: 1,
-	goals: 0,
-	assists: 3,
-	points: 3,
-	pim: 2,
-	plusMinus: 3,
+	games_played: 3,
+	goals: 1,
+	assists: 8,
+	points: 9,
+	pim: 10,
+	plus_minus: 7,
 	team_id: 4
 }, {
 	name: 'Callum Burns',
@@ -1599,12 +1746,12 @@ Player.create([{
 	position: 'Forward',
 	pos_abr: 'F',
 	number: 14,
-	games_played: 2,
-	goals: 0,
-	assists: 0,
-	points: 0,
+	games_played: 4,
+	goals: 2,
+	assists: 1,
+	points: 3,
 	pim: 0,
-	plusMinus: 2,
+	plus_minus: 6,
 	team_id: 4
 }, {
   name: 'Jeremy Akeson',
@@ -1612,12 +1759,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 15,
-  games_played: 4,
+  games_played: 6,
   goals: 3,
-  assists: 5,
-  points: 8,
-  pim: 53,
-  plusMinus: 6,
+  assists: 6,
+  points: 9,
+  pim: 59,
+  plus_minus: 6,
   team_id: 4
 }, {
   name: 'Mitchell Frear',
@@ -1625,12 +1772,12 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 16,
-  games_played: 4,
+  games_played: 6,
   goals: 0,
-  assists: 1,
-  points: 1,
-  pim: 0,
-  plusMinus: 9,
+  assists: 2,
+  points: 2,
+  pim: 79,
+  plus_minus: 11,
   team_id: 4
 }, {
 	name: 'Harrison Macharg',
@@ -1638,12 +1785,12 @@ Player.create([{
 	position: 'Forward',
 	pos_abr: 'F',
 	number: 17,
-	games_played: 2,
+	games_played: 4,
 	goals: 0,
-	assists: 0,
-	points: 0,
+	assists: 1,
+	points: 1,
 	pim: 0,
-	plusMinus: -1,
+	plus_minus: 0,
 	team_id: 4
 }, {
   name: 'Adam Soffer',
@@ -1651,12 +1798,25 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 19,
-  games_played: 4,
+  games_played: 6,
   goals: 0,
   assists: 0,
   points: 0,
   pim: 2,
-  plusMinus: -1,
+  plus_minus: 0,
+  team_id: 4
+}, {
+  name: 'Gareth Lloyd',
+  shoots: 'Right',
+  position: 'Forward',
+  pos_abr: 'F',
+  number: 20,
+  games_played: 1,
+  goals: 0,
+  assists: 0,
+  points: 0,
+  pim: 0,
+  plus_minus: 0,
   team_id: 4
 }, {
   name: 'Ben Miller',
@@ -1669,7 +1829,7 @@ Player.create([{
   assists: 0,
   points: 0,
   pim: 0,
-  plusMinus: 0,
+  plus_minus: 0,
   team_id: 4
 }, {
   name: 'Hayden Argyle',
@@ -1677,12 +1837,12 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 22,
-  games_played: 4,
+  games_played: 6,
   goals: 0,
-  assists: 0,
-  points: 0,
-  pim: 2,
-  plusMinus: 0,
+  assists: 1,
+  points: 1,
+  pim: 6,
+  plus_minus: 2,
   team_id: 4
 }, {
   name: 'Harrison Mills',
@@ -1695,7 +1855,7 @@ Player.create([{
   assists: 0,
   points: 0,
   pim: 0,
-  plusMinus: 1,
+  plus_minus: 1,
   team_id: 4
 }, {
   name: 'Lachlan Frear',
@@ -1703,25 +1863,25 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 24,
-  games_played: 4,
+  games_played: 6,
+  goals: 1,
+  assists: 0,
+  points: 1,
+  pim: 2,
+  plus_minus: 1,
+  team_id: 4
+}, {
+  name: 'Bradley Saville',
+  shoots: 'Right',
+  position: 'Defence',
+  pos_abr: 'D',
+  number: 28,
+  games_played: 2,
   goals: 0,
   assists: 0,
   points: 0,
-  pim: 2,
-  plusMinus: 0,
-  team_id: 4
-}, {
-  name: 'Colin McIntosh',
-  shoots: 'Right',
-  position: 'Forward',
-  pos_abr: 'F',
-  number: 27,
-  games_played: 4,
-  goals: 6,
-  assists: 4,
-  points: 10,
-  pim: 22,
-  plusMinus: 7,
+  pim: 0,
+  plus_minus: 0,
   team_id: 4
 }, {
   name: 'Harley Anderson',
@@ -1729,12 +1889,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 44,
-  games_played: 4,
-  goals: 0,
-  assists: 0,
-  points: 0,
+  games_played: 6,
+  goals: 1,
+  assists: 1,
+  points: 2,
   pim: 0,
-  plusMinus: 0,
+  plus_minus: 1,
   team_id: 4
 }, {
   name: 'Connor Harrison',
@@ -1742,12 +1902,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 88,
-  games_played: 4,
-  goals: 0,
+  games_played: 6,
+  goals: 1,
   assists: 0,
-  points: 0,
-  pim: 14,
-  plusMinus: -1,
+  points: 1,
+  pim: 43,
+  plus_minus: 0,
   team_id: 4
 }, {
   name: 'Jaden Skipper',
@@ -1755,12 +1915,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 89,
-  games_played: 4,
+  games_played: 6,
   goals: 0,
   assists: 0,
   points: 0,
   pim: 0,
-  plusMinus: -1,
+  plus_minus: 0,
   team_id: 4
 }, {
   # Start Skycity Stampede Goaltenders
@@ -1769,13 +1929,13 @@ Player.create([{
   position: 'Goalie',
   pos_abr: 'GK',
   number: 39,
-  games_played: 4,
-  goals_against: 11,
-  gaa: 2.75,
-  sog: 103,
-  saves: 92,
-  svs: 893,
-  shutouts: 0,
+  games_played: 6,
+  goals_against: 13,
+  gaa: 2.17,
+  sog: 146,
+  saves: 133,
+  svs: 91.1,
+  shutouts: 1,
   team_id: 4
 }, {
   name: 'Matt Swirtz',
@@ -1803,7 +1963,7 @@ Player.create([{
   assists: 9,
   points: 9,
   pim: 2,
-  plusMinus: 11,
+  plus_minus: 11,
   team_id: 5
 }, {
   name: 'Nick Craig',
@@ -1816,7 +1976,7 @@ Player.create([{
   assists: 4,
   points: 5,
   pim: 0,
-  plusMinus: 10,
+  plus_minus: 10,
   team_id: 5
 }, {
   name: 'Blake Jackson',
@@ -1829,7 +1989,7 @@ Player.create([{
   assists: 4,
   points: 4,
   pim: 2,
-  plusMinus: 11,
+  plus_minus: 11,
   team_id: 5
 }, {
   name: 'Frazer Ellis',
@@ -1842,7 +2002,7 @@ Player.create([{
   assists: 4,
   points: 8,
   pim: 12,
-  plusMinus: 4,
+  plus_minus: 4,
   team_id: 5
 }, {
   name: 'Steve Huish',
@@ -1855,7 +2015,7 @@ Player.create([{
   assists: 0,
   points: 1,
   pim: 2,
-  plusMinus: 3,
+  plus_minus: 3,
   team_id: 5
 }, {
   name: 'Thomas Battani',
@@ -1868,7 +2028,7 @@ Player.create([{
   assists: 8,
   points: 22,
   pim: 6,
-  plusMinus: 21,
+  plus_minus: 21,
   team_id: 5
 }, {
   name: 'Andy Hart',
@@ -1881,7 +2041,7 @@ Player.create([{
   assists: 5,
   points: 7,
   pim: 12,
-  plusMinus: 10,
+  plus_minus: 10,
   team_id: 5
 }, {
   name: 'Gareth McLeish',
@@ -1894,7 +2054,7 @@ Player.create([{
   assists: 1,
   points: 2,
   pim: 4,
-  plusMinus: 10,
+  plus_minus: 10,
   team_id: 5
 }, {
   name: 'Scott Randell',
@@ -1907,7 +2067,7 @@ Player.create([{
   assists: 0,
   points: 1,
   pim: 2,
-  plusMinus: 2,
+  plus_minus: 2,
   team_id: 5
 }, {
   name: 'Dylan Dickson',
@@ -1920,7 +2080,7 @@ Player.create([{
   assists: 1,
   points: 2,
   pim: 10,
-  plusMinus: 6,
+  plus_minus: 6,
   team_id: 5
 }, {
   name: 'Dale Harrop',
@@ -1933,7 +2093,7 @@ Player.create([{
   assists: 5,
   points: 10,
   pim: 6,
-  plusMinus: 7,
+  plus_minus: 7,
   team_id: 5
 }, {
   name: 'Ryan Martinoli',
@@ -1946,7 +2106,7 @@ Player.create([{
   assists: 1,
   points: 1,
   pim: 2,
-  plusMinus: -2,
+  plus_minus: -2,
   team_id: 5
 }, {
   name: 'Henric Andersen',
@@ -1959,7 +2119,7 @@ Player.create([{
   assists: 16,
   points: 20,
   pim: 0,
-  plusMinus: 20,
+  plus_minus: 20,
   team_id: 5
 }, {
   name: 'Remy Sandoy',
@@ -1972,7 +2132,7 @@ Player.create([{
   assists: 1,
   points: 1,
   pim: 2,
-  plusMinus: 16,
+  plus_minus: 16,
   team_id: 5
 }, {
   name: 'Ryan Ruddle',
@@ -1985,7 +2145,7 @@ Player.create([{
   assists: 5,
   points: 6,
   pim: 4,
-  plusMinus: 4,
+  plus_minus: 4,
   team_id: 5
 }, {
   name: 'Nick Henderson',
@@ -1998,7 +2158,7 @@ Player.create([{
   assists: 7,
   points: 13,
   pim: 4,
-  plusMinus: 11,
+  plus_minus: 11,
   team_id: 5
 }, {
   name: 'Mark Rawiri',
@@ -2011,7 +2171,7 @@ Player.create([{
   assists: 0,
   points: 0,
   pim: 0,
-  plusMinus: -1,
+  plus_minus: -1,
   team_id: 5
 }, {
   name: 'Adrian Toth',
@@ -2024,7 +2184,7 @@ Player.create([{
   assists: 17,
   points: 25,
   pim: 4,
-  plusMinus: 22,
+  plus_minus: 22,
   team_id: 5
 }, {
   name: 'Max Vesper',
@@ -2037,7 +2197,7 @@ Player.create([{
   assists: 0,
   points: 0,
   pim: 0,
-  plusMinus: -1,
+  plus_minus: -1,
   team_id: 5
 }, {
   name: 'Taylor Rooney',
@@ -2050,7 +2210,7 @@ Player.create([{
   assists: 6,
   points: 6,
   pim: 2,
-  plusMinus: 7,
+  plus_minus: 7,
   team_id: 5
 }, {
   name: 'Regan Alexander',
@@ -2063,7 +2223,7 @@ Player.create([{
   assists: 0,
   points: 0,
   pim: 0,
-  plusMinus: -2,
+  plus_minus: -2,
   team_id: 5
 }, {
   name: 'Justin Daigle',
@@ -2076,7 +2236,7 @@ Player.create([{
   assists: 10,
   points: 16,
   pim: 0,
-  plusMinus: 16,
+  plus_minus: 16,
   team_id: 5
 }, {
   # Start West Auckland Admirals Goaltenders

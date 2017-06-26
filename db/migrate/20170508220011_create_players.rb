@@ -12,7 +12,7 @@ class CreatePlayers < ActiveRecord::Migration[5.1]
       t.integer :assists
       t.integer :points
       t.integer :pim
-      t.integer :plusMinus
+      t.integer :plus_minus
       t.integer :svs
       t.integer :sog
       t.integer :saves

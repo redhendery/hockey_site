@@ -1,0 +1,35 @@
+<div class="card-deck">
+  <div class="card">
+    <div class="card-header text-center">
+      <strong>Team Defensive Stats</strong>
+    </div>
+    <div class="card-block">
+      <div class="row">
+        <table class="table-sm w-100">
+          <thead class="table">
+            <tr>
+              <th class="text-center">GA</th>
+              <th class="text-center">SOGA</th>
+              <th class="text-center">GAA</th>
+              <th class="text-center">SHGA</th>
+              <th class="text-center">PIM</th>
+              <th class="text-center">PK</th>
+              <th class="text-center">PPGA</th>
+              <th class="text-center">PK%</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="align-middle text-center">
+            <td><%= @team.team_stat.goals_against %></td>
+            <td><%= @team.team_stat.sog_allowed %></td>
+            <td><%= '%.2f' % @team.team_stat.gaa_perecentage %></td>
+            <td><%= @team.team_stat.shg_allowed %></td>
+            <td><%= @team.team_stat.pim %></td>
+            <td><%= @team.team_stat.pk %></td>
+            <td><%= @team.team_stat.ppg_allowed %></td>
+            <td><%= '%.2f' % @team.team_stat.pk_percent %>%</td>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
