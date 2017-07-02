@@ -17,6 +17,9 @@
                 <% if schedule.overtime %>
                   <h1 class="align-middle item-score">OT</h1>
                 <% end %>
+                <% if schedule.shootout %>
+                  <h1 class="align-middle item-score">SO</h1>
+                <% end %>
                 <% if schedule.completed %>
                   <h1 class="align-middle item-score"><%= schedule.home_score %> - <%= schedule.away_score %></h1>
                 <% else %>

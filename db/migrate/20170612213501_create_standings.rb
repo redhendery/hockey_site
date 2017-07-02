@@ -6,6 +6,7 @@ class CreateStandings < ActiveRecord::Migration[5.1]
       t.integer :losses
       t.integer :overtime_wins
       t.integer :overtime_losses
+      t.integer :shootout
       t.integer :points
       t.integer :goals_for
       t.integer :goals_against

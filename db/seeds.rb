@@ -34,15 +34,16 @@ p "Added #{Team.count} teams"
 
 Standing.create([{
   # Botany Swarm Standings
-  games: 7,
+  games: 8,
   wins: 1,
   losses: 5,
   overtime_wins: 0,
-  overtime_losses: 1,
-  points: 4,
-  goals_for: 18,
-  goals_against: 46,
-  goal_difference: -28,
+  overtime_losses: 2,
+  shootout: 0,
+  points: 5,
+  goals_for: 22,
+  goals_against: 51,
+  goal_difference: -29,
   team_id: 1
 }, {
   # Canterbury Red Devils Standings
@@ -51,6 +52,7 @@ Standing.create([{
   losses: 5,
   overtime_wins: 1,
   overtime_losses: 1,
+  shootout: 0,
   points: 6,
   goals_for: 26,
   goals_against: 57,
@@ -58,39 +60,42 @@ Standing.create([{
   team_id: 2
 }, {
   # Dunedin Thunder Standings
-  games: 7,
+  games: 8,
   wins: 2,
   losses: 4,
-  overtime_wins: 1,
+  overtime_wins: 2,
   overtime_losses: 0,
-  points: 8,
-  goals_for: 27,
-  goals_against: 31,
-  goal_difference: -4,
+  shootout: 1,
+  points: 10,
+  goals_for: 33,
+  goals_against: 35,
+  goal_difference: -2,
   team_id: 3
 }, {
   # Skycity Stampede Standings
-  games: 7,
-  wins: 5,
+  games: 8,
+  wins: 6,
   losses: 2,
   overtime_wins: 0,
   overtime_losses: 0,
-  points: 15,
-  goals_for: 32,
-  goals_against: 17,
-  goal_difference: 15,
+  shootout: 0,
+  points: 18,
+  goals_for: 37,
+  goals_against: 20,
+  goal_difference: 17,
   team_id: 4
 }, {
   # West Auckland Admirals Standings
-  games: 7,
+  games: 8,
   wins: 7,
-  losses: 0,
+  losses: 1,
   overtime_wins: 0,
   overtime_losses: 0,
+  shootout: 0,
   points: 21,
-  goals_for: 63,
-  goals_against: 14,
-  goal_difference: 49,
+  goals_for: 66,
+  goals_against: 19,
+  goal_difference: 47,
   team_id: 5
 }])
 
@@ -98,21 +103,21 @@ p "Added #{Standing.count} standings"
 
 TeamStat.create([{
   # Botany Swarm Team Stats
-  sog: 246,
-  goals_scored: 18,
-  scoring_percentage: 7.30,
-  sog_allowed: 283,
-  goals_against: 46,
-  gaa: 6.57,
-  pp: 54,
+  sog: 288,
+  goals_scored: 22,
+  scoring_percentage: 7.63,
+  sog_allowed: 337,
+  goals_against: 51,
+  gaa: 6.38,
+  pp: 60,
   ppg: 4,
-  pp_perecent: 7.40,
-  pim: 211,
+  pp_perecent: 6.67,
+  pim: 225,
   shg: 0,
   shg_allowed: 2,
-  pk: 52,
-  ppg_allowed: 15,
-  pk_percent: 71.15,
+  pk: 59,
+  ppg_allowed: 18,
+  pk_percent: 69.49,
   team_id: 1
 }, {
   # Canterbury Red Devils Team Stats
@@ -134,21 +139,21 @@ TeamStat.create([{
   team_id: 2
 }, {
   # Dunedin Thunder Team Stats
-  sog: 284,
-  goals_scored: 27,
-  scoring_percentage: 9.40,
-  sog_allowed: 209,
+  sog: 338,
+  goals_scored: 32,
+  scoring_percentage: 9.46,
+  sog_allowed: 251,
   goals_against: 31,
-  gaa: 4.43,
-  pp: 34,
-  ppg: 4,
-  pp_perecent: 11.80,
-  pim: 106,
+  gaa: 3.88,
+  pp: 41,
+  ppg: 7,
+  pp_perecent: 17.07,
+  pim: 118,
   shg: 2,
   shg_allowed: 0,
-  pk: 37,
+  pk: 43,
   ppg_allowed: 6,
-  pk_percent: 83.78,
+  pk_percent: 86.05,
   team_id: 3
 }, {
   # Skycity Stampede Team Stats
@@ -198,6 +203,7 @@ Schedule.create([{
   date: '26/05/2017',
   league_game: 'Game 1',
   prettyDate: 'Friday, May 26th, 6:50pm',
+  shootout: false,
   overtime: false,
   completed: true
 }, {
@@ -208,6 +214,7 @@ Schedule.create([{
   date: '27/05/2017',
   league_game: 'Game 2',
   prettyDate: 'Saturday, May 27th, 4:30pm',
+  shootout: false,
   overtime: false,
   completed: true
 }, {
@@ -218,6 +225,7 @@ Schedule.create([{
   date: '27/05/2017',
   league_game: 'Game 3',
   prettyDate: 'Saturday, May 27th, 6:50pm',
+  shootout: false,
   overtime: false,
   completed: true
 }, {
@@ -228,6 +236,7 @@ Schedule.create([{
   date: '28/05/2017',
   league_game: 'Game 4',
   prettyDate: 'Sunday, May 28th, 4:30pm',
+  shootout: false,
   overtime: false,
   completed: true
 }, {
@@ -238,6 +247,7 @@ Schedule.create([{
   date: '10/06/2017',
   league_game: 'Game 5',
   prettyDate: 'Saturday, June 10th, 4:30pm',
+  shootout: false,
   overtime: false,
   completed: true
 }, {
@@ -248,6 +258,7 @@ Schedule.create([{
   date: '10/06/2017',
   league_game: 'Game 6',
   prettyDate: 'Saturday, June 10th, 4:45pm',
+  shootout: false,
   overtime: true,
   completed: true
 }, {
@@ -258,6 +269,7 @@ Schedule.create([{
   date: '11/06/2017',
   league_game: 'Game 7',
   prettyDate: 'Saturday, June 11th, 4:30pm',
+  shootout: false,
   overtime: false,
   completed: true
 }, {
@@ -268,6 +280,7 @@ Schedule.create([{
   date: '11/06/2017',
   league_game: 'Game 8',
   prettyDate: 'Sunday, June 11th, 4:45pm',
+  shootout: false,
   overtime: false,
   completed: true
 }, {
@@ -278,6 +291,7 @@ Schedule.create([{
   date: '17/06/2107',
   league_game: 'Game 9',
   prettyDate: 'Saturday, June 17th, 4:30pm',
+  shootout: false,
   overtime: false,
   completed: true
 }, {
@@ -288,6 +302,7 @@ Schedule.create([{
   date: '17/06/2107',
   league_game: 'Game 10',
   prettyDate: 'Saturday, June 17th, 4:40pm',
+  shootout: false,
   overtime: false,
   completed: true
 }, {
@@ -298,6 +313,7 @@ Schedule.create([{
   date: '18/06/2107',
   league_game: 'Game 11',
   prettyDate: 'Sunday, June 18th, 4:30pm',
+  shootout: false,
   overtime: false,
   completed: true
 }, {
@@ -308,6 +324,7 @@ Schedule.create([{
   date: '18/06/2107',
   league_game: 'Game 12',
   prettyDate: 'Sunday, June 18th, 4:40pm',
+  shootout: false,
   overtime: false,
   completed: true
 }, {
@@ -318,6 +335,7 @@ Schedule.create([{
   date: '23/06/2017',
   league_game: 'Game 13',
   prettyDate: 'Friday, June 23rd, 7:40pm',
+  shootout: false,
   overtime: false,
   completed: true
 }, {
@@ -328,6 +346,7 @@ Schedule.create([{
   date: '24/06/2017',
   league_game: 'Game 14',
   prettyDate: 'Saturday, June 24th, 4:45pm',
+  shootout: false,
   overtime: true,
   completed: true
 }, {
@@ -338,6 +357,7 @@ Schedule.create([{
   date: '24/06/2017',
   league_game: 'Game 15',
   prettyDate: 'Saturday, June 24th, 6:50pm',
+  shootout: false,
   overtime: false,
   completed: true
 }, {
@@ -348,6 +368,7 @@ Schedule.create([{
   date: '25/06/2017',
   league_game: 'Game 16',
   prettyDate: 'Sunday, June 25th, 4:45pm',
+  shootout: false,
   overtime: false,
   completed: true
 }, {
@@ -358,6 +379,7 @@ Schedule.create([{
   date: '01/07/2017',
   league_game: 'Game 17',
   prettyDate: 'Saturday, July 1st, 4:30pm',
+  shootout: false,
   overtime: false,
   completed: true
 }, {
@@ -368,28 +390,31 @@ Schedule.create([{
   date: '01/07/2017',
   league_game: 'Game 18',
   prettyDate: 'Saturday, July 1st, 4:30pm',
+  shootout: false,
   overtime: false,
   completed: true
 }, {
   away_team_id: 4,
   home_team_id: 5,
-  away_score: 0,
-  home_score: 0,
+  away_score: 5,
+  home_score: 3,
   date: '02/07/2017',
   league_game: 'Game 19',
   prettyDate: 'Sunday, July 2nd, 4:30pm',
+  shootout: false,
   overtime: false,
-  completed: false
+  completed: true
 }, {
   away_team_id: 1,
   home_team_id: 3,
-  away_score: 0,
-  home_score: 0,
+  away_score: 4,
+  home_score: 5,
   date: '02/07/2017',
   league_game: 'Game 20',
   prettyDate: 'Sunday, July 2nd, 4:30pm',
+  shootout: true,
   overtime: false,
-  completed: false
+  completed: true
 }, {
   away_team_id: 3,
   home_team_id: 4,
@@ -398,6 +423,7 @@ Schedule.create([{
   date: '07/07/2017',
   league_game: 'Game 21',
   prettyDate: 'Friday, July 7th, 6:50pm',
+  shootout: false,
   overtime: false,
   completed: false
 }, {
@@ -408,6 +434,7 @@ Schedule.create([{
   date: '08/07/2017',
   league_game: 'Game 22',
   prettyDate: 'Saturday, July 8th, 4:35pm',
+  shootout: false,
   overtime: false,
   completed: false
 }, {
@@ -418,6 +445,7 @@ Schedule.create([{
   date: '08/07/2017',
   league_game: 'Game 23',
   prettyDate: 'Saturday, July 8th, 6:50pm',
+  shootout: false,
   overtime: false,
   completed: false
 }, {
@@ -428,6 +456,7 @@ Schedule.create([{
   date: '09/07/2017',
   league_game: 'Game 24',
   prettyDate: 'Sunday, July 9th 2017, 4:30pm',
+  shootout: false,
   overtime: false,
   completed: false
 }, {
@@ -438,6 +467,7 @@ Schedule.create([{
   date: '14/07/2017',
   league_game: 'Game 25',
   prettyDate: 'Friday, July 14th, 6:50pm',
+  shootout: false,
   overtime: false,
   completed: false
 }, {
@@ -448,6 +478,7 @@ Schedule.create([{
   date: '15/07/2107',
   league_game: 'Game 26',
   prettyDate: 'Saturday, July 15th, 4:45pm',
+  shootout: false,
   overtime: false,
   completed: false
 }, {
@@ -458,6 +489,7 @@ Schedule.create([{
   date: '15/07/2017',
   league_game: 'Game 27',
   prettyDate: 'Saturday, July 15th, 6:50pm',
+  shootout: false,
   overtime: false,
   completed: false
 }, {
@@ -468,6 +500,7 @@ Schedule.create([{
   date: '16/07/2107',
   league_game: 'Game 28',
   prettyDate: 'Sunday, July 16th, 4:45pm',
+  shootout: false,
   overtime: false,
   completed: false
 }, {
@@ -478,6 +511,7 @@ Schedule.create([{
   date: '22/07/2017',
   league_game: 'Game 29',
   prettyDate: 'Saturday, July 22nd, 4:45pm',
+  shootout: false,
   overtime: false,
   completed: false
 }, {
@@ -488,6 +522,7 @@ Schedule.create([{
   date: '22/07/2017',
   league_game: 'Game 30',
   prettyDate: 'Saturday, July 22nd 2017, 4:45pm',
+  shootout: false,
   overtime: false,
   completed: false
 }, {
@@ -498,6 +533,7 @@ Schedule.create([{
   date: '23/07/2017',
   league_game: 'Game 31',
   prettyDate: 'Sunday, July 23rd, 4:45pm',
+  shootout: false,
   overtime: false,
   completed: false
 }, {
@@ -508,6 +544,7 @@ Schedule.create([{
   date: '23/07/2017',
   league_game: 'Game 32',
   prettyDate: 'Sunday, July 23nd 2017, 4:45pm',
+  shootout: false,
   overtime: false,
   completed: false
 }, {
@@ -518,6 +555,7 @@ Schedule.create([{
   date: '29/07/2017',
   league_game: 'Game 33',
   prettyDate: 'Saturday July 29th, 4:45pm',
+  shootout: false,
   overtime: false,
   completed: false
 }, {
@@ -528,6 +566,7 @@ Schedule.create([{
   date: '29/07/2017',
   league_game: 'Game 34',
   prettyDate: 'Saturday, July 29th, 4:45pm',
+  shootout: false,
   overtime: false,
   completed: false
 }, {
@@ -538,6 +577,7 @@ Schedule.create([{
   date: '30/07/2017',
   league_game: 'Game 35',
   prettyDate: 'Sunday July 30th, 4:45pm',
+  shootout: false,
   overtime: false,
   completed: false
 }, {
@@ -548,6 +588,7 @@ Schedule.create([{
   date: '30/07/2017',
   league_game: 'Game 36',
   prettyDate: 'Sunday, July 30th, 4:45pm',
+  shootout: false,
   overtime: false,
   completed: false
 }, {
@@ -558,6 +599,7 @@ Schedule.create([{
   date: '05/08/2017',
   league_game: 'Game 37',
   prettyDate: 'Saturday, August 5th, 4:45pm',
+  shootout: false,
   overtime: false,
   completed: false
 }, {
@@ -568,6 +610,7 @@ Schedule.create([{
   date: '05/08/2017',
   league_game: 'Game 38',
   prettyDate: 'Saturday August 5th, 4:45pm',
+  shootout: false,
   overtime: false,
   completed: false
 }, {
@@ -578,6 +621,7 @@ Schedule.create([{
   date: '06/08/2017',
   league_game: 'Game 39',
   prettyDate: 'Sunday, August 6th, 4:45pm',
+  shootout: false,
   overtime: false,
   completed: false
 }, {
@@ -588,6 +632,7 @@ Schedule.create([{
   date: '06/08/2017',
   league_game: 'Game 40',
   prettyDate: 'Sunday August 6th, 4:45pm',
+  shootout: false,
   overtime: false,
   completed: false
 }])
@@ -615,7 +660,7 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 3,
-  games_played: 5,
+  games_played: 6,
   goals: 0,
   assists: 0,
   points: 0,
@@ -628,12 +673,12 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 5,
-  games_played: 7,
+  games_played: 8,
   goals: 0,
-  assists: 1,
-  points: 1,
-  pim: 6,
-  plus_minus: -5,
+  assists: 2,
+  points: 2,
+  pim: 8,
+  plus_minus: -1,
   team_id: 1
 }, {
   name: 'Michael Attwell',
@@ -641,10 +686,10 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 6,
-  games_played: 6,
-  goals: 2,
+  games_played: 7,
+  goals: 3,
   assists: 2,
-  points: 4,
+  points: 5,
   pim: 16,
   plus_minus: -4,
   team_id: 1
@@ -654,7 +699,7 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 7,
-  games_played: 7,
+  games_played: 8,
   goals: 0,
   assists: 3,
   points: 3,
@@ -667,12 +712,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 8,
-  games_played: 6,
-  goals: 2,
+  games_played: 7,
+  goals: 3,
   assists: 2,
-  points: 4,
+  points: 5,
   pim: 14,
-  plus_minus: -5,
+  plus_minus: -3,
   team_id: 1
 }, {
   name: 'Alexander Mitsionis',
@@ -680,12 +725,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 9,
-  games_played: 7,
-  goals: 6,
+  games_played: 8,
+  goals: 7,
   assists: 2,
-  points: 8,
+  points: 9,
   pim: 10,
-  plus_minus: -1,
+  plus_minus: 0,
   team_id: 1
 }, {
   name: 'Alexander Polosov',
@@ -693,11 +738,11 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 10,
-  games_played: 6,
+  games_played: 7,
   goals: 0,
-  assists: 4,
-  points: 4,
-  pim: 4,
+  assists: 5,
+  points: 5,
+  pim: 6,
   plus_minus: -7,
   team_id: 1
 }, {
@@ -706,12 +751,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 11,
-  games_played: 7,
+  games_played: 8,
   goals: 0,
   assists: 0,
   points: 0,
   pim: 2,
-  plus_minus: -5,
+  plus_minus: -4,
   team_id: 1
 }, {
   name: 'Max Hadraschek',
@@ -719,12 +764,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 12,
-  games_played: 6,
-  goals: 4,
-  assists: 0,
+  games_played: 7,
+  goals: 5,
+  assists: 1,
   points: 4,
   pim: 10,
-  plus_minus: -6,
+  plus_minus: -4,
   team_id: 1
 }, {
   name: 'Andrew Hay',
@@ -732,7 +777,7 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 13,
-  games_played: 6,
+  games_played: 7,
   goals: 0,
   assists: 2,
   points: 2,
@@ -758,12 +803,12 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 15,
-  games_played: 6,
+  games_played: 7,
   goals: 0,
   assists: 0,
   points: 0,
-  pim: 2,
-  plus_minus: -5,
+  pim: 4,
+  plus_minus: -1,
   team_id: 1
 }, {
   name: 'Thomas Clow',
@@ -797,11 +842,11 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 19,
-  games_played: 7,
+  games_played: 8,
   goals: 2,
   assists: 3,
   points: 5,
-  pim: 2,
+  pim: 4,
   plus_minus: -5,
   team_id: 1
 }, {
@@ -836,11 +881,11 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 22,
-  games_played: 7,
+  games_played: 8,
   goals: 0,
   assists: 2,
   points: 2,
-  pim: 12,
+  pim: 14,
   plus_minus: -9,
   team_id: 1
 }, {
@@ -862,20 +907,7 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 24,
-  games_played: 5,
-  goals: 0,
-  assists: 0,
-  points: 0,
-  pim: 0,
-  plus_minus: -3,
-  team_id: 1
-}, {
-  name: 'Lewis Commons',
-  shoots: 'Right',
-  position: 'Forward',
-  pos_abr: 'F',
-  number: 26,
-  games_played: 7,
+  games_played: 6,
   goals: 0,
   assists: 0,
   points: 0,
@@ -883,16 +915,29 @@ Player.create([{
   plus_minus: -4,
   team_id: 1
 }, {
+  name: 'Lewis Commons',
+  shoots: 'Right',
+  position: 'Forward',
+  pos_abr: 'F',
+  number: 26,
+  games_played: 8,
+  goals: 0,
+  assists: 0,
+  points: 0,
+  pim: 2,
+  plus_minus: -3,
+  team_id: 1
+}, {
   name: 'Ondrej Kozak',
   shoots: 'Right',
   position: 'Forward',
   pos_abr: 'F',
   number: 28,
-  games_played: 3,
+  games_played: 4,
   goals: 1,
-  assists: 1,
-  points: 2,
-  pim: 0,
+  assists: 2,
+  points: 3,
+  pim: 2,
   plus_minus: 0,
   team_id: 1
 }, {
@@ -901,7 +946,7 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 29,
-  games_played: 4,
+  games_played: 5,
   goals: 0,
   assists: 0,
   points: 0,
@@ -915,12 +960,12 @@ Player.create([{
   position: 'Goalie',
   pos_abr: 'GK',
   number: 1,
-  games_played: 3,
-  goals_against: 23,
-  gaa: 7.67,
-  sog: 113,
-  saves: 90,
-  svs: 776,
+  games_played: 4,
+  goals_against: 28,
+  gaa: 7.00,
+  sog: 167,
+  saves: 139,
+  svs: 832,
   shutouts: 0,
   team_id: 1
 }, {
@@ -1286,11 +1331,11 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 5,
-  games_played: 7,
+  games_played: 8,
   goals: 2,
   assists: 3,
   points: 5,
-  pim: 10,
+  pim: 12,
   plus_minus: 3,
   team_id: 3
 }, {
@@ -1299,7 +1344,7 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 6,
-  games_played: 6,
+  games_played: 7,
   goals: 0,
   assists: 0,
   points: 0,
@@ -1312,12 +1357,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 9,
-  games_played: 5,
+  games_played: 6,
   goals: 2,
-  assists: 1,
-  points: 3,
-  pim: 12,
-  plus_minus: -3,
+  assists: 2,
+  points: 4,
+  pim: 14,
+  plus_minus: -4,
   team_id: 3
 }, {
   name: 'Matthew Enright',
@@ -1325,10 +1370,10 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 10,
-  games_played: 1,
-  goals: 2,
+  games_played: 2,
+  goals: 3,
   assists: 2,
-  points: 4,
+  points: 5,
   pim: 0,
   plus_minus: 2,
   team_id: 3
@@ -1338,7 +1383,7 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 11,
-  games_played: 4,
+  games_played: 5,
   goals: 0,
   assists: 0,
   points: 0,
@@ -1364,12 +1409,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 16,
-  games_played: 7,
+  games_played: 8,
   goals: 5,
-  assists: 7,
-  points: 12,
+  assists: 8,
+  points: 16,
   pim: 4,
-  plus_minus: -3,
+  plus_minus: -5,
   team_id: 3
 }, {
   name: 'Charlie Lilly',
@@ -1377,7 +1422,7 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 17,
-  games_played: 7,
+  games_played: 8,
   goals: 0,
   assists: 0,
   points: 0,
@@ -1416,7 +1461,7 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 23,
-  games_played: 4,
+  games_played: 5,
   goals: 0,
   assists: 0,
   points: 0,
@@ -1429,12 +1474,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 26,
-  games_played: 7,
-  goals: 2,
-  assists: 1,
-  points: 3,
+  games_played: 8,
+  goals: 4,
+  assists: 3,
+  points: 7,
   pim: 6,
-  plus_minus: -4,
+  plus_minus: -6,
   team_id: 3
 }, {
   name: 'Monty Brown',
@@ -1442,7 +1487,7 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 27,
-  games_played: 1,
+  games_played: 2,
   goals: 0,
   assists: 0,
   points: 0,
@@ -1468,10 +1513,10 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 35,
-  games_played: 6,
-  goals: 0,
+  games_played: 7,
+  goals: 1,
   assists: 0,
-  points: 0,
+  points: 1,
   pim: 0,
   plus_minus: -6,
   team_id: 3
@@ -1494,12 +1539,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 36,
-  games_played: 6,
+  games_played: 7,
   goals: 3,
-  assists: 3,
-  points: 6,
-  pim: 0,
-  plus_minus: -3,
+  assists: 4,
+  points: 7,
+  pim: 2,
+  plus_minus: -4,
   team_id: 3
 }, {
   name: 'Kevin Jagau',
@@ -1507,7 +1552,7 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 56,
-  games_played: 7,
+  games_played: 8,
   goals: 1,
   assists: 2,
   points: 3,
@@ -1520,12 +1565,12 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 59,
-  games_played: 6,
+  games_played: 7,
   goals: 0,
   assists: 0,
   points: 0,
   pim: 14,
-  plus_minus: -1,
+  plus_minus: -3,
   team_id: 3
 }, {
   name: 'Jacob Hurring',
@@ -1533,12 +1578,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 61,
-  games_played: 5,
-  goals: 1,
+  games_played: 6,
+  goals: 2,
   assists: 5,
-  points: 6,
+  points: 7,
   pim: 6,
-  plus_minus: 4,
+  plus_minus: 1,
   team_id: 3
 }, {
   name: 'Liam Roth',
@@ -1546,12 +1591,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 68,
-  games_played: 7,
+  games_played: 8,
   goals: 0,
   assists: 0,
   points: 0,
   pim: 4,
-  plus_minus: -5,
+  plus_minus: -6,
   team_id: 3
 }, {
   name: 'Liam Kinney',
@@ -1559,7 +1604,7 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 70,
-  games_played: 4,
+  games_played: 5,
   goals: 1,
   assists: 0,
   points: 1,
@@ -1585,12 +1630,12 @@ Player.create([{
   position: 'Forward',
   pos_abr: 'F',
   number: 81,
-  games_played: 7,
+  games_played: 8,
   goals: 0,
   assists: 0,
   points: 0,
   pim: 6,
-  plus_minus: -5,
+  plus_minus: -7,
   team_id: 3
 }, {
   name: 'Pierre-Luc Coulombe',
@@ -1598,10 +1643,10 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 98,
-  games_played: 7,
+  games_played: 8,
   goals: 1,
-  assists: 0,
-  points: 1,
+  assists: 2,
+  points: 3,
   pim: 14,
   plus_minus: 2,
   team_id: 3
@@ -1640,12 +1685,12 @@ Player.create([{
   position: 'Goalie',
   pos_abr: 'GK',
   number: 88,
-  games_played: 1,
-  goals_against: 1,
-  gaa: 1.00,
-  sog: 12,
-  saves: 11,
-  svs: 917,
+  games_played: 2,
+  goals_against: 5,
+  gaa: 2.50,
+  sog: 54,
+  saves: 49,
+  svs: 907,
   shutouts: 0,
   team_id: 3
 }, {

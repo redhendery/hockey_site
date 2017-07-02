@@ -47,8 +47,9 @@ ActiveRecord::Schema.define(version: 20170623172103) do
     t.integer "home_score"
     t.integer "away_team_id"
     t.integer "home_team_id"
-    t.boolean "completed", default: false
     t.boolean "overtime", default: false
+    t.boolean "shootout", default: false
+    t.boolean "completed", default: false
   end
 
   create_table "standings", force: :cascade do |t|
@@ -57,6 +58,7 @@ ActiveRecord::Schema.define(version: 20170623172103) do
     t.integer "losses"
     t.integer "overtime_wins"
     t.integer "overtime_losses"
+    t.integer "shootout"
     t.integer "points"
     t.integer "goals_for"
     t.integer "goals_against"
