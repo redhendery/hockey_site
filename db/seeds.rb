@@ -60,29 +60,29 @@ Standing.create([{
   team_id: 2
 }, {
   # Dunedin Thunder Standings
-  games: 8,
+  games: 9,
   wins: 2,
-  losses: 4,
+  losses: 5,
   overtime_wins: 2,
   overtime_losses: 0,
   shootout: 1,
   points: 10,
-  goals_for: 33,
-  goals_against: 35,
-  goal_difference: -2,
+  goals_for: 34,
+  goals_against: 39,
+  goal_difference: -4,
   team_id: 3
 }, {
   # Skycity Stampede Standings
-  games: 8,
-  wins: 6,
+  games: 9,
+  wins: 7,
   losses: 2,
   overtime_wins: 0,
   overtime_losses: 0,
   shootout: 0,
-  points: 18,
-  goals_for: 37,
-  goals_against: 20,
-  goal_difference: 17,
+  points: 21,
+  goals_for: 41,
+  goals_against: 21,
+  goal_difference: 20,
   team_id: 4
 }, {
   # West Auckland Admirals Standings
@@ -139,39 +139,39 @@ TeamStat.create([{
   team_id: 2
 }, {
   # Dunedin Thunder Team Stats
-  sog: 338,
-  goals_scored: 32,
-  scoring_percentage: 9.46,
-  sog_allowed: 251,
-  goals_against: 31,
-  gaa: 3.88,
-  pp: 41,
-  ppg: 7,
-  pp_perecent: 17.07,
-  pim: 118,
+  sog: 365,
+  goals_scored: 31,
+  scoring_percentage: 11.77,
+  sog_allowed: 285,
+  goals_against: 35,
+  gaa: 3.89,
+  pp: 44,
+  ppg: 8,
+  pp_perecent: 18.18,
+  pim: 120,
   shg: 2,
   shg_allowed: 0,
-  pk: 43,
-  ppg_allowed: 6,
-  pk_percent: 86.05,
+  pk: 44,
+  ppg_allowed: 7,
+  pk_percent: 84.09,
   team_id: 3
 }, {
   # Skycity Stampede Team Stats
-  sog: 391,
-  goals_scored: 36,
-  scoring_percentage: 10.86,
-  sog_allowed: 219,
-  goals_against: 20,
-  gaa: 2.50,
-  pp: 45,
-  ppg: 9,
-  pp_perecent: 20.00,
-  pim: 331,
+  sog: 425,
+  goals_scored: 40,
+  scoring_percentage: 10.63,
+  sog_allowed: 246,
+  goals_against: 21,
+  gaa: 233,
+  pp: 46,
+  ppg: 10,
+  pp_perecent: 21.74,
+  pim: 339,
   shg: 3,
   shg_allowed: 2,
-  pk: 55,
-  ppg_allowed: 5,
-  pk_percent: 90.91,
+  pk: 59,
+  ppg_allowed: 6,
+  pk_percent: 89.83,
   team_id: 4
 }, {
   # West Auckland Admirals Team Stats
@@ -418,14 +418,14 @@ Schedule.create([{
 }, {
   away_team_id: 3,
   home_team_id: 4,
-  away_score: 0,
-  home_score: 0,
+  away_score: 1,
+  home_score: 4,
   date: '07/07/2017',
   league_game: 'Game 21',
   prettyDate: 'Friday, July 7th, 6:50pm',
   shootout: false,
   overtime: false,
-  completed: false
+  completed: true
 }, {
   away_team_id: 5,
   home_team_id: 2,
