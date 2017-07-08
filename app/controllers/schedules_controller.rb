@@ -10,15 +10,20 @@ class SchedulesController < ApplicationController
     @home = @schedule.home_team
   end
 
-  def next
-    @schedules = Schedule.where(nil).includes(%i[home_team away_team])
-    if Date.today.tuesday? || Date.today.wednesday? || Date.today.thursday?
-      @schedules = @schedules.where(completed: :false).limit(4)
-    else
-      @schedules = @schedules.where('date >= ?', Date.today)
-        .order(date: :asc, league_game: :asc).limit(4)
+    def next
+      @schedules = Schedule.where(nil).includes(%i[home_team away_team])
+      if current_day.monday?
+          @schedules = @schedules.where(completed: :true).limit(4)
+      elsif current_day.tuesday? || current_day.wednesday? || current_day.thursday?
+         @schedules = @schedules.where(completed: :false).limit(4)
+      else
+        @schedules = @schedules.where('date = ?', Date.today)
+          .or(@schedules.where('date = ?', Date.yesterday))
+          .or(@schedules.where('date = ?', Date.today - 2.days))
+          .or(@schedules.where('date >= ?', Date.today))
+          .order(date: :asc, league_game: :asc).limit(4)
+      end
     end
-  end
 
   def swarm
     @schedules = Schedule.where(home_team_id: 1)
