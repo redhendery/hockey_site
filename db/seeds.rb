@@ -1412,7 +1412,7 @@ Player.create([{
   games_played: 9,
   goals: 5,
   assists: 8,
-  points: 16,
+  points: 13,
   pim: 4,
   plus_minus: -6,
   team_id: 3
