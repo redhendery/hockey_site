@@ -11,8 +11,9 @@ class SchedulesController < ApplicationController
   end
 
   def next
+    console
     @schedules = Schedule.where(nil).includes(%i[home_team away_team])
-    if (current_day.tuesday?..thursday?)
+    if (current_day.tuesday?..current_day.thursday?)
        @schedules = @schedules.where(completed: :false).limit(4)
     else
       @schedules = @schedules.where(date:
