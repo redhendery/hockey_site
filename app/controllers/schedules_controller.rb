@@ -46,4 +46,9 @@ class SchedulesController < ApplicationController
       .or(Schedule.where(away_team_id: 5)).includes(%i[home_team away_team])
   end
 
+  private
+
+    def 
+    end
+
 end
