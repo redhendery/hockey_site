@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'team_stats/index'
-
   resources :teams, only: %i[index show] do
     resources :players, only: %i[index show]
     resources :stats, only: [:index]
