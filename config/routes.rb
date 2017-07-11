@@ -1,18 +1,8 @@
 Rails.application.routes.draw do
 
-  get 'seasons/index'
-
-  resources :standings, :seasons, only: %i[edit index show update]
-
   resources :teams, only: %i[index show] do
     resources :players, only: %i[index show]
     resources :stats, only: [:index]
-  end
-
-  resources :players, only: %i[edit index show update] do
-    collection do
-      get 'all'
-    end
   end
 
   resources :stats, only: [:index] do
@@ -26,6 +16,14 @@ Rails.application.routes.draw do
       get 'swarm', 'reddevils', 'thunder', 'stampede', 'admirals', 'scores', 'next'
     end
   end
+
+  resources :players, only: %i[edit index show update] do
+    collection do
+      get 'all'
+    end
+  end
+
+  resources :standings, only: %i[edit index show update]
 
 # Login routes
   get 'sessions/new'

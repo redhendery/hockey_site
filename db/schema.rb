@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170710140947) do
+ActiveRecord::Schema.define(version: 20170623172103) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,11 +50,6 @@ ActiveRecord::Schema.define(version: 20170710140947) do
     t.boolean "overtime", default: false
     t.boolean "shootout", default: false
     t.boolean "completed", default: false
-  end
-
-  create_table "seasons", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "standings", force: :cascade do |t|
