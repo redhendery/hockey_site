@@ -1,4 +1,4 @@
-<div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
   <div class="card-deck">
     <div class="card">
       <div class="card-header text-center">
@@ -6,29 +6,53 @@
       </div>
       <div class="card-block">
         <div class="table-responsive">
-          <table class="table table-condensed">
+          <table class="table">
             <thead>
               <tr>
-                <th>FINAL</th>
+                <th></th>
                 <th class="text-center">1ST</th>
                 <th class="text-center">2ND</th>
                 <th class="text-center">3RD</th>
+                <% if game_stat.home_goals_ot.present? %>
+                  <th class="text-center">OT</th>
+                <% end %>
+                <% if game_stat.home_goals_so.present? %>
+                  <th class="text-center">SO</th>
+                <% end %>
                 <th class="text-center">TOTAL</th>
+                <th class="text-center">PPG</th>
+                <th class="text-center">SHG</th>
               </tr>
             </thead>
             <tbody>
               <td class="text-left"><%= @home.team_name %></td>
-              <td class="text-center">3</td>
-              <td class="text-center">3</td>
-              <td class="text-center">0</td>
-              <td class="text-center">6</td>
+              <td class="text-center"><%= game_stat.home_goals_1st %></td>
+              <td class="text-center"><%= game_stat.home_goals_2nd %></td>
+              <td class="text-center"><%= game_stat.home_goals_3rd %></td>
+              <% if game_stat.home_goals_ot.present? %>
+                <td class="text-center"><%= game_stat.home_goals_ot %></td>
+              <% end %>
+              <% if game_stat.home_goals_so.present? %>
+                <td class="text-center"><%= game_stat.home_goals_so %></td>
+              <% end %>
+              <td class="text-center"><%= @schedule.home_score %></td>
+              <td class="text-center"><%= game_stat.home_ppg %></td>
+              <td class="text-center"><%= game_stat.home_shg %></td>
             </tbody>
             <tbody>
               <td class="text-left"><%= @away.team_name %></td>
-              <td class="text-center">1</td>
-              <td class="text-center">1</td>
-              <td class="text-center">0</td>
-              <td class="text-center">2</td>
+              <td class="text-center"><%= game_stat.away_goals_1st %></td>
+              <td class="text-center"><%= game_stat.away_goals_2nd %></td>
+              <td class="text-center"><%= game_stat.away_goals_3rd %></td>
+              <% if game_stat.away_goals_ot.present? %>
+                <td class="text-center"><%= game_stat.away_goals_ot %></td>
+              <% end %>
+              <% if game_stat.away_goals_so.present? %>
+                <td class="text-center"><%= game_stat.away_goals_so %></td>
+              <% end %>
+              <td class="text-center"><%= @schedule.away_score %></td>
+              <td class="text-center"><%= game_stat.away_ppg %></td>
+              <td class="text-center"><%= game_stat.away_shg %></td>
             </tbody>
           </table>
         </div>

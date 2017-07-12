@@ -3,13 +3,14 @@
 */
 @import 'bootstrap';
 
-html, body {
+html {
   position: relative;
   min-height: 100%;
 }
 
 body {
   padding: 90px 30px 30px 30px;
+  min-height: 100%
 }
 
 // Card Spacing
@@ -55,16 +56,19 @@ body {
 
 // Footer
 .footer {
-  position: relative;
-  padding-top: 20px;
+  position: absolute;
   bottom: 0;
+  width: 100%;
+  margin-left: -30px;
+  height: 30px;
+  line-height: 60px;
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
   .navbar-collapse {
     text-align: center;
   }
-  
+
   .btn-responsive {
     padding:4px 9px;
     font-size:90%;
@@ -76,7 +80,7 @@ body {
   .navbar-collapse {
     text-align: center;
   }
-  
+
   .btn-responsive {
     padding:2px 4px;
     font-size:80%;
