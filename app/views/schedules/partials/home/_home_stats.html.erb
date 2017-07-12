@@ -1,0 +1,26 @@
+<tbody>
+  <td class="text-left"><%= @home.team_name %></td>
+  <td class="text-center"><%= game_stat.home_sog %></td>
+  <td class="text-center">
+    <%= '%.2f' % home_shoot_percent %>%
+  </td>
+  <td class="text-center"><%= game_stat.home_svs %></td>
+  <td class="text-center">
+    <% if home_svs_percent == 1000 %>
+      <%= '%.2f' % 1 %>
+    <% else %>
+      .<%= home_svs_percent %>
+    <% end %>
+  </td>
+  <td class="text-center">
+    <%= game_stat.home_ppg %>/<%= game_stat.away_penalty %>
+  </td>
+  <td class="text-center">
+    <%= '%.2f' % home_pp_percent %>%
+  </td>
+  <td class="text-center"><%= game_stat.home_pim %></td>
+  <td class="text-center"><%= game_stat.home_penalty - game_stat.away_ppg %>/<%= game_stat.home_penalty %></td>
+  <td class="text-center">
+    <%= '%.2f' % home_pk_percent %>%
+  </td>
+</tbody>

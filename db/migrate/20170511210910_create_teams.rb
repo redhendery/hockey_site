@@ -6,6 +6,8 @@ class CreateTeams < ActiveRecord::Migration[5.1]
       t.string :sm_logo
       t.string :lg_logo
       t.string :venue
+
+      t.timestamps
     end
   end
 end

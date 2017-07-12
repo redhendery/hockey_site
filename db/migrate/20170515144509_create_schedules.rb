@@ -8,6 +8,8 @@ class CreateSchedules < ActiveRecord::Migration[5.1]
       t.integer :home_score
       t.integer :away_team_id
       t.integer :home_team_id
+
+      t.timestamps
     end
     add_column :schedules, :overtime, :boolean, :default => false
     add_column :schedules, :shootout, :boolean, :default => false
