@@ -1,24 +1,24 @@
 <div class="container-fluid">
   <div class="row team-logo-top">
-    <div class="col">
+    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
       <%= link_to image_tag("swarmLarge.png", alt: "Botany Swarm"),
       team_path(@teams[0]), class: "img-fluid float-right team-logos" %>
     </div>
-    <div class="col">
+    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
       <%= link_to image_tag("stampedeLong.png", alt: "Skycity Stampede"),
        team_path(@teams[3]), class: "img-fluid text-center team-logos" %>
     </div>
   </div>
   <div class="row">
-    <div class="col">
+    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
       <%= link_to image_tag("thunderLarge.png", alt: "Dunedin Thunder"),
        team_path(@teams[2]), class: "img-fluid float-right logo-bottom" %>
     </div>
-    <div class="col text-center">
+    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center">
       <%= link_to image_tag("redDevilsLarge.png", alt: "Canterbury Red Devils"),
        team_path(@teams[1]), class: "img-fluid" %>
     </div>
-    <div class="col">
+    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
       <%= link_to image_tag("admiralsLarge.png", alt: "West Auckland Admirals"),
        team_path(@teams[4]), class: "img-fluid" %>
     </div>

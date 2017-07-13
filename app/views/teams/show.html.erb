@@ -3,7 +3,9 @@
     <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
       <%= render 'teams/partials/previous' %>
     </div>
-    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4"><img class="img-fluid mx-auto d-block" src="<%= @team.lg_logo %>" alt="<%= @team.lg_logo %>"></div>
+    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+      <img class="img-fluid mx-auto d-block show-logos" src="<%= @team.lg_logo %>" alt="<%= @team.lg_logo %>">
+    </div>
     <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
       <%= render 'teams/partials/record' %>
     </div>

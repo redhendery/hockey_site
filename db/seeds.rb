@@ -105,91 +105,71 @@ TeamStat.create([{
   # Botany Swarm Team Stats
   sog: 288,
   goals_scored: 22,
-  scoring_percentage: 7.63,
   sog_allowed: 337,
   goals_against: 51,
-  gaa: 6.38,
   pp: 60,
   ppg: 4,
-  pp_perecent: 6.67,
   pim: 225,
   shg: 0,
   shg_allowed: 2,
   pk: 59,
   ppg_allowed: 18,
-  pk_percent: 69.49,
   team_id: 1
 }, {
   # Canterbury Red Devils Team Stats
   sog: 270,
   goals_scored: 29,
-  scoring_percentage: 10.74,
   sog_allowed: 590,
   goals_against: 76,
-  gaa: 7.60,
   pp: 44,
   ppg: 10,
-  pp_perecent: 22.73,
   pim: 190,
   shg: 0,
   shg_allowed: 5,
   pk: 37,
   ppg_allowed: 14,
-  pk_percent: 62.16,
   team_id: 2
 }, {
   # Dunedin Thunder Team Stats
   sog: 388,
   goals_scored: 36,
-  scoring_percentage: 9.28,
   sog_allowed: 332,
   goals_against: 45,
-  gaa: 4.50,
   pp: 48,
   ppg: 8,
-  pp_perecent: 16.67,
   pim: 130,
   shg: 2,
   shg_allowed: 0,
   pk: 49,
   ppg_allowed: 7,
-  pk_percent: 85.71,
   team_id: 3
 }, {
   # Skycity Stampede Team Stats
   sog: 472,
   goals_scored: 47,
-  scoring_percentage: 9.96,
   sog_allowed: 269,
   goals_against: 23,
-  gaa: 2.30,
   pp: 50,
   ppg: 10,
-  pp_perecent: 20.00,
   pim: 357,
   shg: 3,
   shg_allowed: 2,
   pk: 63,
   ppg_allowed: 6,
-  pk_percent: 90.48,
   team_id: 4
 }, {
   # West Auckland Admirals Team Stats
   sog: 557,
   goals_scored: 85,
-  scoring_percentage: 15.26,
   sog_allowed: 293,
   goals_against: 23,
-  gaa: 2.30,
   pp: 65,
   ppg: 15,
-  pp_perecent: 23.08,
   pim: 157,
   shg: 3,
   shg_allowed: 1,
   pk: 57,
   ppg_allowed: 6,
-  pk_percent: 89.47,
   team_id: 5
 }])
 
@@ -2914,7 +2894,7 @@ Player.create([{
   plus_minus: 3,
   team_id: 5
 }, {
-	name: 'Jake Ratcliffe',
+  name: 'Jake Ratcliffe',
 	shoots: 'Right',
 	position: 'Forward',
 	pos_abr: 'F',

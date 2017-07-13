@@ -1,5 +1,5 @@
 <div class="card-deck">
-  <div class="card">
+  <div class="card align-self-center">
     <div class="card-header text-center"><strong>Record</strong></div>
     <div class="card-block">
       <div class="row">
@@ -14,12 +14,15 @@
           </thead>
           <tbody>
             <tr>
-            <td class="align-middle text-center"><%= @team.standing.games %></td>
-            <td class="align-middle text-center"><%= @team.standing.wins %></td>
-            <td class="align-middle text-center"><%= @team.standing.losses %></td>
-            <td class="align-middle text-center"><%= @team.standing.points %></td>
+            <td class="align-middle text-center"><%= standing.games %></td>
+            <td class="align-middle text-center"><%= standing.wins %></td>
+            <td class="align-middle text-center"><%= standing.losses %></td>
+            <td class="align-middle text-center"><%= standing.points %></td>
         </table>
       </div>
+    </div>
+    <div class="card-footer text-muted text-center">
+      <%= link_to 'Standings', standings_path %>
     </div>
   </div>
 </div>
