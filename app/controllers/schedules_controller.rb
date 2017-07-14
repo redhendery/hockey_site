@@ -1,10 +1,12 @@
 class SchedulesController < ApplicationController
 
   def index
+    console
     @schedules = Schedule.where(nil).includes(%i[home_team away_team])
   end
 
   def show
+    console
     @schedule = Schedule.find(params[:id])
     @away = @schedule.away_team
     @home = @schedule.home_team
