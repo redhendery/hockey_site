@@ -82,7 +82,7 @@ Standing.create([{
   points: 27,
   goals_for: 53,
   goals_against: 27,
-  goal_difference: 24,
+  goal_difference: 26,
   team_id: 4
 }, {
   # West Auckland Admirals Standings
@@ -95,7 +95,7 @@ Standing.create([{
   points: 27,
   goals_for: 89,
   goals_against: 29,
-  goal_difference: 62,
+  goal_difference: 60,
   team_id: 5
 }])
 
