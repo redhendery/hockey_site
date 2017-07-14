@@ -40,5 +40,4 @@ module SchedulesHelper
   def away_pk_percent
     100 - home_pp_percent.round(2)
   end
-
 end

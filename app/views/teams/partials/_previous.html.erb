@@ -6,22 +6,28 @@
       <div class="card-header text-center"><strong>Previous</strong></div>
       <div class="card-block">
         <div class="row">
-          <div class="col-8"><%= @previous.first.home_team.abr %></div>
-          <div class="col-4 float-right"><%= @previous.first.home_score %></div>
-          <div class="col-8"><%= @previous.first.away_team.abr %></div>
-          <div class="col-4 float-right"><%= @previous.first.away_score %></div>
+          <div class="col-8"><%= @previous.last.home_team.abr %></div>
+          <div class="col-4 float-right"><%= @previous.last.home_score %></div>
+          <div class="col-8"><%= @previous.last.away_team.abr %></div>
+          <div class="col-4 float-right"><%= @previous.last.away_score %></div>
         </div>
+      </div>
+      <div class="card-footer text-muted text-center">
+        <%= link_to 'Recap', schedule_path(@previous.last.id) %>
       </div>
     </div>
     <div class="card">
       <div class="card-header text-center"><strong>Previous</strong></div>
       <div class="card-block">
         <div class="row">
-          <div class="col-8"><%= @previous.last.home_team.abr %></div>
-          <div class="col-4 float-right"><%= @previous.last.home_score %></div>
-          <div class="col-8"><%= @previous.last.away_team.abr %></div>
-          <div class="col-4 float-right"><%= @previous.last.away_score %></div>
+          <div class="col-8"><%= @previous.first.home_team.abr %></div>
+          <div class="col-4 float-right"><%= @previous.first.home_score %></div>
+          <div class="col-8"><%= @previous.first.away_team.abr %></div>
+          <div class="col-4 float-right"><%= @previous.first.away_score %></div>
         </div>
+      </div>
+      <div class="card-footer text-muted text-center">
+        <%= link_to 'Recap', schedule_path(@previous.first.id) %>
       </div>
     </div>
   </div>
