@@ -442,8 +442,8 @@ Schedule.create([{
 }, {
   away_team_id: 5,
   home_team_id: 4,
-  away_score: 6,
-  home_score: 4,
+  away_score: 4,
+  home_score: 6,
   date: '14/07/2017',
   league_game: 'Game 25',
   prettyDate: 'Friday, July 14th, 6:50pm',
