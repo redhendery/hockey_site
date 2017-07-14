@@ -73,28 +73,28 @@ Standing.create([{
   team_id: 3
 }, {
   # Skycity Stampede Standings
-  games: 10,
-  wins: 8,
+  games: 11,
+  wins: 9,
   losses: 2,
   overtime_wins: 0,
   overtime_losses: 0,
   shootout: 0,
-  points: 24,
-  goals_for: 47,
-  goals_against: 23,
+  points: 27,
+  goals_for: 53,
+  goals_against: 27,
   goal_difference: 24,
   team_id: 4
 }, {
   # West Auckland Admirals Standings
-  games: 10,
+  games: 11,
   wins: 9,
-  losses: 1,
+  losses: 2,
   overtime_wins: 0,
   overtime_losses: 0,
   shootout: 0,
   points: 27,
-  goals_for: 85,
-  goals_against: 23,
+  goals_for: 89,
+  goals_against: 29,
   goal_difference: 62,
   team_id: 5
 }])
@@ -145,30 +145,30 @@ TeamStat.create([{
   team_id: 3
 }, {
   # Skycity Stampede Team Stats
-  sog: 472,
-  goals_scored: 47,
-  sog_allowed: 269,
-  goals_against: 23,
-  pp: 50,
+  sog: 500,
+  goals_scored: 53,
+  sog_allowed: 301,
+  goals_against: 27,
+  pp: 53,
   ppg: 10,
-  pim: 357,
+  pim: 381,
   shg: 3,
   shg_allowed: 2,
-  pk: 63,
+  pk: 60,
   ppg_allowed: 6,
   team_id: 4
 }, {
   # West Auckland Admirals Team Stats
-  sog: 557,
-  goals_scored: 85,
-  sog_allowed: 293,
-  goals_against: 23,
-  pp: 65,
+  sog: 589,
+  goals_scored: 89,
+  sog_allowed: 321,
+  goals_against: 29,
+  pp: 72,
   ppg: 15,
-  pim: 157,
+  pim: 163,
   shg: 3,
   shg_allowed: 1,
-  pk: 57,
+  pk: 60,
   ppg_allowed: 6,
   team_id: 5
 }])
@@ -442,14 +442,14 @@ Schedule.create([{
 }, {
   away_team_id: 5,
   home_team_id: 4,
-  away_score: 0,
-  home_score: 0,
+  away_score: 6,
+  home_score: 4,
   date: '14/07/2017',
   league_game: 'Game 25',
   prettyDate: 'Friday, July 14th, 6:50pm',
   shootout: false,
   overtime: false,
-  completed: false
+  completed: true
 }, {
   away_team_id: 3,
   home_team_id: 1,
@@ -1108,24 +1108,24 @@ GameStat.create([{
   away_shg: 1,
   schedule_id: 24
 }, {
-  home_goals_1st: 0,
-  away_goals_1st: 0,
-  home_goals_2nd: 0,
-  away_goals_2nd: 0,
-  home_goals_3rd: 0,
-  away_goals_3rd: 0,
-  home_svs: 0,
-  away_svs: 0,
-  home_sog: 0,
-  away_sog: 0,
-  home_pim: 0,
-  away_pim: 0,
+  home_goals_1st: 2,
+  away_goals_1st: 1,
+  home_goals_2nd: 2,
+  away_goals_2nd: 2,
+  home_goals_3rd: 2,
+  away_goals_3rd: 1,
+  home_svs: 28,
+  away_svs: 22,
+  home_sog: 28,
+  away_sog: 32,
+  home_pim: 24,
+  away_pim: 6,
   home_ppg: 0,
   away_ppg: 0,
   home_shg: 0,
   away_shg: 0,
-  home_penalty: 0,
-  away_penalty: 0,
+  home_penalty: 7,
+  away_penalty: 3,
   schedule_id: 25
 }, {
   home_goals_1st: 0,
