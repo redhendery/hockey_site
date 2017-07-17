@@ -12,8 +12,10 @@
           </div>
           <div class="card-block">
             <div class="row">
-              <div class="col-4"><img src="<%= schedule.home_team.sm_logo %>" alt="<%= schedule.home_team.sm_logo %>" class="img-fluid float-left"></div>
-              <div class="col-4 align-self-center">
+              <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <img src="<%= schedule.home_team.sm_logo %>" alt="<%= schedule.home_team.sm_logo %>" class="img-fluid float-left">
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 align-self-center">
                 <% if schedule.overtime %>
                   <h1 class="align-middle">OT</h1>
                 <% end %>
@@ -27,13 +29,19 @@
                   <%= link_to 'Game Details', schedule_path(schedule), class: "btn btn-primary btn-responsive" %>
                 <% end %>
               </div>
-              <div class="col-4"><img src="<%= schedule.away_team.sm_logo %>" alt="<%= schedule.away_team.sm_logo %>" class="img-fluid float-right"></div>
+              <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <img src="<%= schedule.away_team.sm_logo %>" alt="<%= schedule.away_team.sm_logo %>" class="img-fluid float-right">
+              </div>
             </div>
           </div>
           <div class="card-footer text-muted">
             <div class="row">
-              <div class="col-6"><small><span class="float-left"><%= schedule.home_team.venue %></span></div>
-              <div class="col-6"><span class="float-right"><%= schedule.pretty_date %></span></small></div>
+              <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                <small><span class="float-left"><%= schedule.home_team.venue %></span>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                <span class="float-right"><%= schedule.pretty_date %></span></small>
+              </div>
             </div>
           </div>
         </div>

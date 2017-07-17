@@ -12,12 +12,12 @@ class SchedulesController < ApplicationController
 
   def next
     @schedules = Schedule.where(nil).includes(%i[home_team away_team])
-    if Date.current.saturday? || Date.current.sunday? || Date.current.monday?
+    if Date.current.tuesday? || Date.current.wednesday? || Date.current.thursday?
+      @schedules = @schedules.where(completed: :false).limit(4)
+    else
       @schedules = @schedules.where(date:
         (Date.current - 3.day)..Date.current + 2.days)
         .order(date: :asc, league_game: :asc).limit(4)
-    else
-      @schedules = @schedules.where(completed: :false).limit(4)
     end
   end
 

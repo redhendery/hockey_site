@@ -2,8 +2,8 @@ Team.create([{
   abr: 'BSW',
   team_name: 'Botany Swarm',
   venue: 'Paradice Botany',
-  sm_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarm.png?alt=media&token=78ca16e2-6101-4a14-8b8f-54bc9862bd69',
-  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarmLarge.png?alt=media&token=6f494894-6dcc-4f52-bf9d-facd61ca8ebe'
+  sm_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarm.png?alt=media&token=6f930fe2-af69-4012-ac97-bd2e1240f971',
+  lg_logo: 'https://firebasestorage.googleapis.com/v0/b/nzihl-game-center.appspot.com/o/swarmLarge.png?alt=media&token=934f001d-8052-40d5-81a5-f7cbf96ab95f'
 }, {
   abr: 'CRD',
   team_name: 'Canterbury Red Devils',
@@ -102,9 +102,7 @@ Standing.create([{
 p "Added #{Standing.count} standings"
 
 TeamStat.create([{
-  # Botany Swarm Team Stats
-  goals_scored: 31,
-  goals_against: 59,
+  # Botany Swarm Team Stat
   sog: 378,
   sog_allowed: 389,
   pim: 251,
@@ -117,8 +115,6 @@ TeamStat.create([{
   team_id: 1
 }, {
   # Canterbury Red Devils Team Stats
-  goals_scored: 29,
-  goals_against: 76,
   sog: 270,
   sog_allowed: 590,
   pim: 190,
@@ -131,8 +127,6 @@ TeamStat.create([{
   team_id: 2
 }, {
   # Dunedin Thunder Team Stats
-  goals_scored: 44,
-  goals_against: 54,
   sog: 443,
   sog_allowed: 422,
   pim: 172,
@@ -145,8 +139,6 @@ TeamStat.create([{
   team_id: 3
 }, {
   # Skycity Stampede Team Stats
-  goals_scored: 58,
-  goals_against: 30,
   sog: 540,
   sog_allowed: 320,
   pim: 395,
@@ -159,8 +151,6 @@ TeamStat.create([{
   team_id: 4
 }, {
   # West Auckland Admirals Team Stats
-  goals_scored: 92,
-  goals_against: 34,
   sog: 608,
   sog_allowed: 361,
   pim: 192,
