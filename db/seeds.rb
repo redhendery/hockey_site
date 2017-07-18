@@ -2495,7 +2495,7 @@ Player.create([{
   position: 'Defence',
   pos_abr: 'D',
   number: 3,
-  games_played: 1,
+  games_played: 12,
   goals: 1,
   assists: 8,
   points: 8,
