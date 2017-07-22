@@ -34,16 +34,16 @@ p "Added #{Team.count} teams"
 
 Standing.create([{
   # Botany Swarm Standings
-  games: 10,
+  games: 11,
   wins: 2,
-  losses: 5,
+  losses: 7,
   overtime_wins: 0,
   overtime_losses: 2,
   shootout: 0,
   points: 8,
-  goals_for: 31,
-  goals_against: 59,
-  goal_difference: -28,
+  goals_for: 32,
+  goals_against: 65,
+  goal_difference: -33,
   team_id: 1
 }, {
   # Canterbury Red Devils Standings
@@ -73,16 +73,16 @@ Standing.create([{
   team_id: 3
 }, {
   # Skycity Stampede Standings
-  games: 12,
-  wins: 10,
+  games: 13,
+  wins: 11,
   losses: 2,
   overtime_wins: 0,
   overtime_losses: 0,
   shootout: 0,
   points: 30,
-  goals_for: 58,
-  goals_against: 30,
-  goal_difference: 28,
+  goals_for: 64,
+  goals_against: 31,
+  goal_difference: 33,
   team_id: 4
 }, {
   # West Auckland Admirals Standings
@@ -103,15 +103,15 @@ p "Added #{Standing.count} standings"
 
 TeamStat.create([{
   # Botany Swarm Team Stat
-  sog: 378,
-  sog_allowed: 389,
-  pim: 251,
+  sog: 408,
+  sog_allowed: 414,
+  pim: 287,
   ppg: 6,
-  ppg_allowed: 19,
+  ppg_allowed: 22,
   shg: 0,
   shg_allowed: 2,
-  pp: 76,
-  pk: 69,
+  pp: 82,
+  pk: 77,
   team_id: 1
 }, {
   # Canterbury Red Devils Team Stats
@@ -139,15 +139,15 @@ TeamStat.create([{
   team_id: 3
 }, {
   # Skycity Stampede Team Stats
-  sog: 540,
-  sog_allowed: 320,
-  pim: 395,
-  ppg: 13,
+  sog: 585,
+  sog_allowed: 350,
+  pim: 407,
+  ppg: 16,
   ppg_allowed: 9,
   shg: 3,
   shg_allowed: 2,
-  pp: 56,
-  pk: 67,
+  pp: 64,
+  pk: 73,
   team_id: 4
 }, {
   # West Auckland Admirals Team Stats
@@ -476,14 +476,14 @@ Schedule.create([{
 }, {
   away_team_id: 4,
   home_team_id: 1,
-  home_score: 0,
-  away_score: 0,
+  home_score: 1,
+  away_score: 6,
   date: '22/07/2017',
   league_game: 'Game 29',
   pretty_date: 'Saturday, July 22nd, 4:45pm',
   shootout: false,
   overtime: false,
-  completed: false
+  completed: true
 }, {
   away_team_id: 2,
   home_team_id: 3,
@@ -1178,24 +1178,24 @@ GameStat.create([{
   away_penalty: 9,
   schedule_id: 28
 }, {
-  home_goals_1st: 0,
-  away_goals_1st: 0,
+  home_goals_1st: 1,
+  away_goals_1st: 3,
   home_goals_2nd: 0,
-  away_goals_2nd: 0,
+  away_goals_2nd: 1,
   home_goals_3rd: 0,
-  away_goals_3rd: 0,
-  home_svs: 0,
-  away_svs: 0,
-  home_sog: 0,
-  away_sog: 0,
-  home_pim: 0,
-  away_pim: 0,
+  away_goals_3rd: 2,
+  home_svs: 39,
+  away_svs: 29,
+  home_sog: 30,
+  away_sog: 45,
+  home_pim: 36,
+  away_pim: 12,
   home_ppg: 0,
-  away_ppg: 0,
+  away_ppg: 3,
   home_shg: 0,
   away_shg: 0,
-  home_penalty: 0,
-  away_penalty: 0,
+  home_penalty: 8,
+  away_penalty: 6,
   schedule_id: 29
 }, {
   home_goals_1st: 0,

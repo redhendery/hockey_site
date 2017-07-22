@@ -100,16 +100,14 @@ ActiveRecord::Schema.define(version: 20170711190558) do
 
   create_table "team_stats", force: :cascade do |t|
     t.integer "sog"
-    t.integer "goals_scored"
     t.integer "sog_allowed"
-    t.integer "goals_against"
-    t.integer "pp"
-    t.integer "ppg"
     t.integer "pim"
-    t.integer "shg"
-    t.integer "pk"
+    t.integer "ppg"
     t.integer "ppg_allowed"
+    t.integer "shg"
     t.integer "shg_allowed"
+    t.integer "pp"
+    t.integer "pk"
     t.integer "team_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
