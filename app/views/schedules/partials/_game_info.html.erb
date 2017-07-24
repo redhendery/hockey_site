@@ -1,17 +1,27 @@
-<h5 class="text-muted"><%= @schedule.league_game %></h5>
-<h3><%= @home.team_name %> v <%= @away.team_name %></h3>
-<h5><%= @home.venue %> <%= @schedule.pretty_date %></h5>
-<% if @schedule.completed %>
-  </br>
-  <div class="row">
-    <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5">
-      <h1 class="float-right score"><%= @schedule.home_score %></h1>
-    </div>
-    <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
-      <h1 class=" score">-</h1>
-    </div>
-    <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5">
-      <h1 class="float-left score"><%= @schedule.away_score %></h1>
-    </div>
+<div class="row">
+  <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 text-center">
+    <img class="img-fluid mx-auto d-block show-logos" src="<%= @home.lg_logo %>" alt="<%= @home.team_name %>">
   </div>
-<% end %>
+  <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 align-self-center text-center">
+    <h5 class="text-muted"><%= @schedule.league_game %></h5>
+    <h3><%= @home.team_name %> v <%= @away.team_name %></h3>
+    <h5><%= @home.venue %> <%= @schedule.pretty_date %></h5>
+    <% if @schedule.completed %>
+      </br>
+      <div class="row">
+        <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5">
+          <h1 class="float-right score"><%= @schedule.home_score %></h1>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+          <h1 class=" score">-</h1>
+        </div>
+        <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5">
+          <h1 class="float-left score"><%= @schedule.away_score %></h1>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 text-center">
+    <img class="img-fluid mx-auto d-block show-logos" src="<%= @away.lg_logo %>" alt="<%= @away.team_name %>">
+  </div>
+</div>

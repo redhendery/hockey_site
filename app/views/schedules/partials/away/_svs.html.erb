@@ -2,7 +2,7 @@
   <div class="card-deck">
     <div class="card">
       <div class="card-header">
-        <strong>Save Percentage Leaders</strong>
+        <strong>Save Percentage</strong>
       </div>
       <div class="card-block">
         <% @away.players.limit(3).where.not(pos_abr: %w[F D], games_played: '0').each_with_index do |svs, i| %>

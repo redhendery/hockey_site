@@ -1,23 +1,45 @@
 <div class="container-fluid">
+  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 align-self-center text-center">
+    <%= render 'schedules/partials/game_info' %>
+  </div>
   <div class="row">
-    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 text-center">
-      <%= render 'schedules/partials/home/home_team' %>
+    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center">
+      <%= render 'schedules/partials/home/home_offensive_stats' %>
     </div>
     <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center">
-      <%= render 'schedules/partials/game_info' %>
+      <%= render 'schedules/partials/away/away_offensive_stats' %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center">
+      <%= render 'schedules/partials/home/home_defensive_stats' %>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center">
+      <%= render 'schedules/partials/away/away_defensive_stats' %>
+    </div>
+  </div>
+    <div class="row">
+    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center">
+      <h4 class="lineups"><%= @home.team_name %> Player Stats & Lineups</h4>
       <div class="row">
-        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
-          <p class="text-muted float-left lineups">Home Lineup</p>
-          <%= render 'schedules/partials/home/home_lineup' %>
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center">
+          <%= render 'schedules/partials/home/home_team' %>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
-          <p class="text-muted float-right lineups">Away Lineup</p>
-          <%= render 'schedules/partials/away/away_lineup' %>
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center">
+          <%= render 'schedules/partials/home/home_lineup' %>
         </div>
       </div>
     </div>
-    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 text-center">
-      <%= render 'schedules/partials/away/away_team' %>
+    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center">
+      <h4 class="lineups"><%= @away.team_name %> Player Stats & Lineups</h4>
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center">
+          <%= render 'schedules/partials/away/away_lineup' %>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center">
+          <%= render 'schedules/partials/away/away_team' %>
+        </div>
+      </div>
     </div>
   </div>
 </div>
