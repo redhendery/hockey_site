@@ -1,16 +1,16 @@
 <h5 class="text-muted"><%= @schedule.league_game %></h5>
 <h3><%= @home.team_name %> v <%= @away.team_name %></h3>
-<h5><%= @home.venue %> <%= @schedule.prettyDate %></h5>
+<h5><%= @home.venue %> <%= @schedule.pretty_date %></h5>
 <% if @schedule.completed %>
   </br>
   <div class="row">
-    <div class="col-5">
+    <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5">
       <h1 class="float-right score"><%= @schedule.home_score %></h1>
     </div>
-    <div class="col-2">
+    <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
       <h1 class=" score">-</h1>
     </div>
-    <div class="col-5">
+    <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5">
       <h1 class="float-left score"><%= @schedule.away_score %></h1>
     </div>
   </div>

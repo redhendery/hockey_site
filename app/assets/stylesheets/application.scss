@@ -13,20 +13,21 @@ body {
   min-height: 100%
 }
 
+// Logo's on Show Pages
+.show-logos {
+  padding-bottom: 30px;
+}
+
+
 // Card Spacing
 .card-deck {
   min-height: 100%;
-  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 // Show Schedule Lineups
 .lineups {
   padding-top: 15px;
-}
-
-// Data Tables Spacing
-.dataTables_wrapper {
-  padding-top: 30px;
 }
 
 // Team Logos Index

@@ -20,14 +20,14 @@
           </thead>
           <tbody>
             <tr class="align-middle text-center">
-            <td><%= @team.team_stat.goals_against %></td>
-            <td><%= @team.team_stat.sog_allowed %></td>
-            <td><%= '%.2f' % @team.team_stat.gaa %></td>
-            <td><%= @team.team_stat.shg_allowed %></td>
-            <td><%= @team.team_stat.pim %></td>
-            <td><%= @team.team_stat.pk %></td>
-            <td><%= @team.team_stat.ppg_allowed %></td>
-            <td><%= '%.2f' % @team.team_stat.pk_percent %>%</td>
+            <td><%= standing.goals_against %></td>
+            <td><%= stat.sog_allowed %></td>
+            <td><%= '%.2f' % gaa %></td>
+            <td><%= stat.shg_allowed %></td>
+            <td><%= stat.pim %></td>
+            <td><%= stat.pk %></td>
+            <td><%= stat.ppg_allowed %></td>
+            <td><%= '%.2f' % pk_percent %>%</td>
         </table>
       </div>
     </div>

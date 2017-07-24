@@ -70,7 +70,7 @@ ActiveRecord::Schema.define(version: 20170711190558) do
   create_table "schedules", force: :cascade do |t|
     t.date "date"
     t.string "league_game"
-    t.string "prettyDate"
+    t.string "pretty_date"
     t.integer "away_score"
     t.integer "home_score"
     t.integer "away_team_id"
@@ -100,20 +100,14 @@ ActiveRecord::Schema.define(version: 20170711190558) do
 
   create_table "team_stats", force: :cascade do |t|
     t.integer "sog"
-    t.integer "goals_scored"
-    t.decimal "scoring_percentage"
     t.integer "sog_allowed"
-    t.integer "goals_against"
-    t.decimal "gaa"
-    t.integer "pp"
-    t.integer "ppg"
-    t.decimal "pp_perecent"
     t.integer "pim"
-    t.integer "shg"
-    t.integer "pk"
+    t.integer "ppg"
     t.integer "ppg_allowed"
+    t.integer "shg"
     t.integer "shg_allowed"
-    t.decimal "pk_percent"
+    t.integer "pp"
+    t.integer "pk"
     t.integer "team_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

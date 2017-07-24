@@ -1,14 +1,13 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-2">
+    <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
       <img src="<%= @player.team.sm_logo %>" class="img-fluid" alt="<%= @player.team.team_name %>">
     </div>
-    <div class="col">
+    <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
       <h1 class="text-center">Edit Stats for <%= @player.name %></h1>
       <p class="text-center"><%= link_to 'Back to Players', players_path %></p>
     </div>
-    <div class="col-2">
-      <img src="<%= @player.team.sm_logo %>" class="img-fluid float-right" alt="<%= @player.team.team_name %>">
+    <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
     </div>
   </div>
   <% if @player.pos_abr == 'GK' %>
