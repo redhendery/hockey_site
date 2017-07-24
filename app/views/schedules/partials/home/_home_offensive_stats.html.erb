@@ -1,0 +1,33 @@
+<div class="card-deck">
+  <div class="card">
+    <div class="card-header text-center">
+      <strong><%= @home.team_name %> Offensive Team Stats</strong>
+    </div>
+    <div class="card-block">
+      <div class="row">
+        <table class="table-sm w-100">
+          <thead class="table">
+            <tr>
+              <th class="text-center">GS</th>
+              <th class="text-center">SOG</th>
+              <th class="text-center">GS%</th>
+              <th class="text-center">PP</th>
+              <th class="text-center">PPG</th>
+              <th class="text-center">PP%</th>
+              <th class="text-center">SHG</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="align-middle text-center">
+            <td><%= @home.standing.goals_for %></td>
+            <td><%= home_stat.sog %></td>
+            <td><%= '%.2f' % home_scoring_percentage %>%</td>
+            <td><%= home_stat.pp %></td>
+            <td><%= home_stat.ppg %></td>
+            <td><%= '%.2f' % home_pp_percentage %>%</td>
+            <td><%= home_stat.shg %></td>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

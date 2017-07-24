@@ -1,0 +1,43 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 text-center">
+      <img class="img-fluid mx-auto d-block" src="<%= @home.lg_logo %>" alt="<%= @home.team_name %>">
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center">
+      <%= render 'schedules/partials/game_info' %>
+      <h1 class="text-center">Edit Result</h1>
+      <p class="text-center"><%= link_to 'Back to Schedules', schedules_path %></p>
+    </div>
+    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 text-center">
+      <img class="img-fluid mx-auto d-block" src="<%= @away.lg_logo %>" alt="<%= @away.team_name %>">
+    </div>
+  </div>
+
+  <%= form_for @schedule, html: { class: 'form-row' } do |f| %>
+    <div class="row">
+      <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+        <%= f.label :home_score %>:
+        <%= f.text_field :home_score, class: 'form-control' %>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+        <%= f.label :away_score %>:
+        <%= f.text_field :away_score, class: 'form-control' %>
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+        <%= f.label :completed %>:
+        <%= f.text_field :completed, class: 'form-control' %>
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+        <%= f.label :overtime %>:
+        <%= f.text_field :overtime, class: 'form-control' %>
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+        <%= f.label :shootout %>:
+        <%= f.text_field :shootout, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 update-button">
+      <%= f.submit 'Update Schedule', class: 'btn btn-primary btn-lg btn-block' %>
+    </div>
+  <% end %>
+</div>
