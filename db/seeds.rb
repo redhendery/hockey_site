@@ -590,7 +590,7 @@ Schedule.create([{
   away_score: 0,
   date: '12/08/2017',
   league_game: 'Game 39',
-  pretty_date: 'Saturday, July 22nd 2017, 4:45pm',
+  pretty_date: 'Saturday, August 12th, 7:00pm',
   shootout: false,
   overtime: false,
   completed: false
@@ -602,7 +602,7 @@ Schedule.create([{
   away_score: 0,
   date: '13/08/2017',
   league_game: 'Game 40',
-  pretty_date: 'Sunday, July 23nd 2017, 4:45pm',
+  pretty_date: 'Sunday, August 13th, 4:40pm',
   shootout: false,
   overtime: false,
   completed: false
