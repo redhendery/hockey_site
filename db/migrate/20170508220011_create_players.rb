@@ -9,6 +9,9 @@ class CreatePlayers < ActiveRecord::Migration[5.1]
       t.integer :number
       t.integer :games_played
       t.integer :goals
+      t.integer :ppg
+      t.integer :shg
+      t.integer :gwg
       t.integer :assists
       t.integer :points
       t.integer :pim
