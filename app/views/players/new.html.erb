@@ -1,0 +1,27 @@
+<div class="continaer-fluid">
+  <h1 class="text-center player-pos">What position is the Player?</h1>
+  <div class="row">
+    <div class="col-4">
+      <button type="button" class="btn btn-primary btn-lg btn-block btn-responsive">Defence</button>
+    </div>
+    <div class="col-4">
+      <button type="button" class="btn btn-primary btn-lg btn-block btn-responsive">Forward</button>
+    </div>
+    <div class="col-4">
+      <button type="button" class="btn btn-primary btn-lg btn-block btn-responsive">Goalie</button>
+    </div>
+  </div>
+</div>
+<%= form_for :player, url: players_path do |f| %>
+  <% if @player.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@player.errors.count, "errors") %> prevented you from saving this player:</h2>
+      <ul>
+        <% @player.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<% end %>

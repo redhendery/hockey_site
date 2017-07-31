@@ -1,6 +1,6 @@
-<div class="row ">
+<div class="row">
   <% @skaters.each do |player| %>
-    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
       <div class="card-deck">
         <div class="card">
           <div class="card-header">
@@ -26,6 +26,9 @@
                     <th class="text-center">P</th>
                     <th class="text-center">PIM</th>
                     <th class="text-center">+/-</th>
+                    <th class="text-center">GWG</th>
+                    <th class="text-center">PPG</th>
+                    <th class="text-center">SHG</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -35,6 +38,9 @@
                   <td class="text-center"><%= player.points %></td>
                   <td class="text-center"><%= player.pim %></td>
                   <td class="text-center"><%= player.plus_minus %></td>
+                  <td class="text-center"><%= player.gwg %></td>
+                  <td class="text-center"><%= player.ppg %></td>
+                  <td class="text-center"><%= player.shg %></td>
                 </tbody>
               </table>
             </div>

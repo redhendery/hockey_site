@@ -8,6 +8,17 @@ class PlayersController < ApplicationController
     @gk = @gk.where(team_id: params[:team_id]) if params[:team_id].present?
   end
 
+  def create
+    if logged_in?
+      @player = Player.new(params[:player])
+      if @player.save
+        redirect_to @player
+      else
+        redirect_to all_players_path
+      end
+    end
+  end
+
   def show
     @player = Player.find(params[:id])
   end
@@ -44,7 +55,8 @@ class PlayersController < ApplicationController
         :name, :shoots, :position, :pos_abr,
         :number, :games_played, :goals, :assists,
         :goals_against, :gaa, :sog, :saves, :svs,
-        :shutouts, :points, :pim, :plus_minus, :team_id
+        :shutouts, :points, :pim, :plus_minus,
+        :ppg, :gwg, :shg, :team_id
       )
     end
 

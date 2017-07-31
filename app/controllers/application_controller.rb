@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
-  include GameStatHelper, SessionsHelper, SchedulesHelper, TeamsHelper
+  include AdmiralsHelper, DevilsHelper, GameStatHelper, SessionsHelper,
+    StampedeHelper, SwarmHelper, SchedulesHelper, TeamsHelper, ThunderHelper
 end

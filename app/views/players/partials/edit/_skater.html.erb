@@ -1,36 +1,28 @@
 <%= form_for @player, html: { class: 'form-row' } do |f| %>
   <div class="row">
-    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
-      <p>Name:</p>
-      <%= f.text_field :name, class: 'form-control' %>
-      <p>Shoots:</p>
-      <%= f.text_field :shoots, class: 'form-control' %>
-      <p>Position:</p>
-      <%= f.text_field :position, class: 'form-control' %>
-    </div>
-    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
-      <p>Position Abreviation:</p>
-      <%= f.text_field :pos_abr, class: 'form-control' %>
-      <p>Number:</p>
-      <%= f.text_field :number, class: 'form-control' %>
+    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
       <p>Games Played:</p>
       <%= f.text_field :games_played, class: 'form-control' %>
-    </div>
-    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
-      <p>Goals:</p>
-      <%= f.text_field :goals, class: 'form-control' %>
-      <p>Assists:</p>
-      <%= f.text_field :assists, class: 'form-control' %>
       <p>Points:</p>
       <%= f.text_field :points, class: 'form-control' %>
+      <p>Game Winning Goals:</p>
+      <%= f.text_field :gwg, class: 'form-control' %>
     </div>
-    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+      <p>Goals:</p>
+      <%= f.text_field :goals, class: 'form-control' %>
       <p>Penalty Minutes:</p>
       <%= f.text_field :pim, class: 'form-control' %>
+      <p>Power Play Goals:</p>
+      <%= f.text_field :ppg, class: 'form-control' %>
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+      <p>Assists:</p>
+      <%= f.text_field :assists, class: 'form-control' %>
       <p>Plus Minus:</p>
       <%= f.text_field :plus_minus, class: 'form-control' %>
-      <p>team_id:</p>
-      <%= f.text_field :team_id, class: 'form-control' %>
+      <p>Short Handed Goals:</p>
+      <%= f.text_field :shg, class: 'form-control' %>
     </div>
   </div>
   <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 update-button">
