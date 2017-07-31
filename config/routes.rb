@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
   resources :teams, only: %i[index show] do
     resources :players, only: %i[index show]
     resources :stats, only: [:index]
@@ -11,13 +10,13 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :schedules, only: %i[index show] do
+  resources :schedules do
     collection do
       get 'swarm', 'reddevils', 'thunder', 'stampede', 'admirals', 'scores', 'next'
     end
   end
 
-  resources :players do
+  resources :players, only: %i[edit index show update] do
     collection do
       get 'all'
     end
@@ -25,7 +24,7 @@ Rails.application.routes.draw do
 
   resources :standings, only: %i[edit index show update]
 
-# Login routes
+  # Login routes
   get 'sessions/new'
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'

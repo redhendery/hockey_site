@@ -1,0 +1,24 @@
+<tbody>
+  <td class="text-left"><%= @away.team_name %></td>
+  <td class="text-center"><%= game_stat.away_sog %></td>
+  <td class="text-center">
+    <%= '%.2f' % away_shoot_percent %>%
+  </td>
+  <td class="text-center"><%= game_stat.away_svs %></td>
+  <td class="text-center">
+    <% if away_svs_percent == 1000 %>
+      <%= '%.2f' % 1 %>
+    <% else %>
+      .<%= away_svs_percent %>
+    <% end %>
+  </td>
+  <td class="text-center">
+    <%= game_stat.away_ppg %>/<%= game_stat.home_penalty %>
+  </td>
+  <td class="text-center">
+    <%= '%.2f' % away_pp_percent %>%
+  </td>
+  <td class="text-center"><%= game_stat.away_pim %></td>
+  <td class="text-center"><%= game_stat.away_penalty - game_stat.home_ppg %>/<%= game_stat.away_penalty %></td>
+  <td class="text-center"><%= '%.2f' % away_pk_percent %>%</td>
+</tbody>

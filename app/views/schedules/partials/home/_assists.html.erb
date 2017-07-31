@@ -1,8 +1,8 @@
-<div class="col-12">
+<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
   <div class="card-deck">
     <div class="card">
       <div class="card-header">
-        <strong>Assists Leaders</strong>
+        <strong><%= @home.abr %> Assist Leaders</strong>
       </div>
       <div class="card-block">
         <% @home.players.limit(3).where(pos_abr: %w[F D]).order(assists: :desc).each_with_index do |assists, i| %>

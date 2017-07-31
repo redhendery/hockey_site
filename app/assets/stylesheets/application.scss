@@ -3,28 +3,31 @@
 */
 @import 'bootstrap';
 
-html, body {
+html {
   position: relative;
   min-height: 100%;
 }
 
 body {
   padding: 90px 30px 30px 30px;
+  min-height: 100%
 }
+
+// Logo's on Show Pages
+.show-logos {
+  padding-bottom: 30px;
+}
+
 
 // Card Spacing
 .card-deck {
-  padding-top: 30px;
+  min-height: 100%;
+  padding-bottom: 30px;
 }
 
 // Show Schedule Lineups
 .lineups {
-  padding-top: 15px;
-}
-
-// Data Tables Spacing
-.dataTables_wrapper {
-  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 // Team Logos Index
@@ -55,9 +58,12 @@ body {
 
 // Footer
 .footer {
-  position: relative;
-  padding-top: 20px;
+  position: absolute;
   bottom: 0;
+  width: 100%;
+  margin-left: -30px;
+  height: 30px;
+  line-height: 60px;
 }
 
 // Player add buttons

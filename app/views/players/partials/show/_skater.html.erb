@@ -1,11 +1,14 @@
 <div class="row">
-  <div class="col-8">
+  <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+    <img src="<%= @player.team.lg_logo %>" alt="<%= @player.team.team_name %>">
+  </div>
+  <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 align-self-center">
     <div class="row">
-      <div class="col-11">
+      <div class="col-sm-11 col-md-11 col-lg-11 col-xl-11">
         <h5 class="card-title"><%= @player.name %></h5>
         <h6 class="card-subtitle mb-2 text-muted">Shoots: <%= @player.shoots %></h6>
       </div>
-      <div class="col-1">
+      <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">
         <h5 class="card-title float-right">#<%= @player.number %></h5>
         <h6 class="card-subtitle mb-2 text-muted float-right"><%= @player.position %></h6>
       </div>
@@ -20,6 +23,9 @@
             <th class="text-center">P</th>
             <th class="text-center">PIM</th>
             <th class="text-center">+/-</th>
+            <th class="text-center">GWG</th>
+            <th class="text-center">PPG</th>
+            <th class="text-center">SHG</th>
           </tr>
         </thead>
         <tbody>
@@ -29,11 +35,11 @@
           <td class="text-center"><%= @player.points %></td>
           <td class="text-center"><%= @player.pim %></td>
           <td class="text-center"><%= @player.plus_minus %></td>
+          <td class="text-center"><%= @player.gwg %></td>
+          <td class="text-center"><%= @player.ppg %></td>
+          <td class="text-center"><%= @player.shg %></td>
         </tbody>
       </table>
     </div>
-  </div>
-  <div class="col-4 text-center">
-    <img src="<%= @player.team.lg_logo %>" alt="<%= @player.team.team_name %>">
   </div>
 </div>

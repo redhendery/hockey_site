@@ -1,7 +1,7 @@
 <div class="card-deck">
   <div class="card">
     <div class="card-header text-center">
-      <strong>Offensive Team Season Stats</strong>
+      <strong><%= @home.team_name %> Offensive Team Stats</strong>
     </div>
     <div class="card-block">
       <div class="row">
@@ -19,13 +19,13 @@
           </thead>
           <tbody>
             <tr class="align-middle text-center">
-            <td><%= standing.goals_for %></td>
-            <td><%= stat.sog %></td>
-            <td><%= '%.2f' % goal_scoring_percent %>%</td>
-            <td><%= stat.pp %></td>
-            <td><%= stat.ppg %></td>
-            <td><%= '%.2f' % pp_percent %>%</td>
-            <td><%= stat.shg %></td>
+            <td><%= @home.standing.goals_for %></td>
+            <td><%= home_stat.sog %></td>
+            <td><%= '%.2f' % home_scoring_percentage %>%</td>
+            <td><%= home_stat.pp %></td>
+            <td><%= home_stat.ppg %></td>
+            <td><%= '%.2f' % home_pp_percentage %>%</td>
+            <td><%= home_stat.shg %></td>
         </table>
       </div>
     </div>

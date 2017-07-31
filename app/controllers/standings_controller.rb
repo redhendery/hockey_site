@@ -28,8 +28,8 @@ class StandingsController < ApplicationController
 
     def standing_params
       params.require(:standing).permit(
-          :games, :wins, :losses, :overtime_wins, :overtime_losses,
-          :points, :goals_for, :goals_against, :goal_difference
-          )
+        :games, :wins, :losses, :overtime_wins, :overtime_losses,
+        :points, :goals_for, :goals_against, :goal_difference
+      )
     end
 end

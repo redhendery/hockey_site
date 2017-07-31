@@ -52,10 +52,11 @@ class PlayersController < ApplicationController
 
     def player_params
       params.require(:player).permit(
-          :name, :shoots, :position, :pos_abr,
-          :number, :games_played, :goals, :assists,
-          :goals_against, :gaa, :sog, :saves, :svs,
-          :shutouts, :points, :pim, :plus_minus, :team_id
+        :name, :shoots, :position, :pos_abr,
+        :number, :games_played, :goals, :assists,
+        :goals_against, :gaa, :sog, :saves, :svs,
+        :shutouts, :points, :pim, :plus_minus,
+        :ppg, :gwg, :shg, :team_id
       )
     end
 

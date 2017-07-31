@@ -5,12 +5,10 @@ class TeamsController < ApplicationController
 
   def show
     @team = Team.find(params[:id])
-    @skate = @team.players.where(pos_abr: %w[D F])
-    @schedule = Schedule.where(home_team_id: @team.id)
+    @previous = Schedule.where(home_team_id: @team.id)
         .or(Schedule.where(away_team_id: @team.id))
-    @previous = @schedule.where(home_team_id: @team.id)
-        .or(@schedule.where(away_team_id: @team.id))
-    @previous = @previous.where('date <= ?', Date.today)
+        .where('Date < ?', Date.current).order(date: :desc)
         .limit(2).includes(%i[home_team away_team])
+    @skate = @team.players.where(pos_abr: %w[D F])
   end
 end

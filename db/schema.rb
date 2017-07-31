@@ -10,10 +10,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170623172103) do
+ActiveRecord::Schema.define(version: 20170711190558) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "game_stats", force: :cascade do |t|
+    t.integer "home_goals_1st"
+    t.integer "away_goals_1st"
+    t.integer "home_goals_2nd"
+    t.integer "away_goals_2nd"
+    t.integer "home_goals_3rd"
+    t.integer "away_goals_3rd"
+    t.integer "home_goals_ot"
+    t.integer "away_goals_ot"
+    t.string "home_goals_so"
+    t.string "away_goals_so"
+    t.integer "home_svs"
+    t.integer "away_svs"
+    t.integer "home_sog"
+    t.integer "away_sog"
+    t.integer "home_pim"
+    t.integer "away_pim"
+    t.integer "home_penalty"
+    t.integer "away_penalty"
+    t.integer "home_ppg"
+    t.integer "away_ppg"
+    t.integer "home_shg"
+    t.integer "away_shg"
+    t.integer "schedule_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "players", force: :cascade do |t|
     t.string "name"
@@ -24,6 +52,9 @@ ActiveRecord::Schema.define(version: 20170623172103) do
     t.integer "number"
     t.integer "games_played"
     t.integer "goals"
+    t.integer "ppg"
+    t.integer "shg"
+    t.integer "gwg"
     t.integer "assists"
     t.integer "points"
     t.integer "pim"
@@ -42,13 +73,16 @@ ActiveRecord::Schema.define(version: 20170623172103) do
   create_table "schedules", force: :cascade do |t|
     t.date "date"
     t.string "league_game"
-    t.string "prettyDate"
+    t.string "pretty_date"
     t.integer "away_score"
     t.integer "home_score"
     t.integer "away_team_id"
     t.integer "home_team_id"
-    t.boolean "completed", default: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.boolean "overtime", default: false
+    t.boolean "shootout", default: false
+    t.boolean "completed", default: false
   end
 
   create_table "standings", force: :cascade do |t|
@@ -57,6 +91,7 @@ ActiveRecord::Schema.define(version: 20170623172103) do
     t.integer "losses"
     t.integer "overtime_wins"
     t.integer "overtime_losses"
+    t.integer "shootout"
     t.integer "points"
     t.integer "goals_for"
     t.integer "goals_against"
@@ -68,20 +103,14 @@ ActiveRecord::Schema.define(version: 20170623172103) do
 
   create_table "team_stats", force: :cascade do |t|
     t.integer "sog"
-    t.integer "goals_scored"
-    t.decimal "scoring_percentage"
     t.integer "sog_allowed"
-    t.integer "goals_against"
-    t.decimal "gaa"
-    t.integer "pp"
-    t.integer "ppg"
-    t.decimal "pp_perecent"
     t.integer "pim"
-    t.integer "shg"
-    t.integer "pk"
+    t.integer "ppg"
     t.integer "ppg_allowed"
+    t.integer "shg"
     t.integer "shg_allowed"
-    t.decimal "pk_percent"
+    t.integer "pp"
+    t.integer "pk"
     t.integer "team_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -93,6 +122,8 @@ ActiveRecord::Schema.define(version: 20170623172103) do
     t.string "sm_logo"
     t.string "lg_logo"
     t.string "venue"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
