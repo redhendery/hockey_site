@@ -606,8 +606,8 @@ Schedule.create([{
   overtime: false,
   completed: false
 }, {
-  away_team_id: 2,
-  home_team_id: 3,
+  away_team_id: 4,
+  home_team_id: 5,
   home_score: 0,
   away_score: 0,
   date: '19/08/2017',
