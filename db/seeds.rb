@@ -606,19 +606,19 @@ Schedule.create([{
   overtime: false,
   completed: false
 }, {
-  away_team_id: 4,
-  home_team_id: 5,
+  away_team_id: 2,
+  home_team_id: 3,
   home_score: 0,
   away_score: 0,
   date: '19/08/2017',
   league_game: 'Game 41',
-  pretty_date: 'Saturday, August 19th, 4:50pm',
+  pretty_date: 'Saturday, August 19th, 4:40pm',
   shootout: false,
   overtime: false,
   completed: false
 }, {
-  away_team_id: 5,
-  home_team_id: 4,
+  away_team_id: 4,
+  home_team_id: 5,
   home_score: 0,
   away_score: 0,
   date: '25/08/2017',
@@ -628,8 +628,8 @@ Schedule.create([{
   overtime: false,
   completed: false
 }, {
-  away_team_id: 5,
-  home_team_id: 4,
+  away_team_id: 4,
+  home_team_id: 5,
   home_score: 0,
   away_score: 0,
   date: '26/08/2017',
@@ -638,7 +638,7 @@ Schedule.create([{
   shootout: false,
   overtime: false,
   completed: false
-}])
+}, ])
 
 p "Added #{Schedule.count} schedules"
 
