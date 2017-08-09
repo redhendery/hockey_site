@@ -594,8 +594,7 @@ Schedule.create([{
   shootout: false,
   overtime: false,
   completed: false
-},
-{
+}, {
   away_team_id: 2,
   home_team_id: 3,
   home_score: 0,
@@ -603,6 +602,39 @@ Schedule.create([{
   date: '13/08/2017',
   league_game: 'Game 40',
   pretty_date: 'Sunday, August 13th, 4:40pm',
+  shootout: false,
+  overtime: false,
+  completed: false
+}, {
+  away_team_id: 4,
+  home_team_id: 5,
+  home_score: 0,
+  away_score: 0,
+  date: '19/08/2017',
+  league_game: 'Game 41',
+  pretty_date: 'Saturday, August 19th, 4:50pm',
+  shootout: false,
+  overtime: false,
+  completed: false
+}, {
+  away_team_id: 5,
+  home_team_id: 4,
+  home_score: 0,
+  away_score: 0,
+  date: '25/08/2017',
+  league_game: 'Game 42',
+  pretty_date: 'Friday, August 25th, 4:40pm',
+  shootout: false,
+  overtime: false,
+  completed: false
+}, {
+  away_team_id: 5,
+  home_team_id: 4,
+  home_score: 0,
+  away_score: 0,
+  date: '26/08/2017',
+  league_game: 'Game 43',
+  pretty_date: 'Saturday, August 26th, 4:40pm',
   shootout: false,
   overtime: false,
   completed: false
@@ -1422,6 +1454,66 @@ GameStat.create([{
   home_penalty: 0,
   away_penalty: 0,
   schedule_id: 40
+}, {
+  home_goals_1st: 0,
+  away_goals_1st: 0,
+  home_goals_2nd: 0,
+  away_goals_2nd: 0,
+  home_goals_3rd: 0,
+  away_goals_3rd: 0,
+  home_svs: 0,
+  away_svs: 0,
+  home_sog: 0,
+  away_sog: 0,
+  home_pim: 0,
+  away_pim: 0,
+  home_ppg: 0,
+  away_ppg: 0,
+  home_shg: 0,
+  away_shg: 0,
+  home_penalty: 0,
+  away_penalty: 0,
+  schedule_id: 41
+}, {
+  home_goals_1st: 0,
+  away_goals_1st: 0,
+  home_goals_2nd: 0,
+  away_goals_2nd: 0,
+  home_goals_3rd: 0,
+  away_goals_3rd: 0,
+  home_svs: 0,
+  away_svs: 0,
+  home_sog: 0,
+  away_sog: 0,
+  home_pim: 0,
+  away_pim: 0,
+  home_ppg: 0,
+  away_ppg: 0,
+  home_shg: 0,
+  away_shg: 0,
+  home_penalty: 0,
+  away_penalty: 0,
+  schedule_id: 42
+}, {
+  home_goals_1st: 0,
+  away_goals_1st: 0,
+  home_goals_2nd: 0,
+  away_goals_2nd: 0,
+  home_goals_3rd: 0,
+  away_goals_3rd: 0,
+  home_svs: 0,
+  away_svs: 0,
+  home_sog: 0,
+  away_sog: 0,
+  home_pim: 0,
+  away_pim: 0,
+  home_ppg: 0,
+  away_ppg: 0,
+  home_shg: 0,
+  away_shg: 0,
+  home_penalty: 0,
+  away_penalty: 0,
+  schedule_id: 43
 }])
 
 p "Added #{GameStat.count} game stats"
