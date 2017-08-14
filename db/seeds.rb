@@ -603,8 +603,8 @@ Schedule.create([{
   league_game: 'Game 40',
   pretty_date: 'Sunday, August 13th, 4:40pm',
   shootout: false,
-  overtime: true,
-  completed: false
+  overtime: false,
+  completed: true
 }, {
   away_team_id: 4,
   home_team_id: 5,
