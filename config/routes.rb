@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
   resources :schedules do
     collection do
-      get 'swarm', 'reddevils', 'thunder', 'stampede', 'admirals', 'scores', 'next'
+      get 'swarm', 'reddevils', 'thunder', 'stampede', 'admirals', 'scores', 'next', 'finals'
     end
   end
 
@@ -31,5 +31,5 @@ Rails.application.routes.draw do
   delete '/logout',  to: 'sessions#destroy'
   resources :users
 
-  root 'schedules#next'
+  root 'schedules#finals'
 end
