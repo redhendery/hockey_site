@@ -74,7 +74,7 @@ Standing.create([{
 }, {
   # Skycity Stampede Standings
   games: 16,
-  wins: 14,
+  wins: 13,
   losses: 3,
   overtime_wins: 0,
   overtime_losses: 0,
