@@ -41,7 +41,7 @@ class SchedulesController < ApplicationController
   end
 
   def finals
-    @schedules = Schedule.where(nil).includes(%i[home_team away_team]).last(3)
+    @schedules = Schedule.where(nil).includes(%i[home_team away_team]).last(2)
   end
 
   def swarm
